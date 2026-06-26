@@ -256,7 +256,8 @@ export default function Header({ locale, translations }: HeaderProps) {
               <div className="mt-2 overflow-hidden rounded-2xl border border-gray-100 bg-white p-6 shadow-2xl">
                 <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                   {features.map((item) => {
-                    const megaData = nav.mega[item.slug];
+                    const megaKey = item.slug.replace(/-/g, '_');
+                    const megaData = nav.mega[megaKey as keyof typeof nav.mega];
                     if (!megaData) return null;
                     return (
                       <Link
