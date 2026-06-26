@@ -3,6 +3,7 @@ import { locales, type Locale } from "@/i18n/config";
 import { getMessages } from "@/i18n/request";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DemoCta from "@/components/home/DemoCta";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -30,6 +31,7 @@ export default async function LocaleLayout({
       <body suppressHydrationWarning style={{ fontFamily: "'IRANSansX', sans-serif" }} className="min-h-screen bg-background text-foreground">
         <Header locale={typedLocale} translations={messages} />
         <main className="pt-16">{children}</main>
+        <DemoCta locale={typedLocale} translations={messages} />
         <Footer locale={typedLocale} translations={messages} />
       </body>
     </html>

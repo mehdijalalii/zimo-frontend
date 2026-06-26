@@ -5,7 +5,6 @@ import HomeHighlights from '@/components/home/HomeHighlights';
 import HomeHowItWorks from '@/components/home/HomeHowItWorks';
 import HomeStats from '@/components/home/HomeStats';
 import HomeTrust from '@/components/home/HomeTrust';
-import DemoCta from '@/components/home/DemoCta';
 
 export default async function HomePage({
   params,
@@ -23,7 +22,6 @@ export default async function HomePage({
       <HomeHowItWorks translations={messages} />
       <HomeStats translations={messages} />
       <HomeTrust translations={messages} />
-      <DemoCta locale={typedLocale} translations={messages} />
     </>
   );
 }
