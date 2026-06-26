@@ -4,6 +4,11 @@ import { notFound } from 'next/navigation';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 
+function getDashboardImage(locale: string): string {
+  if (locale === 'fa') return '/images/landing/zimo-dashboard.png';
+  return `/images/landing/zimo-dashboard-${locale}.png`;
+}
+
 function getHref(locale: string, slug: string): string {
   const prefix = locale === 'fa' ? '' : `/${locale}`;
   if (slug === 'home') return prefix || '/';
@@ -132,7 +137,7 @@ export default async function FeatureDetailPage({
           </div>
           <div className="relative group lg:pl-4">
             <div className="relative z-10 overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-[0_48px_80px_-16px_rgba(132,20,116,0.18)]">
-              <Image src="/images/landing/zimo-dashboard.png" alt={imageAlt} width={800} height={500} className="w-full object-cover" />
+              <Image src={getDashboardImage(typedLocale)} alt={imageAlt} width={800} height={500} className="w-full object-cover" />
             </div>
             <div className="absolute -bottom-10 -left-10 -z-10 h-80 w-80 rounded-full bg-[#841474]/5 blur-[100px]" />
           </div>
