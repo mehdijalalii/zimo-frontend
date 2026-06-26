@@ -39,7 +39,7 @@ export default function HomeHighlights({ locale, translations }: HomeHighlightsP
         <div className="bento-grid">
           <Link
             href={getHref(locale, 'features')}
-            className="feature-card feature-card--bento feature-card--bento-lg group relative transition hover:-translate-y-1"
+            className="feature-card feature-card--bento group relative transition hover:-translate-y-1"
           >
             <div className="absolute inset-x-0 top-0 rounded-t-3xl bg-[#841474]" />
             <div className="flex items-center gap-3">
@@ -66,13 +66,6 @@ export default function HomeHighlights({ locale, translations }: HomeHighlightsP
             <p className="mt-2 text-sm leading-relaxed text-gray-600">
               {highlights.items[0]?.description}
             </p>
-            <Image
-              src="/images/landing/smart-appointment.png"
-              alt={highlights.items[0]?.title ?? ''}
-              width={600}
-              height={400}
-              className="mt-4 w-full rounded-xl object-cover"
-            />
           </Link>
 
           <Link
