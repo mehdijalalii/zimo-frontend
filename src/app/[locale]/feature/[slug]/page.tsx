@@ -89,8 +89,8 @@ export default async function FeatureDetailPage({
   const section1Title = (feature.section_1_title ?? '') as string;
   const section1Desc = (feature.section_1_desc ?? '') as string;
 
-  const stepByStepTitle = (feature.step_by_step_title ?? feature.steps_title ?? feature.capabilities_title ?? feature.dashboards_title ?? feature.tools_title ?? feature.features_title ?? feature.layers_title ?? feature.kpis_title ?? '') as string;
-  const steps = (feature.steps ?? feature.capabilities ?? feature.dashboards ?? feature.tools ?? feature.features_list ?? feature.layers ?? feature.kpis ?? []) as { number: string; title: string; description: string }[];
+  const stepByStepTitle = (feature.step_by_step_title ?? feature.steps_title ?? feature.capabilities_title ?? feature.dashboards_title ?? feature.tools_title ?? feature.features_title ?? feature.layers_title ?? feature.kpis_title ?? feature.sections_title ?? '') as string;
+  const steps = (feature.steps ?? feature.capabilities ?? feature.dashboards ?? feature.tools ?? feature.features_list ?? feature.layers ?? feature.kpis ?? feature.sections ?? []) as { number: string; title: string; description: string }[];
 
   const cycleTitle = (feature.cycle_title ?? '') as string;
   const cycleItems = (feature.cycle_items ?? []) as { title: string; description: string }[];
