@@ -5,8 +5,7 @@ export const metadata: Metadata = {
   title: "زیمو | CRM سالن زیبایی",
   description: "زیمو CRM فارسی برای مدیریت نوبت، شعبه، پرسنل، تسویه و باشگاه زیباجویان سالن‌های زیبایی است.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon-96x96.png",
+    icon: "/favicon.png",
   },
 };
 
