@@ -14,6 +14,7 @@ type PricingTranslations = {
   price_per_month: string;
   price_per_year: string;
   request_demo: string;
+  contact_us: string;
   comparison: {
     kicker: string;
     title: string;
@@ -80,9 +81,9 @@ export default function PricingSection({
                   <p className="mt-1 text-sm text-gray-500">{plan.landing_subtitle}</p>
                 )}
 
-                <p className="mt-5 text-base font-bold text-[#841474]">تماس بگیرید</p>
+                <p className="mt-5 text-base font-bold text-[#841474]">{translations.contact_us}</p>
 
-              <ul className="flex-1 space-y-3 pl-8 pt-6 mt-5رتس pb-0">
+              <ul className="flex-1 space-y-3 pt-6 mt-5 pb-0">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
                     <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#841474]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -95,7 +96,7 @@ export default function PricingSection({
 
               <Link
                 href={getHref(locale, 'demo')}
-                className={`mt-8 mx-8 mb-4 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-bold transition-all ${
+                className={`mt-8 mx-8 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-bold transition-all ${
                   plan.is_featured
                     ? 'bg-[#841474] text-white shadow-lg shadow-[#841474]/20 hover:bg-[#6b105d] hover:shadow-[#841474]/40'
                     : 'border border-gray-200 bg-white text-gray-700 hover:bg-gray-50'
@@ -163,7 +164,7 @@ export default function PricingSection({
                 <th className="whitespace-nowrap p-3 lg:p-5 font-bold text-[#841474] text-xs lg:text-base"></th>
                 {plans.map((plan) => (
                     <th key={plan.id} className={`whitespace-nowrap p-3 lg:p-5 text-center font-bold ${plan.is_featured ? 'text-[#841474]' : 'text-gray-900'}`}>
-                      <span className="text-base font-bold text-[#841474]">تماس بگیرید</span>
+                      <span className="text-base font-bold text-[#841474]">{translations.contact_us}</span>
                     </th>
                 ))}
               </tr>
