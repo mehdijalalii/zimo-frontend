@@ -241,25 +241,6 @@ export default function PricingSection({
                   );
                 })}
               </tr>
-              <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
-                <th className="whitespace-nowrap p-3 lg:p-5"></th>
-                {plans.map((plan) => {
-                  const isCustom = plan.pricing_type === 'custom' || plan.price === null || plan.price === 0;
-                  return (
-                    <th key={plan.id} className="whitespace-nowrap p-3 lg:p-5 text-center">
-                      <Link
-                        href={isCustom ? getHref(locale, 'contact') : getHref(locale, 'demo')}
-                        className="inline-flex items-center gap-1 lg:gap-1.5 rounded-lg bg-[#841474] px-3 py-2 lg:px-4 lg:py-3 text-[11px] lg:text-xs font-semibold text-white transition-colors hover:bg-[#6b105d]"
-                      >
-                        <svg className="h-3 w-3 lg:h-3.5 lg:w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                        </svg>
-                        <span>{translations.request_demo}</span>
-                      </Link>
-                    </th>
-                  );
-                })}
-              </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {comparisonFeatures.map((feature) => (
@@ -278,6 +259,61 @@ export default function PricingSection({
                 </tr>
               ))}
             </tbody>
+            <tfoot className="bg-[#841474]/5">
+              <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
+                <th className="whitespace-nowrap p-3 lg:p-5 font-bold text-[#841474] text-xs lg:text-base">{translations.comparison.price}</th>
+                {plans.map((plan) => {
+                  const price = plan.price;
+                  const isCustom = plan.pricing_type === 'custom' || price === null || price === 0;
+                  const monthlyPrice = isCustom ? null : Number(price);
+
+                  return (
+                    <th key={plan.id} className={`whitespace-nowrap p-3 lg:p-5 text-center font-bold ${plan.is_featured ? 'text-[#841474]' : 'text-gray-900'}`}>
+                      {isCustom ? (
+                        <span className="inline-block rounded-full px-4 py-1.5 text-sm lg:text-base font-bold text-black/70">
+                          {translations.comparison.custom_price}
+                        </span>
+                      ) : (
+                        <div className="text-center">
+                          <div className="text-xs lg:text-sm font-normal text-gray-600">
+                            <strong>{formatPrice(monthlyPrice)}</strong>{' '}
+                            <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_month}</span>
+                          </div>
+                          <div className="mt-1 lg:mt-2">
+                            <div className="text-xs lg:text-sm font-normal text-gray-600">
+                              <strong>{formatPrice(Number(monthlyPrice) * 10)}</strong>{' '}
+                              <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_year}</span>
+                            </div>
+                            <div className="mt-2 lg:mt-4 text-[10px] font-semibold leading-tight text-[#841474]">
+                              <span className="text-[11px] lg:text-[12px]">{translations.comparison.two_months_free_yearly}</span>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </th>
+                  );
+                })}
+              </tr>
+              <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
+                <th className="whitespace-nowrap p-3 lg:p-5"></th>
+                {plans.map((plan) => {
+                  const isCustom = plan.pricing_type === 'custom' || plan.price === null || plan.price === 0;
+                  return (
+                    <th key={plan.id} className="whitespace-nowrap p-3 lg:p-5 text-center">
+                      <Link
+                        href={isCustom ? getHref(locale, 'contact') : getHref(locale, 'demo')}
+                        className="inline-flex items-center gap-1 lg:gap-1.5 rounded-lg bg-[#841474] px-3 py-2 lg:px-4 lg:py-3 text-[11px] lg:text-xs font-semibold text-white transition-colors hover:bg-[#6a105e]"
+                      >
+                        <svg className="h-3 w-3 lg:h-3.5 lg:w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        <span>{translations.request_demo}</span>
+                      </Link>
+                    </th>
+                  );
+                })}
+              </tr>
+            </tfoot>
           </table>
         </div>
       </section>

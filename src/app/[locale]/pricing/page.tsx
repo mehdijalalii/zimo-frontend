@@ -21,7 +21,7 @@ export default async function PricingPage({
           <p className="section-kicker mx-auto mb-4">
             {messages.pricing_page.kicker}
           </p>
-          <h1 className="text-3xl font-extrabold leading-tight text-gray-900 md:text-4xl">
+          <h1 className="page-title">
             {messages.pricing_page.title}
           </h1>
           <p className="section-lead section-lead--center mx-auto mt-3 max-w-3xl">
