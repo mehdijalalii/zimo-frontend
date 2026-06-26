@@ -343,7 +343,29 @@
             "features_header": "Özellikler",
             "custom_price": "Özel Fiyat",
             "price": "Fiyat",
-            "two_months_free_yearly": "Yıllık ödemede 2 ay ücretsiz"
+            "two_months_free_yearly": "Yıllık ödemede 2 ay ücretsiz",
+            "rows": [
+                { "label": "Özel Domain Bağlantısı", "values": [false, false, true] },
+                { "label": "Şube Sayısı", "values": ["1", "3", "Sınırsız"] },
+                { "label": "Personel Sayısı", "values": ["7", "10", "Sınırsız"] },
+                { "label": "Akıllı Randevu (7 katmanlı)", "values": [true, true, true] },
+                { "label": "Özel Geliştirme", "values": [false, false, true] },
+                { "label": "İzin Yönetimi", "values": [false, true, true] },
+                { "label": "Personel Devam Takibi", "values": [false, true, true] },
+                { "label": "Müşteri Adayı Yönetimi", "values": [true, true, true] },
+                { "label": "Çevrimiçi Erişim", "values": [true, true, true] },
+                { "label": "Otomatik SMS", "values": [true, true, true] },
+                { "label": "Dijital Müşteri Profili", "values": [true, true, true] },
+                { "label": "Kasa & Vardiyalar", "values": [false, true, true] },
+                { "label": "Sadakat Programları", "values": [false, true, true] },
+                { "label": "Merkezi Şube Yönetimi", "values": [false, false, true] },
+                { "label": "Müşteri Kulübü", "values": [false, true, true] },
+                { "label": "Finansal & Maaş Otomasyonu", "values": [false, true, true] },
+                { "label": "Kredi & Avans Yönetimi", "values": [false, true, true] },
+                { "label": "Akıllı Dönemlik SMS", "values": [false, true, true] },
+                { "label": "Destek", "values": ["Çevrimiçi", "7/24", "Özel"] },
+                { "label": "Raporlama", "values": ["Temel", "İleri", "Özel"] }
+            ]
         }
     },
     "contact_page": {

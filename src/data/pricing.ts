@@ -34,7 +34,6 @@ const plans: Record<Locale, Plan[]> = {
       features: [
         { text: 'تا ۳ شعبه' },
         { text: 'گزارش‌های پایه' },
-        { text: 'پشتیبانی ایمیلی' },
         { text: 'داشبورد مدیریتی' },
       ],
       comparison_values: {
@@ -96,7 +95,7 @@ const plans: Record<Locale, Plan[]> = {
         sms: { active: false, custom_text: 'نامحدود' },
         api: { active: true, custom_text: null },
         custom_reports: { active: true, custom_text: null },
-        support_priority: { active: false, custom_text: '۲۴/۷' },
+        support_priority: { active: false, custom_text: null },
       },
     },
   ],
@@ -175,7 +174,7 @@ const plans: Record<Locale, Plan[]> = {
         sms: { active: false, custom_text: 'Unlimited' },
         api: { active: true, custom_text: null },
         custom_reports: { active: true, custom_text: null },
-        support_priority: { active: false, custom_text: '24/7' },
+        support_priority: { active: false, custom_text: null },
       },
     },
   ],

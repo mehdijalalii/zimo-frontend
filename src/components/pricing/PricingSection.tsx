@@ -23,6 +23,7 @@ type PricingTranslations = {
     custom_price: string;
     price: string;
     two_months_free_yearly: string;
+    rows?: { label: string; values: (boolean | string)[] }[];
   };
 };
 
@@ -34,7 +35,7 @@ function getHref(locale: string, page: string): string {
 function CellValue({ value }: { value: boolean | string | null }) {
   if (value === null || value === undefined || value === false) {
     return (
-      <svg className="mx-auto h-5 w-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="mx-auto h-5 w-5 lg:h-6 lg:w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       </svg>
     );
@@ -143,19 +144,14 @@ export default function PricingSection({
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
-              {comparisonFeatures.map((feature) => (
-                <tr key={feature.key} className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200 transition-colors even:bg-gray-50/50 hover:bg-[#841474]/5">
-                  <td className="p-3 lg:p-5 font-medium text-gray-900 text-xs lg:text-sm">{feature.label}</td>
-                  {plans.map((plan) => {
-                    const val = plan.comparison_values?.[feature.key];
-                    const active = val?.active ?? false;
-                    const customText = val?.custom_text ?? null;
-                    return (
-                      <td key={plan.id} className="p-3 lg:p-5 text-center">
-                        <CellValue value={customText ?? active} />
-                      </td>
-                    );
-                  })}
+              {(translations.comparison.rows || []).map((row, i) => (
+                <tr key={i} className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200 transition-colors even:bg-gray-50/50 hover:bg-[#841474]/5">
+                  <td className="p-3 lg:p-5 font-medium text-gray-900 text-xs lg:text-sm">{row.label}</td>
+                  {row.values.map((val, j) => (
+                    <td key={j} className="p-3 lg:p-5 text-center">
+                      <CellValue value={val} />
+                    </td>
+                  ))}
                 </tr>
               ))}
             </tbody>

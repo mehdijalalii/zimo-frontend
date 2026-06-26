@@ -343,7 +343,29 @@
             "features_header": "Features",
             "custom_price": "Custom Price",
             "price": "Price",
-            "two_months_free_yearly": "2 months free with annual payment"
+            "two_months_free_yearly": "2 months free with annual payment",
+            "rows": [
+                { "label": "Custom Domain Connection", "values": [false, false, true] },
+                { "label": "Branch Limit", "values": ["1", "3", "Unlimited"] },
+                { "label": "Staff Limit", "values": ["7", "10", "Unlimited"] },
+                { "label": "Smart Appointment (7-layer)", "values": [true, true, true] },
+                { "label": "Custom Development", "values": [false, false, true] },
+                { "label": "Leave Management", "values": [false, true, true] },
+                { "label": "Staff Attendance", "values": [false, true, true] },
+                { "label": "Lead Management", "values": [true, true, true] },
+                { "label": "Online Access", "values": [true, true, true] },
+                { "label": "Automated SMS", "values": [true, true, true] },
+                { "label": "Digital Client Profile", "values": [true, true, true] },
+                { "label": "Cash Register & Shifts", "values": [false, true, true] },
+                { "label": "Loyalty Programs", "values": [false, true, true] },
+                { "label": "Centralized Branch Mgmt", "values": [false, false, true] },
+                { "label": "Client Club", "values": [false, true, true] },
+                { "label": "Financial & Payroll Automation", "values": [false, true, true] },
+                { "label": "Loan & Advance Mgmt", "values": [false, true, true] },
+                { "label": "Smart Periodic SMS", "values": [false, true, true] },
+                { "label": "Support", "values": ["Online", "24/7", "Dedicated"] },
+                { "label": "Reporting", "values": ["Basic", "Advanced", "Custom"] }
+            ]
         }
     },
     "contact_page": {

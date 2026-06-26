@@ -343,7 +343,29 @@
             "features_header": "قابلیت‌ها",
             "custom_price": "قیمت سفارشی",
             "price": "قیمت",
-            "two_months_free_yearly": "۲ ماه رایگان در پرداخت سالیانه"
+            "two_months_free_yearly": "۲ ماه رایگان در پرداخت سالیانه",
+            "rows": [
+                { "label": "امکان اتصال به دامنه اختصاصی", "values": [false, false, true] },
+                { "label": "تعداد شعبه", "values": ["۱", "۳", "نامحدود"] },
+                { "label": "تعداد پرسنل", "values": ["۷ نفر", "۱۰ نفر", "نامحدود"] },
+                { "label": "رزرو نوبت هوشمند (سیستم ۷ لایه)", "values": [true, true, true] },
+                { "label": "توسعه قابلیت‌های اختصاصی", "values": [false, false, true] },
+                { "label": "مدیریت مرخصی و غیبت", "values": [false, true, true] },
+                { "label": "حضور و غیاب پرسنل", "values": [false, true, true] },
+                { "label": "مدیریت لیدها (سرنخ‌ها)", "values": [true, true, true] },
+                { "label": "دسترسی آنلاین", "values": [true, true, true] },
+                { "label": "پیامک‌های خودکار لحظه‌ای", "values": [true, true, true] },
+                { "label": "پروفایل دیجیتال زیباجویان", "values": [true, true, true] },
+                { "label": "صندوق و شیفت‌ها", "values": [false, true, true] },
+                { "label": "برنامه‌های وفاداری", "values": [false, true, true] },
+                { "label": "مدیریت متمرکز شعب", "values": [false, false, true] },
+                { "label": "باشگاه مشتریان", "values": [false, true, true] },
+                { "label": "اتوماسیون مالی و حقوق", "values": [false, true, true] },
+                { "label": "مدیریت وام و مساعده", "values": [false, true, true] },
+                { "label": "پیامک‌های دوره‌ای هوشمند", "values": [false, true, true] },
+                { "label": "پشتیبانی", "values": ["آنلاین", "۲۴/۷", "اختصاصی"] },
+                { "label": "گزارش‌گیری", "values": ["ساده", "پیشرفته", "سفارشی"] }
+            ]
         }
     },
     "contact_page": {
