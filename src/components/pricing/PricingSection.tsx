@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import type { Plan, ComparisonFeature } from '@/data/pricing';
@@ -49,12 +48,6 @@ function CellValue({ value }: { value: boolean | string | null }) {
   );
 }
 
-function formatPrice(price: string | number | null): string {
-  if (price === null || price === undefined || price === 0) return '0';
-  const num = typeof price === 'string' ? parseInt(price, 10) : price;
-  return num.toLocaleString('fa-IR');
-}
-
 export default function PricingSection({
   locale,
   translations,
@@ -66,91 +59,30 @@ export default function PricingSection({
   plans: Plan[];
   comparisonFeatures: ComparisonFeature[];
 }) {
-  const [isYearly, setIsYearly] = useState(false);
   const dir = locale === 'fa' ? 'rtl' : 'ltr';
 
   return (
     <>
-      {/* Toggle */}
-      <div className="mb-10 flex flex-col items-center gap-4 md:mb-12">
-        <label className="inline-flex cursor-pointer items-center gap-3">
-          <span className={`text-sm font-semibold transition-colors ${!isYearly ? 'text-[#841474]' : 'text-gray-500'}`}>
-            {translations.monthly}
-          </span>
-          <button
-            type="button"
-            role="switch"
-            aria-checked={isYearly}
-            aria-label={translations.billing_label}
-            onClick={() => setIsYearly(!isYearly)}
-            className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#841474]/50 focus:ring-offset-2 ${isYearly ? 'bg-[#841474]' : 'bg-gray-200'}`}
-          >
-            <span className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${isYearly ? 'translate-x-5' : 'translate-x-0'}`} />
-          </button>
-          <span className={`text-sm font-semibold transition-colors ${isYearly ? 'text-[#841474]' : 'text-gray-500'}`}>
-            {translations.yearly}
-          </span>
-          <span className="rounded-full bg-[#841474]/10 px-3 py-1 text-xs font-bold text-[#841474]">
-            {translations.two_months_free}
-          </span>
-        </label>
-      </div>
-
       {/* Cards */}
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid items-stretch gap-4 lg:grid-cols-3">
         {plans.map((plan) => {
-          const price = plan.price;
-          const isCustom = plan.pricing_type === 'custom' || (price === null || price === 0);
-          const monthlyPrice = isCustom ? null : Number(price);
-          const yearlyPrice = monthlyPrice ? monthlyPrice * 10 : null;
-
           return (
-            <article
-              key={plan.id}
-              className={`relative flex flex-col overflow-hidden rounded-3xl border bg-white p-8 transition-all ${
-                plan.is_featured
-                  ? 'border-[#841474]/30 shadow-xl shadow-[#841474]/10'
-                  : 'border-gray-100 shadow-sm hover:shadow-lg'
-              }`}
-            >
-              {plan.is_featured && (
-                <span className="absolute inset-x-0 top-0 h-1 bg-[#841474]" />
-              )}
-              {plan.ribbon_text && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#841474] px-4 py-1 text-xs font-bold text-white">
-                  {plan.ribbon_text}
-                </span>
-              )}
-
-              {plan.landing_subtitle && (
-                <p className="text-sm text-gray-500">{plan.landing_subtitle}</p>
-              )}
-              <h3 className="mt-1 text-xl font-bold text-gray-900">{plan.name}</h3>
-
-              <div className="mt-6">
-                {isCustom ? (
-                  <div>
-                    <p className="text-2xl font-bold text-[#841474]">{translations.custom_price}</p>
-                    <p className="text-sm text-gray-500">{translations.custom_period}</p>
-                  </div>
-                ) : isYearly ? (
-                  <div>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-extrabold text-gray-900">{formatPrice(yearlyPrice)}</span>
-                      <span className="text-sm text-gray-500">{translations.price_per_year}</span>
-                    </div>
-                  </div>
-                ) : (
-                  <div>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-extrabold text-gray-900">{formatPrice(monthlyPrice)}</span>
-                      <span className="text-sm text-gray-500">{translations.price_per_month}</span>
-                    </div>
-                  </div>
+            <div key={plan.id} className="relative">
+              <article
+                className={`relative flex flex-col h-full overflow-hidden rounded-3xl bg-white p-8 transition-all ${
+                  plan.is_featured
+                    ? 'border border-[#841474] ring-2 ring-[#841474]/20 shadow-2xl z-10'
+                    : 'border border-gray-100 shadow-sm hover:shadow-lg'
+                }`}
+              >
+                <h3 className="text-xl font-bold text-gray-900">{plan.name}</h3>
+                {plan.landing_subtitle && (
+                  <p className="mt-1 text-sm text-gray-500">{plan.landing_subtitle}</p>
                 )}
-              </div>
 
-              <ul className="mt-8 flex-1 space-y-3">
+                <p className="mt-5 text-base font-bold text-[#841474]">تماس بگیرید</p>
+
+              <ul className="flex-1 space-y-3 pl-8 pt-6 mt-5رتس pb-0">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
                     <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#841474]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,8 +94,8 @@ export default function PricingSection({
               </ul>
 
               <Link
-                href={isCustom ? getHref(locale, 'contact') : getHref(locale, 'demo')}
-                className={`mt-8 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-bold transition-all ${
+                href={getHref(locale, 'demo')}
+                className={`mt-8 mx-8 mb-4 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-bold transition-all ${
                   plan.is_featured
                     ? 'bg-[#841474] text-white shadow-lg shadow-[#841474]/20 hover:bg-[#6b105d] hover:shadow-[#841474]/40'
                     : 'border border-gray-200 bg-white text-gray-700 hover:bg-gray-50'
@@ -172,6 +104,7 @@ export default function PricingSection({
                 {translations.request_demo}
               </Link>
             </article>
+            </div>
           );
         })}
       </div>
@@ -196,12 +129,7 @@ export default function PricingSection({
                     <span>{translations.comparison.features_header}</span>
                   </span>
                 </th>
-                {plans.map((plan) => {
-                  const price = plan.price;
-                  const isCustom = plan.pricing_type === 'custom' || price === null || price === 0;
-                  const monthlyPrice = isCustom ? null : Number(price);
-
-                  return (
+                {plans.map((plan) => (
                     <th key={plan.id} className={`whitespace-nowrap py-6 px-3 lg:py-8 lg:px-5 text-center font-bold ${plan.is_featured ? 'text-[#841474]' : 'text-gray-900'}`}>
                       <span className="flex items-center justify-center gap-1 lg:gap-2">
                         <svg className="h-4 w-4 lg:h-5 lg:w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,37 +137,8 @@ export default function PricingSection({
                         </svg>
                         <span>{plan.name}</span>
                       </span>
-                      <div className="mt-2 lg:mt-3 space-y-1 text-xs lg:text-sm font-normal text-center">
-                        {isCustom ? (
-                          <span className="inline-block rounded-full px-4 py-1.5 text-sm lg:text-base font-bold text-black/70">
-                            {translations.comparison.custom_price}
-                          </span>
-                        ) : isYearly ? (
-                          <div className="text-gray-600">
-                            <strong>{formatPrice(Number(monthlyPrice) * 10)}</strong>{' '}
-                            <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_year}</span>
-                          </div>
-                        ) : (
-                          <>
-                            <div>
-                              <strong className="text-gray-600">{formatPrice(monthlyPrice)}</strong>{' '}
-                              <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_month}</span>
-                            </div>
-                            <div>
-                              <div className="text-gray-600">
-                                <strong>{formatPrice(Number(monthlyPrice) * 10)}</strong>{' '}
-                                <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_year}</span>
-                              </div>
-                              <div className="mt-2 lg:mt-4 text-[10px] font-semibold leading-tight text-[#841474]">
-                                <span className="text-[11px] lg:text-[12px]">{translations.comparison.two_months_free_yearly}</span>
-                              </div>
-                            </div>
-                          </>
-                        )}
-                      </div>
                     </th>
-                  );
-                })}
+                ))}
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -261,38 +160,12 @@ export default function PricingSection({
             </tbody>
             <tfoot className="bg-[#841474]/5">
               <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
-                <th className="whitespace-nowrap p-3 lg:p-5 font-bold text-[#841474] text-xs lg:text-base">{translations.comparison.price}</th>
-                {plans.map((plan) => {
-                  const price = plan.price;
-                  const isCustom = plan.pricing_type === 'custom' || price === null || price === 0;
-                  const monthlyPrice = isCustom ? null : Number(price);
-
-                  return (
+                <th className="whitespace-nowrap p-3 lg:p-5 font-bold text-[#841474] text-xs lg:text-base"></th>
+                {plans.map((plan) => (
                     <th key={plan.id} className={`whitespace-nowrap p-3 lg:p-5 text-center font-bold ${plan.is_featured ? 'text-[#841474]' : 'text-gray-900'}`}>
-                      {isCustom ? (
-                        <span className="inline-block rounded-full px-4 py-1.5 text-sm lg:text-base font-bold text-black/70">
-                          {translations.comparison.custom_price}
-                        </span>
-                      ) : (
-                        <div className="text-center">
-                          <div className="text-xs lg:text-sm font-normal text-gray-600">
-                            <strong>{formatPrice(monthlyPrice)}</strong>{' '}
-                            <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_month}</span>
-                          </div>
-                          <div className="mt-1 lg:mt-2">
-                            <div className="text-xs lg:text-sm font-normal text-gray-600">
-                              <strong>{formatPrice(Number(monthlyPrice) * 10)}</strong>{' '}
-                              <span className="text-[12px] lg:text-[13px] text-gray-400">{translations.price_per_year}</span>
-                            </div>
-                            <div className="mt-2 lg:mt-4 text-[10px] font-semibold leading-tight text-[#841474]">
-                              <span className="text-[11px] lg:text-[12px]">{translations.comparison.two_months_free_yearly}</span>
-                            </div>
-                          </div>
-                        </div>
-                      )}
+                      <span className="text-base font-bold text-[#841474]">تماس بگیرید</span>
                     </th>
-                  );
-                })}
+                ))}
               </tr>
               <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
                 <th className="whitespace-nowrap p-3 lg:p-5"></th>
