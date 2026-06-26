@@ -219,7 +219,7 @@ export default function Header({ locale, translations }: HeaderProps) {
   const nav = translations.nav;
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md transition-all duration-300">
+    <><header className="fixed inset-x-0 top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md transition-all duration-300">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
           <Link href={getHref(locale, 'home')} className="flex items-center">
@@ -316,15 +316,15 @@ export default function Header({ locale, translations }: HeaderProps) {
             >
               {nav.demo}
             </Link>
-            <Link
+            {/* <Link
               href={getLoginHref()}
               className="rounded-full border border-gray-200 bg-white px-5 py-2 text-sm font-bold text-gray-700 transition hover:bg-gray-50"
             >
               {nav.login}
-            </Link>
+            </Link> */}
           </div>
 
-          <LanguageSwitcher locale={locale} />
+          {!mobileMenuOpen && <LanguageSwitcher locale={locale} />}
 
           <button
             className="flex size-10 items-center justify-center rounded-full bg-[#841474] text-white lg:hidden"
@@ -337,45 +337,93 @@ export default function Header({ locale, translations }: HeaderProps) {
         </div>
       </div>
 
+    </header>
       {mobileMenuOpen && (
-        <div className="absolute inset-x-0 top-full border-b border-gray-100 bg-white/95 p-4 shadow-xl backdrop-blur-xl lg:hidden">
-          <div className="flex flex-col gap-2">
-            <Link href={getHref(locale, 'home')} className="rounded-lg p-3 text-gray-700 hover:bg-gray-50">
+        <div className="fixed inset-0 top-16 z-[60] bg-white overflow-y-auto lg:hidden">
+          <div className="p-4 flex flex-col gap-1">
+            <Link href={getHref(locale, 'home')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
               {nav.home}
             </Link>
-            <Link href={getHref(locale, 'features')} className="rounded-lg p-3 text-gray-700 hover:bg-gray-50">
+
+            <Link href={getHref(locale, 'features')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              </svg>
               {nav.features}
             </Link>
-            <Link href={getHref(locale, 'pricing')} className="rounded-lg p-3 text-gray-700 hover:bg-gray-50">
+            <div className="flex flex-wrap gap-2 pr-11 pb-2">
+              {features.map((item) => {
+                const megaData = nav.mega[item.slug];
+                if (!megaData) return null;
+                return (
+                  <Link
+                    key={item.slug}
+                    href={getFeatureHref(locale, item.slug)}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-[11px] py-1.5 px-3 rounded-lg bg-gray-100/80 text-gray-500 hover:bg-[#841474]/10 hover:text-[#841474] transition-colors"
+                  >
+                    {megaData.title}
+                  </Link>
+                );
+              })}
+            </div>
+
+            <Link href={getHref(locale, 'pricing')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               {nav.pricing}
             </Link>
-            <Link href={getHref(locale, 'faq')} className="rounded-lg p-3 text-gray-700 hover:bg-gray-50">
+
+            <Link href={getHref(locale, 'faq')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
               {nav.faq}
             </Link>
-            <Link href={getHref(locale, 'about')} className="rounded-lg p-3 text-gray-700 hover:bg-gray-50">
+
+            <Link href={getHref(locale, 'about')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               {nav.about}
             </Link>
-            <Link href={getHref(locale, 'contact')} className="rounded-lg p-3 text-gray-700 hover:bg-gray-50">
+
+            <Link href={getHref(locale, 'contact')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
               {nav.contact}
             </Link>
 
-            <div className="mt-4 flex flex-wrap items-center gap-2 border-t pt-4">
+            <div className="h-px bg-gray-100 mx-2 my-2" />
+
+            <div className="flex flex-wrap items-center justify-center gap-2 px-4 py-2">
               <MobileLangLink locale={locale} target="fa" pathname={pathname}>🇮🇷 FA</MobileLangLink>
               <MobileLangLink locale={locale} target="en" pathname={pathname}>🇺🇸 EN</MobileLangLink>
               <MobileLangLink locale={locale} target="tr" pathname={pathname}>🇹🇷 TR</MobileLangLink>
             </div>
 
-            <div className="mt-2 flex flex-col gap-2 border-t pt-4">
-              <Link href={getHref(locale, 'demo')} className="flex h-11 items-center justify-center rounded-xl bg-[#841474] font-bold text-white">
+            <div className="h-px bg-gray-100 mx-2 my-2" />
+
+            <div className="px-4 mt-2">
+              <Link href={getHref(locale, 'demo')} onClick={() => setMobileMenuOpen(false)}
+                className="flex h-12 w-full items-center justify-center rounded-xl bg-[#841474] font-bold text-white hover:bg-[#6b105d] transition-colors">
                 {nav.demo}
-              </Link>
-              <Link href={getLoginHref()} className="flex h-11 items-center justify-center rounded-xl border border-gray-200 font-bold text-gray-700">
-                {nav.login}
               </Link>
             </div>
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

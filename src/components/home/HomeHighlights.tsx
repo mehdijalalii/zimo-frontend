@@ -24,7 +24,7 @@ export default function HomeHighlights({ locale, translations }: HomeHighlightsP
   const { highlights } = translations;
 
   return (
-    <section className="section-block bg-[#841474]/[0.12]">
+    <section className="section-block pt-8 md:pt-12 bg-[#841474]/[0.12]">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
           <p className="section-kicker mx-auto">{highlights.kicker}</p>
