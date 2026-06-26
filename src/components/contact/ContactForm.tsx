@@ -20,7 +20,7 @@ export default function ContactForm({ translations: t }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="rounded-3xl border border-gray-100 bg-gray-50 p-6 md:p-8">
+    <div className="rounded-[28px] border border-[var(--color-zimo-border)] bg-white p-6 shadow-[var(--shadow-zimo-card)] md:p-8">
       {submitted ? (
         <div className="flex flex-col items-center justify-center py-16 text-center">
           <div className="mb-4 flex size-16 items-center justify-center rounded-full bg-[#841474]/10 text-[#841474]">

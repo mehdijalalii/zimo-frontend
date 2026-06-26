@@ -19,7 +19,7 @@ export default async function FaqPage({
           <p className="section-kicker mx-auto mb-4">
             {messages.faq_page.kicker}
           </p>
-          <h1 className="text-3xl font-extrabold leading-tight text-gray-900 md:text-4xl">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#841474]">
             {messages.faq_page.title}
           </h1>
           <p className="section-lead section-lead--center mx-auto mt-3 max-w-2xl">

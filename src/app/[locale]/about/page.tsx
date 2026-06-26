@@ -18,9 +18,12 @@ export default async function AboutPage({
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="space-y-6">
             <p className="section-kicker">{messages.about_page.kicker}</p>
-            <h1 className="text-3xl font-extrabold leading-tight text-gray-900 md:text-4xl">
+            <h1 className="page-title">
               {messages.about_page.title}
             </h1>
+            <p className="section-lead">
+              {messages.about_page.description}
+            </p>
             <div className="space-y-4 text-lg leading-relaxed text-gray-600">
               <p>{messages.about.story_1}</p>
               <p>{messages.about.story_2}</p>
