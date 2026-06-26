@@ -1,0 +1,1289 @@
+{
+    "meta": {
+        "default_title": "Zimo | Beauty Salon CRM",
+        "default_description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons.",
+        "home": {
+            "title": "Zimo | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "features": {
+            "title": "Zimo Features | Smart Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "pricing": {
+            "title": "Zimo Pricing | Invest in Your Salon's Growth & Organization",
+            "description": "Zimo is a tool to optimize revenue and eliminate human errors. Transparent plans, no hidden costs, with 2 months free on annual payments."
+        },
+        "about": {
+            "title": "About Us | Zimo",
+            "description": "The story of Zimo — an online specialized management system for beauty salons and chains. Breaking free from the limitations of traditional systems."
+        },
+        "contact": {
+            "title": "Contact Us | Zimo",
+            "description": "Get in touch with Zimo — request a free demo, consultation, and support for beauty salons."
+        },
+        "demo": {
+            "title": "Request a Demo | Zimo",
+            "description": "Request a free online demo of the Zimo beauty salon management software."
+        },
+        "faq": {
+            "title": "FAQ | Zimo",
+            "description": "Answers to frequently asked questions about Zimo beauty salon management software, data security, and support."
+        },
+        "feature_appointments": {
+            "title": "Zimo Feature | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_branches": {
+            "title": "Zimo Feature | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_finance": {
+            "title": "Zimo Feature | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_loyalty": {
+            "title": "Zimo Feature | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_payroll": {
+            "title": "Zimo Feature | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_reporting": {
+            "title": "Zimo Feature | Beauty Salon CRM",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_security": {
+            "title": "Security | Zimo",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_marketing_crm": {
+            "title": "Marketing & CRM | Zimo",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_staff_dashboard": {
+            "title": "Staff Dashboard | Zimo",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_staff_performance": {
+            "title": "Staff Performance Evaluation | Zimo",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        },
+        "feature_online_booking": {
+            "title": "Online Booking | Zimo",
+            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        }
+    },
+    "nav": {
+        "logo_badge": "Zi",
+        "logo_text": "Zimo",
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "faq": "FAQ",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "demo": "Request a Demo",
+        "login": "Login to Panel",
+        "all_features": "View All Features",
+        "mega": {
+            "appointments": {
+                "title": "Smart Appointment Scheduling",
+                "desc": "Online booking & conflict-free management"
+            },
+            "online_booking": {
+                "title": "Online Booking",
+                "desc": "Booking widget for your website & Instagram"
+            },
+            "finance": {
+                "title": "Finance & Settlement",
+                "desc": "Automatic staff commission calculations"
+            },
+            "branches": {
+                "title": "Branch Management",
+                "desc": "Unified control across all salons"
+            },
+            "loyalty": {
+                "title": "Client Loyalty Club",
+                "desc": "Loyalty system for your clients"
+            },
+            "payroll": {
+                "title": "Payroll & Salary",
+                "desc": "Digital wallet for staff"
+            },
+            "reporting": {
+                "title": "Reporting & Analytics",
+                "desc": "Smart profit & loss analysis"
+            },
+            "staff_performance": {
+                "title": "Performance Evaluation",
+                "desc": "KPIs & staff productivity analysis"
+            },
+            "staff_dashboard": {
+                "title": "Staff Dashboard",
+                "desc": "Wallet, schedule & pay slips"
+            },
+            "marketing_crm": {
+                "title": "Marketing & CRM",
+                "desc": "Campaigns & client communication"
+            },
+            "security": {
+                "title": "Security",
+                "desc": "Privacy & data protection"
+            }
+        },
+        "mobile": {
+            "home": "Home",
+            "features": "Features",
+            "pricing": "Pricing",
+            "faq": "FAQ",
+            "about": "About Us",
+            "contact": "Contact Us",
+            "demo": "Request a Demo",
+            "login": "Login to Panel"
+        }
+    },
+    "hero": {
+        "kicker": "Smart Management Software for Multi-Branch & Single-Branch Beauty Salons",
+        "title": "Hassle-Free Beauty Salon Management; <br> From Online Booking to Instant Staff Settlement",
+        "description": "All your salon operations — from booking and reception to settlement and reporting — in one unified platform. No confusion, no errors, with full focus on growing your branches.",
+        "demo_cta": "Get a Free Demo & Consultation",
+        "features_cta": "View Features",
+        "image_alt": "Zimo software dashboard for beauty salon management"
+    },
+    "stats": {
+        "heading": "Zero",
+        "no_conflicts": "Booking Conflicts",
+        "return_rate": "Increase in Client Return Rate",
+        "transparency": "Financial Transaction Transparency",
+        "uptime": "Stable & Reliable Uptime"
+    },
+    "highlights": {
+        "kicker": "Why Zimo?",
+        "heading": "Everything for Your Salon, All in One Place",
+        "lead": "Three Pillars of Salon Management",
+        "items": [
+            {
+                "number": "01",
+                "title": "Smart & Online Appointment Booking",
+                "description": "A live calendar with zero conflicts. Receptionists see every staff member's availability at a glance and book in seconds — no confusion, no manual errors."
+            },
+            {
+                "number": "02",
+                "title": "Unified Salon Operations",
+                "description": "From reception to settlement — seamless coordination between the front desk, stylists, and management in a single workflow."
+            },
+            {
+                "number": "03",
+                "title": "Settlement & Financial Reporting",
+                "description": "Automatic staff commission calculations, digital wallets, and transparent management reports."
+            }
+        ],
+        "cta": "View All Features →"
+    },
+    "how_it_works": {
+        "kicker": "Quick Start",
+        "heading": "Make Your Salon Smart in 3 Simple Steps",
+        "steps": [
+            {
+                "number": "1",
+                "title": "Sign Up & Set Up",
+                "description": "No installation, no hardware needed. Enter your salon info, staff, and services in minutes. Our support team is here to help."
+            },
+            {
+                "number": "2",
+                "title": "Smart Customization",
+                "description": "Customize working hours, service prices, staff commission models, and automated SMS to match your business perfectly."
+            },
+            {
+                "number": "3",
+                "title": "Manage & Grow",
+                "description": "Smart booking, automatic settlements, and real-time reports. Focus on expanding your branches and improving service quality — worry-free."
+            }
+        ]
+    },
+    "trust": {
+        "heading": "How Does Zimo Pave the Way for Your Salon's Growth?",
+        "lead": "We're more than just a booking calendar. Zimo's edge lies in its intelligent subsystem architecture, designed to solve the real bottlenecks of salon management.",
+        "items": [
+            {
+                "title": "Seamless Multi-Branch Management",
+                "description": "Whether you have one growing location or a chain of 10, switch between salons instantly, monitor live cash registers, manage rotating staff, and view unified reports — all under one roof."
+            },
+            {
+                "title": "Secure Data Storage",
+                "description": "Stop worrying about crashed laptops, viruses, or stolen on-site systems. Your client data and invoice history are stored in a completely independent, secure environment."
+            },
+            {
+                "title": "High-Precision Financial Automation & Commissioning",
+                "description": "Staff commission formulas, consumable material costs, bonuses, attendance penalties, loan installments, and advances — all calculated with zero human error and settled with a single click."
+            }
+        ]
+    },
+    "demo_cta": {
+        "heading": "Ready to Take Your Salon Management to the Next Level?",
+        "lead": "A quick online demo and a chat with our consultants is all it takes to see how every module of our system is tailored to your business.",
+        "demo_cta": "Request a Demo",
+        "features_cta": "View Features"
+    },
+    "features_page": {
+        "kicker": "Zimo Features",
+        "title": "Everything You Need to Manage Your Beauty Salon,<br class=\"hidden md:block\"> All in One Smart Platform",
+        "description": "Zimo is a specialized CRM for beauty salons that automates and streamlines every business process — from online booking to financial settlement and management reporting. Say goodbye to scheduling conflicts, manual commission calculations, and client churn."
+    },
+    "features_grid": {
+        "items": [
+            {
+                "number": "1",
+                "title": "Smart Appointment Scheduling",
+                "description": "Book appointments in 30 seconds with a 7-layer validation system. Zero conflicts, zero errors. Supports phone, walk-in, and online widget bookings.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "2",
+                "title": "Finance & Settlement",
+                "description": "Smart invoicing with unique IDs, split payments, discounts, and tips. Daily cash register with automatic discrepancy detection — zero variance.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "3",
+                "title": "Branch Management",
+                "description": "Each branch has its own identity with dedicated hours, pricing, and staff. Switch between locations with one click — all in one platform.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "4",
+                "title": "Loyalty Club",
+                "description": "Tiered loyalty programs with points, rewards, and smart transactions. Boost your client return rate by up to 40%.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "5",
+                "title": "Staff Payroll & Wallet",
+                "description": "One-click settlement with automatic aggregation of commissions, tips, and deductions. A digital wallet with full transparency for every staff member.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "6",
+                "title": "Management Reports",
+                "description": "5 specialized dashboards with real-time KPIs. Analyze sales, staff performance, appointments, and loyalty. Role-based access control.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "7",
+                "title": "Security & Privacy",
+                "description": "Data encryption, role-based access, daily backups, and OTP login. Enterprise-grade security.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "8",
+                "title": "Staff Performance Evaluation",
+                "description": "Detailed KPIs on sales, productivity, and tips for each staff member. Identify your star performers and training needs with objective data.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "9",
+                "title": "Personal Staff Dashboard",
+                "description": "Every staff member sees their appointments, real-time earnings, commissions, and pay slips in their personal panel. Total transparency and independence.",
+                "details_link": "View Details"
+            },
+            {
+                "number": "10",
+                "title": "Marketing & CRM",
+                "description": "Complete client profiles, targeted SMS campaigns, communication automation, and loyal client identification. Boost your return rate.",
+                "details_link": "View Details"
+            }
+        ]
+    },
+    "operations": {
+        "kicker": "Salon Workflow",
+        "heading": "From Reception to Settlement — Seamless & Error-Free Team Coordination",
+        "description": "When the front desk, stylists, and management all have real-time visibility into every appointment, errors drop dramatically, and every client leaves with a smile.",
+        "image_alt": "Zimo salon operations panel",
+        "steps": [
+            {
+                "title": "Dynamic Calendar & Quick Booking",
+                "description": "The 7-layer system simultaneously checks salon capacity, staff leave, and existing bookings to suggest real 10-minute slots. Book an appointment in 30 seconds — error-free."
+            },
+            {
+                "title": "Check-In & Live Status Tracking",
+                "description": "The client journey — from appointment confirmation and arrival to service start and settlement — is tracked transparently across 5 statuses. Automatic reminder SMS at 3 stages."
+            },
+            {
+                "title": "Auto Settlement & Staff Wallet",
+                "description": "Commission based on agreed percentages, after automatic deduction of consumable costs, is instantly applied to the staff's digital wallet. Every stylist sees their real-time earnings."
+            },
+            {
+                "title": "Performance Analysis & Management Decisions",
+                "description": "Specialized dashboards with real-time KPIs on sales, staff performance, and client behavior. Identify opportunities and prevent hidden losses with precise data."
+            }
+        ]
+    },
+    "pricing_page": {
+        "kicker": "Pricing",
+        "title": "Invest in Your Salon's Organization, Peace of Mind & Growth",
+        "description": "Zimo automates your daily salon operations, reduces human error, boosts team productivity, and gives you a crystal-clear view of your business performance."
+    },
+    "pricing": {
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "billing_label": "Toggle between monthly and yearly pricing",
+        "two_months_free": "2 months free",
+        "custom_price": "Custom",
+        "custom_period": "Based on your needs",
+        "price_per_month": "$ / month",
+        "price_per_year": "$ / year",
+        "request_demo": "Request Consultation & Demo",
+        "comparison": {
+            "kicker": "Comparison",
+            "title": "Full Feature Comparison",
+            "lead": "Compare all Zimo plans at a glance",
+            "features_header": "Features",
+            "custom_price": "Custom Price",
+            "price": "Price",
+            "two_months_free_yearly": "2 months free with annual payment"
+        }
+    },
+    "contact_page": {
+        "kicker": "Contact Us",
+        "title": "Get in Touch",
+        "description": "Have a question, suggestion, or need support? The Zimo team is ready to hear from you."
+    },
+    "contact": {
+        "heading": "We're Ready to Talk About Growing Your Salon",
+        "lead": "Have a question or want to discuss your salon's specific needs? We're here to help. Just fill out the form or reach out to us directly. The Zimo consulting team will get back to you as quickly as possible.",
+        "phone_label": "Phone Consultation",
+        "phone_number": "+98-21-0000-0000",
+        "hours_label": "Office Hours",
+        "hours_weekdays": "Monday to Friday: 9 AM to 6 PM",
+        "hours_weekend": "Saturday, Sunday & Holidays: Online Support",
+        "form": {
+            "name_label": "Your Name",
+            "name_placeholder": "Full name of salon manager",
+            "phone_label": "Phone Number",
+            "phone_placeholder": "+98-912-000-0000",
+            "salon_label": "Salon or Brand Name",
+            "salon_placeholder": "Your beauty salon name",
+            "message_label": "How can we help you?",
+            "message_placeholder": "e.g., I need consultation for my second branch...",
+            "submit": "Send Message to the Zimo Team"
+        }
+    },
+    "demo_page": {
+        "kicker": "Free Demo",
+        "title": "Request a Demo",
+        "description": "Fill out the form below and our experts will call you to schedule an online demo."
+    },
+    "demo_form": {
+        "heading": "Experience Salon Management Like Never Before",
+        "lead": "Zimo is a tool that adapts to your salon's needs. In your demo session, we'll show you exactly how to simplify and automate your current complex processes with Zimo.",
+        "steps": [
+            {
+                "number": "1",
+                "title": "Personalized & Free Demo",
+                "description": "A 20-minute walkthrough of the software environment with a Zimo expert, plus answers to all your questions."
+            },
+            {
+                "number": "2",
+                "title": "Technical Needs Analysis",
+                "description": "We review your branch structure, staff, and commission models to offer the best partnership proposal."
+            },
+            {
+                "number": "3",
+                "title": "7-Day Free Trial Gift",
+                "description": "After the demo, test the system with your own real data in a secure environment."
+            }
+        ],
+        "form": {
+            "manager_name_label": "Salon Manager Name",
+            "manager_name_placeholder": "Full name",
+            "phone_label": "Phone Number",
+            "phone_placeholder": "+98-912-000-0000",
+            "salon_label": "Salon or Brand Name",
+            "salon_placeholder": "Your beauty salon name",
+            "branches_label": "Number of Branches",
+            "branches_options": {
+                "1": "Single Branch",
+                "2-3": "2 to 3 Branches",
+                "3+": "More than 3 Branches (Chain)"
+            },
+            "plan_label": "Preferred Plan",
+            "plan_options": {
+                "unsure": "Not sure / Need consultation",
+                "starter": "Starter Plan",
+                "professional": "Professional Plan",
+                "enterprise_custom": "Enterprise / Custom Plan"
+            },
+            "message_label": "Any specific concerns or needs?",
+            "message_placeholder": "e.g., Managing commissions has gotten really complicated...",
+            "submit": "Submit Consultation & Demo Request",
+            "disclaimer": "Our experts will contact you within 24 business hours to schedule your demo."
+        }
+    },
+    "faq_page": {
+        "kicker": "FAQ",
+        "title": "Have Questions? We've Got Answers",
+        "description": "Most salon managers have these questions before joining the Zimo family. Browse the answers and take the next step with confidence.",
+        "accordion_label": "Frequently Asked Questions",
+        "items": [
+            {
+                "question": "Can our salon data be migrated from old software to Zimo?",
+                "answer": "Absolutely. Our technical team extracts your data from any system (Excel or old Windows software) and transfers it to Zimo without disrupting your client reception. You won't miss a single day of operations."
+            },
+            {
+                "question": "Will we lose access to the system if the internet goes down?",
+                "answer": "No. Zimo's servers are hosted in the most reliable data centers. Our system is optimized to run smoothly even on the slowest internet connections. Plus, if the internet goes down completely, you can temporarily record appointments and sync them once you're back online."
+            },
+            {
+                "question": "How do complex commission and material calculations work in Zimo?",
+                "answer": "Zimo eliminates manual calculations. You define commission formulas (tiered or flat), consumable material costs, loans, and advances just once. At the end of each month, Zimo generates precise pay slips for every staff member with a single click — no more calculation errors."
+            },
+            {
+                "question": "Do staff members also have access to the panel?",
+                "answer": "Yes. Every staff member has their own personal panel. They can view their daily earnings, tips, and advance status. This transparency keeps them focused on quality work and eliminates the \"what's my share?\" confusion."
+            },
+            {
+                "question": "Do I need to buy separate accounts for managing multiple branches?",
+                "answer": "No. Zimo is designed for chain management. With a single admin panel, you can control multiple branches simultaneously, switch between them, and generate consolidated reports (for the entire brand) or segmented reports (per branch)."
+            },
+            {
+                "question": "How secure is our client data?",
+                "answer": "Your data is your asset. Our system uses advanced encryption and performs automatic, regular backups. Unlike offline systems where a single hard drive failure wipes out years of records, your data on Zimo is kept safe across the most secure data centers."
+            },
+            {
+                "question": "Is Zimo too complicated for our staff to learn?",
+                "answer": "We built Zimo for stylists, not IT professionals. The interface is incredibly intuitive, and during the initial training sessions, your team will master it in under an hour."
+            },
+            {
+                "question": "Can we upgrade our plan later?",
+                "answer": "Yes, absolutely. You can upgrade at any time. The price difference is calculated proportionally, and all your data and settings transfer seamlessly to the new plan. No re-migration, no reconfiguration needed."
+            },
+            {
+                "question": "Are there any hidden costs?",
+                "answer": "No. Zimo has zero hidden costs. All pricing and services are transparently listed on our pricing page. There are no charges for installation, initial training, data migration, or support."
+            },
+            {
+                "question": "How can I get a demo?",
+                "answer": "Simply submit your request on the demo page. Our team will walk you through the system tailored to your salon's specific needs and answer all your questions."
+            }
+        ]
+    },
+    "about_page": {
+        "kicker": "About Zimo",
+        "title": "The Story of a Revolution in Beauty Salon Management",
+        "description": "At Zimo, we believe beauty salon managers should focus entirely on creating beauty and elevating services — not on complex commission accounting formulas or Windows crashes!"
+    },
+    "about": {
+        "kicker": "How Did We Start?",
+        "heading": "The End of the Old-School Software Era — Manage from Anywhere, Anytime",
+        "story_1": "The idea for Zimo was born from the chaos of busy salons and the constant frustrations of their managers. We saw receptionists drowning in overlapping phone and Instagram bookings, and managers spending the last days of every month on exhausting commission calculations, material deductions, loan installments, and staff advances.",
+        "story_2": "We rolled up our sleeves to build a fully online, integrated, and locally-tailored platform. Zimo was designed to create seamless harmony between every moving part — a platform that makes comprehensive management possible without being physically present at the salon or tied to a specific operating system.",
+        "stat_1_value": "100%",
+        "stat_1_label": "Financial data & salon records integrity",
+        "stat_2_value": "Under 10 minutes",
+        "stat_2_label": "Time for monthly staff commission calculations",
+        "image_alt": "The Zimo platform story",
+        "mission": {
+            "title": "Our Mission",
+            "description": "To automate complex financial and HR processes for salons, giving managers the freedom to focus on brand growth, staff training, and service quality."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To create the most modern, secure, and scalable management platform for the beauty industry in the Persian-speaking market — becoming the backbone of growth for premier salon chains."
+        },
+        "values": {
+            "title": "Core Values",
+            "description": "Absolute pricing transparency, continuous code optimization, client data privacy, and genuine human support during your salon's busiest hours."
+        },
+        "migration": {
+            "heading": "Hassle-Free Migration to the New Zimo System",
+            "description": "The biggest concern for active salons is losing years of client history, files, or staff accounts. The Zimo support team acts as your business partner, extracting all your old data and securely transferring it to the new system.",
+            "items": [
+                "Simultaneous training for management, receptionists, and the financial team",
+                "Instant setup of service SMS templates"
+            ],
+            "stat_1_value": "24 hours",
+            "stat_1_label": "Average time for full data deployment",
+            "stat_2_value": "100%",
+            "stat_2_label": "Continuous protection of your financial data on Zimo servers"
+        }
+    },
+    "feature_detail": {
+        "breadcrumb_home": "Home",
+        "breadcrumb_features": "Features",
+        "demo_cta": "Request a Free Demo",
+        "login_cta": "Login to Panel",
+        "cta_section": {
+            "heading": "Ready to Transform Your Salon?",
+            "description": "Join smart salon managers today and use Zimo's :feature to grow your business.",
+            "cta": "Request a Demo"
+        }
+    },
+    "feature_appointments": {
+        "breadcrumb_current": "Smart Appointment Scheduling",
+        "title": "Zimo Smart Scheduling — Never Waste Your Salon's Prime Time",
+        "description": "Zimo's 7-layer validation system only shows real, conflict-free time slots before booking. Branch closures, working hours, staff leave, and existing appointments — all checked in a fraction of a second. Result: appointments booked in under 30 seconds, with zero human error and zero rework.",
+        "image_alt": "Zimo smart appointment scheduling",
+        "why_smart_title": "Why Is Smart Scheduling Essential for Beauty Salons?",
+        "why_smart_1": "Managing appointments with a notebook or memory is one of the biggest headaches for salon managers. Overlapping bookings, forgetting past reservations, uncoordinated staff leave — these issues don't just confuse your team; they directly impact client experience and your salon's reputation. Appointments can be booked from multiple channels — all in one unified, conflict-free calendar.",
+        "why_smart_2": "<strong>Zimo</strong> intelligently manages all complexities with its 7-layer scheduling depth. The system simultaneously checks branch closure status, branch working hours, staff working hours, attendance times, existing bookings, leaves, and unavailability blocks — displaying real vacant slots in 10-minute increments (flexible and adjustable). Result: zero booking conflicts and dramatically faster reception.",
+        "step_by_step_title": "Step-by-Step How It Works",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Smart Client Search",
+                "description": "The receptionist searches by name or phone number to pull up the client's file. New clients are registered instantly via the form."
+            },
+            {
+                "number": "02",
+                "title": "Select Branch, Service & Staff",
+                "description": "Choose the branch, service, and its variation. The system only shows qualified staff for that branch who offer the selected service. Pricing priority: staff-specific price → variation price → base service price."
+            },
+            {
+                "number": "03",
+                "title": "7-Layer Time Slot Validation",
+                "description": "1. Branch closures 2. Branch working hours 3. Staff working hours 4. Overlap of branch & staff hours 5. Existing bookings 6. Unavailability blocks (leave/absence) 7. Slot generation in 10-minute increments."
+            },
+            {
+                "number": "04",
+                "title": "Book with 5 Visual Slot Types",
+                "description": "Each slot is color-coded to show its status: available, booked, staff break, or unavailable. Flexible booking is available with a warning when crossing break boundaries."
+            }
+        ],
+        "cycle_title": "The Full Appointment Lifecycle — From Booking to Settlement",
+        "cycle_items": [
+            {
+                "title": "Pending Confirmation",
+                "description": "Initial booking — not yet confirmed. Can be confirmed or canceled with a mandatory reason. Booking source is recorded: phone or walk-in."
+            },
+            {
+                "title": "Confirmed → Checked In",
+                "description": "Once confirmed, the client arrives at the salon. Reception updates the status to \"Checked In.\""
+            },
+            {
+                "title": "In Progress → Completed",
+                "description": "Service is underway. Once finished, the status changes to \"Completed.\" The settlement screen opens with options for discounts, tips, team commission, and split payments."
+            },
+            {
+                "title": "Canceled",
+                "description": "An appointment can be canceled at any stage (except Completed) with the reason and person who canceled recorded. Canceled appointments don't affect slot calculations."
+            }
+        ],
+        "scenario_title": "Real Scenario: Your Busiest Day, Zero Chaos",
+        "scenario": "It's Saturday afternoon and your salon is packed. The phone is ringing off the hook: \"Any openings this evening?\", \"Can Ms. X come in on Monday?\" In the old way, the receptionist flips through a notebook, coordinates with staff, and errors are still likely. With Zimo, the receptionist searches the client's name, picks the service and staff, and the 7-layer system instantly shows real slots in 5 colors. A few clicks and it's done — no confusion, no mistakes. Confirmation and reminder SMS are automatically sent to the client.",
+        "comparison_title": "Comparison with Traditional Methods",
+        "comparison_headers": [
+            "Aspect",
+            "Traditional Method (Phone / Notebook)",
+            "Zimo Smart Scheduling"
+        ],
+        "comparison_rows": [
+            [
+                "Booking speed",
+                "Several minutes — flipping through notebooks, prone to errors",
+                "Under 30 seconds — a few clicks with auto-confirmation"
+            ],
+            [
+                "Booking conflict risk",
+                "High — human error in overlapping bookings",
+                "Near zero — 7-layer validation system"
+            ],
+            [
+                "Appointment reminders",
+                "Manual & inconsistent — often forgotten",
+                "Automatic — SMS in 3 stages"
+            ],
+            [
+                "Leave & absence management",
+                "Manual — prone to forgetfulness and error",
+                "Smart — automatic slot removal & impact alerts"
+            ],
+            [
+                "Time spent on scheduling",
+                "Hours per day — manual coordination with notebook & phone",
+                "Minutes — quick booking with color-coded slots"
+            ]
+        ],
+        "benefits_title": "Key Benefits of Smart Scheduling",
+        "benefits": [
+            {
+                "title": "80% Time Savings",
+                "description": "Dramatically reduce phone calls and free up receptionists for more valuable work. Book in 30 seconds with the 7-layer system."
+            },
+            {
+                "title": "50% Reduction in No-Shows",
+                "description": "Three-stage automatic reminders minimize client absence rates."
+            },
+            {
+                "title": "5 Color-Coded Slots & Flexible Booking",
+                "description": "Real-time slot status at a glance with distinct colors. Flexible booking allows crossing break boundaries with a warning."
+            },
+            {
+                "title": "Fast & Error-Free Booking",
+                "description": "Book in just a few clicks — no notebook, unnecessary phone calls, or manual calculations needed."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Can phone and walk-in bookings share the same calendar?",
+                "a": "Yes. All appointments — phone and walk-in — are recorded in a single unified calendar. The 7-layer system prevents any conflicts."
+            },
+            {
+                "q": "What happens if a staff member is on leave or absent?",
+                "a": "When leave or absence is recorded, that time window is completely blocked. The manager is alerted to the number of affected appointments upon confirmation."
+            },
+            {
+                "q": "Is flexible booking available?",
+                "a": "Yes. By enabling the \"Flexible Booking\" option in settings, slots that slightly cross break or closing boundaries become selectable with a \"Warning\" label."
+            },
+            {
+                "q": "Are reminder SMS sent automatically?",
+                "a": "Yes. The system sends SMS in three stages: booking confirmation, 24-hour reminder, and 2-hour reminder — no receptionist intervention needed."
+            }
+        ]
+    },
+    "feature_branches": {
+        "breadcrumb_current": "Branch Management",
+        "title": "Each Branch Independent; <br class=\"hidden md:block\"> All Managed in One Platform",
+        "description": "Zimo lets you define each salon branch completely independently — from basic info and dedicated working hours to staff assignment with different payment models. Every branch has its own structure, all managed from one unified platform. Switch between branches with a single click.",
+        "image_alt": "Zimo branch management",
+        "section_1_title": "Define Your Branch Structure Professionally",
+        "section_1_desc": "Expanding your beauty salon into multiple branches brings new challenges. Each branch has different hours, separate staff, and distinct services. In the old way, every branch needed its own notebook, its own system, and its own accountant. Zimo strikes the perfect balance: each branch operates independently, yet all are managed from a single dashboard.",
+        "capabilities_title": "Branch Management Capabilities in Zimo",
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Basic Info & Branch Identity",
+                "description": "Define a unique identity for each branch with complete location and contact information. Each branch has its own code and independent status."
+            },
+            {
+                "number": "02",
+                "title": "Custom Working Hours Per Day",
+                "description": "Precisely define opening and closing times for each day of the week (Monday through Sunday). Weekly holidays can be configured."
+            },
+            {
+                "number": "03",
+                "title": "Special Holidays & Occasions",
+                "description": "Record public holidays, anniversaries, or special days on the branch calendar. These days are fully blocked for bookings."
+            },
+            {
+                "number": "04",
+                "title": "Staff Assignment with Separate Payment Models",
+                "description": "Each staff member is assigned to a branch with a role (manager, stylist, receptionist), payment model (percentage, fixed salary, hourly, hybrid), and commission percentage."
+            },
+            {
+                "number": "05",
+                "title": "Per-Branch Pricing",
+                "description": "Service prices can differ by branch. If no branch-specific price is set, the base service price is used."
+            },
+            {
+                "number": "06",
+                "title": "Switch Between Branches",
+                "description": "Switch between branches with one click or select the \"All Branches\" view. All pages, appointments, and reports are filtered by the selected branch."
+            }
+        ],
+        "scenario_title": "Real Scenario: Two Branches, Two Different Schedules",
+        "scenario": "Your salon has two branches: one downtown with hours from 9 AM to 10 PM (Monday to Friday) and one in the suburbs with hours from 10 AM to 8 PM (Monday to Saturday). You've also recorded public holidays and the anniversary for the downtown branch. Staff are assigned with different payment models: some get 40% pure commission at Branch A and a fixed salary + 20% commission at Branch B. With Zimo, you configure all of this in one platform. Just switch branches from the top menu and everything is displayed accordingly.",
+        "benefits_title": "Benefits of Structured Management",
+        "benefits": [
+            {
+                "title": "Operational Independence",
+                "description": "Each branch has its own staff, hours, services, and cash register. Shared data at the global level, independent data per branch."
+            },
+            {
+                "title": "Quick Context Switching",
+                "description": "Switch between branches with one click. Zimo remembers your selection throughout your work session."
+            },
+            {
+                "title": "Flexible Staff Assignment",
+                "description": "A single staff member can be a manager at Branch A and a stylist at Branch B. Commission percentages and payment models vary by branch."
+            },
+            {
+                "title": "Conflict-Free Booking",
+                "description": "The system prevents bookings on holidays or outside working hours for each branch. If a branch is deactivated, previously booked appointments remain valid."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Does each branch have separate working hours?",
+                "a": "Yes. Each branch has its own opening and closing times for every day of the week. Weekly holidays and special holidays are also configured separately."
+            },
+            {
+                "q": "Can staff work across multiple branches with different roles?",
+                "a": "Yes. A staff member can be a manager at Branch A and a stylist at Branch B. However, they can only hold one role per branch."
+            },
+            {
+                "q": "Do I need separate accounts for multiple branches?",
+                "a": "No. All branches are managed under a single Zimo account. Just select a branch from the top menu and everything adapts to that branch."
+            }
+        ]
+    },
+    "feature_finance": {
+        "breadcrumb_current": "Smart Finance & Settlement",
+        "title": "Transparent Financial Management — Instant Settlement, Zero Variance",
+        "description": "Leave the complex accounting formulas of your beauty salon to Zimo. Automatic invoice generation with unique IDs, split payments (cash + card + points), real-time commission calculations based on defined percentages, intelligent tip distribution, and shift closing with auto-discrepancy detection. Everything is transparent, precise, and calculated in real time.",
+        "image_alt": "Zimo financial management",
+        "section_1_title": "Forget Your Salon's Financial Challenges Forever",
+        "section_1_desc": "One of the biggest concerns for beauty salon managers is accurate financial transaction management. Calculating staff shares based on complex percentages, properly distributing tips, deducting consumable material costs, managing advances, and closing daily accounts. Small mistakes in this area can lead to staff dissatisfaction, serious disputes, and financial losses. Zimo fully automates your financial processes, giving your business 100% transparency.",
+        "steps_title": "From Invoice to Final Settlement — Step by Step",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Smart Invoicing with Clear Statuses",
+                "description": "Immediately after the service is completed, an invoice with a unique ID is issued. Line items include service, discount, tax (configurable), tip, and payments. Statuses: Draft → Pending Payment → Paid → Refunded."
+            },
+            {
+                "number": "02",
+                "title": "Split Payment",
+                "description": "Clients can pay using multiple methods: part cash, part card, the rest with loyalty points. RRN, terminal number, and last 4 card digits are automatically recorded. All payments are linked to the active cash register shift."
+            },
+            {
+                "number": "03",
+                "title": "Discounts from Catalog or Manual",
+                "description": "Discounts can be percentage-based or fixed amounts. Within each invoice, you specify which discount to apply. Simple and straightforward."
+            },
+            {
+                "number": "04",
+                "title": "Tips with Smart Distribution",
+                "description": "Three distribution methods: individual (to one staff member), percentage-based (across multiple staff with remainder algorithm), or pool (shared fund). Payment options: cash, card, or included in the invoice."
+            },
+            {
+                "number": "05",
+                "title": "Commission & Revenue Recognition",
+                "description": "Commission is calculated based on the percentage defined in the staff-to-branch assignment. Commission basis: item amount - material cost - discount share. Revenue is recognized after the invoice is fully paid."
+            },
+            {
+                "number": "06",
+                "title": "Cash Register Shifts & General Ledger",
+                "description": "All cash payments are linked to the active shift. At shift close, Zimo calculates the expected balance and compares it with the actual amount — discrepancies are flagged immediately. All events are recorded in the cash register report."
+            }
+        ],
+        "scenario_title": "Real Scenario: Weekend Rush Settlement",
+        "scenario": "Friday night, the salon is packed. A client, after a keratin treatment, wants to pay $120 as $60 cash and $60 card, plus leave a $10 tip for the stylist. On the settlement screen, the operator enters the cash amount in the active shift, enters the card details with terminal info, records the tip — all on one page in a few clicks. The invoice is issued with a unique ID. The cash register and staff wallet are updated automatically. At the end of the night, the manager closes the shift and confirms zero variance.",
+        "benefits_title": "Benefits of Zimo's Financial System",
+        "benefits": [
+            {
+                "title": "100% Transparency",
+                "description": "Staff see their real-time earnings in their personal panel. Invoices with full details. End of month disputes and calculation ambiguities are history."
+            },
+            {
+                "title": "Detailed Reports Ready for Analysis",
+                "description": "Gross sales, collections, refunds, net sales, receivables, average invoice, 30-day daily sales trend, and payment method distribution."
+            },
+            {
+                "title": "Management Time Savings",
+                "description": "Automated financial calculations (commission, tips, discounts, taxes) free up hours of management time. Close the daily register in minutes."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Can we record fixed salon expenses (rent, utilities)?",
+                "a": "Yes. You can record all fixed and variable expenses in the expenses section."
+            },
+            {
+                "q": "Is refund processing available?",
+                "a": "Yes. The refund process has 4 steps: Request → Approved → Completed → Recorded in the register. Full or partial refunds are available via cash, card, or credit. Staff commissions are automatically reversed."
+            },
+            {
+                "q": "How is each staff member's commission percentage determined?",
+                "a": "The commission percentage is defined when assigning staff to a branch. You can also set specific commissions for each service per staff member."
+            }
+        ]
+    },
+    "feature_loyalty": {
+        "breadcrumb_current": "Client Loyalty Club",
+        "title": "Smart Loyalty Club — Boost Client Return Rate by 40%",
+        "description": "Turn one-time visitors into loyal clients with Zimo's multi-tier loyalty system. Standard or tiered programs (Bronze → Silver → Gold) with custom point multipliers. Smart point accrual with gradual expiration logic.",
+        "image_alt": "Zimo loyalty club",
+        "section_1_title": "Invest in Your Current Clients — The Key to Sustainable Growth",
+        "section_1_desc": "Did you know that acquiring a new client costs 5 to 25 times more than retaining an existing one? In the competitive beauty salon market, having a loyalty strategy is a competitive necessity. Clients who feel valued not only return themselves — they refer their friends. Zimo helps you analyze client behavior and define custom rewards for each segment.",
+        "steps_title": "How the Zimo Loyalty Club Works",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Standard or Tiered Loyalty Program",
+                "description": "Two program types: standard with a uniform point rate for all clients, or tiered with different point rates per level. You set the point calculation basis yourself."
+            },
+            {
+                "number": "02",
+                "title": "Membership Tiers with Exclusive Benefits",
+                "description": "Define different tiers with clear upgrade conditions. Higher tiers earn more points, and welcome points plus exclusive benefits are configurable per level."
+            },
+            {
+                "number": "03",
+                "title": "Point Accrual with Gradual Expiration",
+                "description": "Each point has its own expiration date — the oldest points expire first. Clients receive reminders before their points expire."
+            },
+            {
+                "number": "04",
+                "title": "Point Transactions with Real-Time Balance",
+                "description": "Six transaction types: earn, redeem, expire, manual adjustment, bonus, and referral. The real-time balance is updated after every transaction."
+            },
+            {
+                "number": "05",
+                "title": "Point Redemption at Settlement with Smart Limits",
+                "description": "Clients can use their points at settlement. The system intelligently calculates the maximum redeemable points and prevents overspending."
+            }
+        ],
+        "scenario_title": "Real Scenario: Winning Back Inactive Clients",
+        "scenario": "One of your regulars who used to visit monthly hasn't been to the salon in over 45 days. Zimo automatically flags this client. You've already set up a campaign: \"Send a 20% discount SMS to inactive clients.\" The system personalizes the message instantly: \"Hey Mona! We miss you! We've got a special surprise with 20% off just for you. Come grab it before it's gone!\" Result: the client comes back, and the return rate climbs by 40%.",
+        "benefits_title": "Benefits of the Loyalty Club",
+        "benefits": [
+            {
+                "title": "40% Increase in Return Rate",
+                "description": "Clients keep coming back to redeem points or claim special rewards. Welcome bonuses and referral rewards create extra motivation."
+            },
+            {
+                "title": "Targeted & Effective Promotions",
+                "description": "Send exclusive offers only to the clients who need them. Birthday, anniversary, and expiration reminder SMS."
+            },
+            {
+                "title": "Word-of-Mouth Referral System",
+                "description": "Happy clients are your best marketing tool. With the loyalty club features, your clients become brand ambassadors."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Do points expire?",
+                "a": "Yes. You decide how many days until points expire. They expire gradually, and a reminder is sent 30 days before expiration."
+            },
+            {
+                "q": "Can loyalty tiers be customized?",
+                "a": "Absolutely. You define the tier names, upgrade conditions, point multipliers, welcome points, and exclusive benefits."
+            }
+        ]
+    },
+    "feature_payroll": {
+        "breadcrumb_current": "Payroll & Staff Wallet",
+        "title": "One-Click Payroll Settlement — Full Transparency, Double Motivation",
+        "description": "Zimo's smart settlement system automatically calculates all commissions, tips, advances, penalties, and loan installments. Complete cycle: Draft → Review → Approve → Lock with Snapshot → Pay. Create a settlement period with one click and the system aggregates all revenue events. Every staff member sees their real-time earnings in their digital wallet. Goodbye Excel and calculators.",
+        "image_alt": "Zimo staff panel",
+        "section_1_title": "Financial Transparency — The Foundation of Trust in Your Salon",
+        "section_1_desc": "One of the biggest HR challenges in salons is financial disputes and commission calculations. Every month, tons of time and energy are spent closing staff accounts — and there are always ambiguities. \"Why is my share lower this month?\" \"Did I get that client's tip or did the receptionist?\" \"Was my advance deducted?\" Zimo eliminates all this ambiguity by giving every staff member a digital wallet. Each stylist logs into their personal panel and sees every detail: daily earnings, commission per service, tips, deductions, and final balance.",
+        "steps_title": "The Complete Payroll Cycle — From Draft to Pay Slip",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Define Non-Overlapping Settlement Periods",
+                "description": "Create periods with a specific date range. Periods for each branch are non-overlapping. Only open periods can be edited and used to create settlement runs."
+            },
+            {
+                "number": "02",
+                "title": "Automatic Event Aggregation",
+                "description": "The system syncs all income/deduction sources: service commissions, tip distribution, fixed salary (monthly calculation), hourly wages (approved attendance), late and absence penalties, advances, and loan installments."
+            },
+            {
+                "number": "03",
+                "title": "Review, Adjust & Regenerate",
+                "description": "In Draft, Under Review, or Approved statuses, you can review records, add manual items, or regenerate calculations. Any changes in source data are instantly reflected in the settlement."
+            },
+            {
+                "number": "04",
+                "title": "Lock & Snapshot",
+                "description": "After final review, you lock the settlement run. The system takes an instant snapshot of settings, events, and calculations. Once locked, the run becomes immutable and settled sources are marked."
+            },
+            {
+                "number": "05",
+                "title": "Record Payment & Issue Pay Slips",
+                "description": "Select the payment method and finalize the settlement run. A detailed pay slip is issued for each staff member showing all income, deductions, and net payment."
+            },
+            {
+                "number": "06",
+                "title": "Advances, Loans & Automatic Installments",
+                "description": "Record advances and loans with auto-installments. Unrepaid advances and overdue installments are applied as salary deductions in the settlement run."
+            }
+        ],
+        "scenario_title": "Real Scenario: Stress-Free Month-End",
+        "scenario": "It's May 31st — settlement day. The finance manager opens the May settlement period and clicks \"Create Settlement Run.\" The system instantly aggregates all events: 28 completed appointments with 35% commission, $150 in distributed tips, 180 approved attendance hours (with 2 penalized absence days), $600 in advances, and 3 loan installments. A minimum income guarantee kicks in for a new stylist, adding a $250 top-up. The manager reviews, approves, and locks. All done in 15 minutes — zero errors, zero phone calls.",
+        "benefits_title": "Benefits of the Staff Panel",
+        "benefits": [
+            {
+                "title": "Greater Motivation & Productivity",
+                "description": "Seeing daily rewards and earnings in real time in the digital wallet creates positive competition. Every stylist knows exactly how much they earned today."
+            },
+            {
+                "title": "Eliminate Disputes Completely",
+                "description": "100% transparency in commission, tip, deduction, and advance calculations = no more repetitive month-end arguments. Everything is visible in the wallet."
+            },
+            {
+                "title": "Security & Privacy",
+                "description": "Each staff member only sees their own wallet. Bank account details (account number, card, IBAN) are stored encrypted."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Can changes be made after a settlement run is locked?",
+                "a": "Once locked, the settlement run cannot be changed. To make adjustments, create a corrective settlement run in the next period. Snapshots are saved from the moment of locking."
+            },
+            {
+                "q": "What does \"minimum income guarantee\" mean?",
+                "a": "If a staff member's total earnings fall below the guaranteed minimum, the system adds the difference as a top-up amount to the settlement."
+            },
+            {
+                "q": "How does attendance affect pay?",
+                "a": "Approved attendance hours are converted into hourly wages. Late penalties and absence deductions are automatically applied to the settlement."
+            }
+        ]
+    },
+    "feature_reporting": {
+        "breadcrumb_current": "Management Reports",
+        "title": "Smart Data Analytics — Decisions Based on Facts, Not Guesswork",
+        "description": "Zimo's management dashboards turn raw daily data into strategic insights. Real-time sales, staff performance, service popularity, client behavior, and return rates — all in visual, exportable charts. Specialized dashboards with real-time KPIs and role-based access. Stop making decisions in the dark.",
+        "image_alt": "Zimo management reporting",
+        "section_1_title": "Business Intelligence for Your Beauty Salon",
+        "section_1_desc": "Running a beauty salon without accurate statistics is like driving at night without headlights. You might think your salon is profitable, but without analyzing costs, client return rates, and staff productivity, you can't identify hidden weaknesses. Maybe a specific service has the highest sales but low profitability. Maybe your VIP clients are churning and you don't even know it. Zimo's reporting system fills this information gap.",
+        "dashboards_title": "Specialized Dashboards for Smart Management",
+        "dashboards": [
+            {
+                "number": "01",
+                "title": "Overview Dashboard",
+                "description": "A snapshot of your salon's performance at a glance — sales, appointments, new clients, and loyalty status"
+            },
+            {
+                "number": "02",
+                "title": "Appointment Report",
+                "description": "Appointment analysis from booking to completion or cancellation, including booking source and status statistics"
+            },
+            {
+                "number": "03",
+                "title": "Financial Report",
+                "description": "Key sales indicators, collections, and receivables with daily trends and payment method breakdowns"
+            },
+            {
+                "number": "04",
+                "title": "Staff Report",
+                "description": "Compare staff performance by sales, appointment count, tips, and consumable material costs"
+            },
+            {
+                "number": "05",
+                "title": "Loyalty Report",
+                "description": "Member status and point transactions in visual charts"
+            },
+            {
+                "number": "06",
+                "title": "Role-Based Access",
+                "description": "Each dashboard and KPI has its own permission; full access for managers, limited access for operators"
+            }
+        ],
+        "scenario_title": "Real Scenario: Identifying a Sales Drop with Real-Time Data",
+        "scenario": "The manager of a chain salon opens the overview dashboard. The appointment completion rate widget shows 62% for the central branch — compared to last month's 85% average. One click into the appointment report shows a chart: 23% cancellations! Checking the booking source, 70% of cancellations came from phone bookings. A quick call confirms the reception phone was down for two days. The issue is fixed immediately — without data, it might have gone unnoticed until month-end.",
+        "benefits_title": "Benefits of the Reporting System",
+        "benefits": [
+            {
+                "title": "Spot Golden Opportunities",
+                "description": "Discover high-profit services, star staff, and loyal clients for targeted investment."
+            },
+            {
+                "title": "Prevent Hidden Losses",
+                "description": "Early detection of sales decline, client churn, or productivity drops — before it's too late."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Are the reports updated in real time?",
+                "a": "Yes. All charts and statistics are updated instantly after every invoice settlement. You see real-time data, not yesterday's."
+            },
+            {
+                "q": "What is the reporting period?",
+                "a": "All dashboards show the current month by default. The daily sales chart covers the last 30 days. Advanced filters are available for custom date ranges."
+            },
+            {
+                "q": "Do operators have access to reports?",
+                "a": "Operators don't have access by default. Each dashboard and KPI has its own permission settings configurable by the manager."
+            }
+        ]
+    },
+    "feature_security": {
+        "breadcrumb_current": "Security",
+        "title": "Client Privacy & Data Security — Zimo's Ongoing Commitment",
+        "description": "Your client information and financial data are stored in the most secure environment possible. Advanced encryption, role-based access, daily backups, and adherence to security standards. Zimo's multi-layer security architecture gives you complete peace of mind about data confidentiality and integrity.",
+        "image_alt": "Zimo security",
+        "section_1_title": "Security Is Not a Choice — It's a Requirement",
+        "section_1_desc": "At Zimo, we've embedded security into every layer of our system architecture. From the moment a user logs in to data storage on servers, every step is designed with the highest security standards. You trust us — we honor that trust with enterprise-grade security.",
+        "layers_title": "Zimo Security Layers",
+        "layers": [
+            {
+                "number": "01",
+                "title": "Data Encryption",
+                "description": "All sensitive data in the database is encrypted using advanced algorithms. Client information is stored at the highest security level."
+            },
+            {
+                "number": "02",
+                "title": "Role-Based Access Control (RBAC)",
+                "description": "Multi-layer authentication and authorization system. Users only access the data and features the salon manager has defined for them. Operators don't have access to financial reports."
+            },
+            {
+                "number": "03",
+                "title": "Automatic Daily Backups",
+                "description": "The system automatically backs up all data every day. In case of any issue, data recovery is performed in the shortest possible time."
+            },
+            {
+                "number": "04",
+                "title": "One-Time Password (OTP) Login",
+                "description": "Log in to the panel using a one-time password sent via SMS, in addition to the standard password option."
+            },
+            {
+                "number": "05",
+                "title": "Secure Routing & HTTPS",
+                "description": "All communication between the user's browser and servers is encrypted with HTTPS and SSL certificates. No data can be intercepted in transit."
+            },
+            {
+                "number": "06",
+                "title": "Complete Activity Logging",
+                "description": "All user activities are recorded and stored. Salon managers can review the complete history of access to sensitive data."
+            }
+        ],
+        "benefits_title": "Security Guarantees",
+        "benefits": [
+            {
+                "title": "Privacy Protection",
+                "description": "Client personal information is never shared with third parties."
+            },
+            {
+                "title": "Standards Compliance",
+                "description": "Zimo's security architecture is designed based on international data security standards."
+            }
+        ]
+    },
+    "feature_marketing_crm": {
+        "breadcrumb_current": "Marketing & CRM",
+        "title": "Know Your Clients, Connect with Them, and Keep Them Loyal",
+        "description": "Zimo is more than just a salon management system. At its core is a powerful CRM that brings all your client data together in one place. From visit history and bookings to preferences and important occasions. With integrated marketing tools, you can run targeted campaigns, identify loyal clients, and dramatically boost your return rate.",
+        "image_alt": "Zimo marketing CRM",
+        "section_1_title": "Every Client Has a Full Profile — From First Call to Last Booking",
+        "section_1_desc": "When a new client is registered via phone or walk-in, Zimo automatically creates a complete profile. This includes contact info, appointment history, received services, amounts paid, loyalty points, preferences, special occasions (birthdays, anniversaries), and even staff notes. With this information, you can deliver a personalized experience for every client.",
+        "tools_title": "Integrated Marketing Tools",
+        "tools": [
+            {
+                "number": "01",
+                "title": "Targeted SMS Campaigns",
+                "description": "Send SMS to specific client groups: loyal clients, those who haven't visited in over a month, special occasions. Track campaign return rates and more."
+            },
+            {
+                "number": "02",
+                "title": "Client Segmentation",
+                "description": "Categorize clients by: visit frequency, booking value, last visit date, popular service type, loyalty points, and preferred branch."
+            },
+            {
+                "number": "03",
+                "title": "Communication Automation",
+                "description": "Automatic sending of: welcome messages to new clients, appointment reminders, birthday greetings, and re-engagement invites after inactivity."
+            },
+            {
+                "number": "04",
+                "title": "VIP & At-Risk Client Identification",
+                "description": "The system automatically identifies loyal VIP clients and alerts you to those at risk of churning."
+            }
+        ],
+        "scenario_title": "Real Scenario: Re-engaging Dormant Clients",
+        "scenario": "Zimo automatically compiles a list of clients who haven't visited in over 60 days. You send a promotional SMS with a 20% discount code for their favorite services. Result: 35% of these clients return within a week. Zimo shows you the campaign return rate so you can measure its effectiveness.",
+        "benefits_title": "CRM Benefits",
+        "benefits": [
+            {
+                "title": "Higher Return Rate",
+                "description": "Bring clients back to your salon with targeted, personalized communication."
+            },
+            {
+                "title": "Targeted Campaigns",
+                "description": "Send messages to specific clients, not everyone. Maximize your marketing ROI."
+            }
+        ]
+    },
+    "feature_staff_dashboard": {
+        "breadcrumb_current": "Personal Staff Dashboard",
+        "title": "Every Staff Member Has Their Own Dashboard — From Appointments to Salary",
+        "description": "Your stylists log into their Zimo dashboard and see everything they need at a glance: today's and tomorrow's appointments, real-time earnings, commissions, tips, leave requests, and pay slips. No need to call the manager, no confusion. Full financial transparency and precise work scheduling for every team member.",
+        "image_alt": "Zimo staff dashboard",
+        "section_1_title": "Empower Your Staff with Transparency & Real-Time Information",
+        "section_1_desc": "One of the biggest concerns for salon staff is the lack of financial transparency and unclear scheduling. Zimo solves this by giving every staff member their own personal dashboard. Each stylist logs in and sees all their work details without needing to ask the manager or accountant. This transparency boosts job satisfaction, reduces turnover, and improves productivity.",
+        "sections_title": "Personal Dashboard Sections",
+        "sections": [
+            {
+                "number": "01",
+                "title": "Appointment Calendar",
+                "description": "View today's and tomorrow's appointments with full details: client name, service, start and end time. Ability to confirm or cancel appointments."
+            },
+            {
+                "number": "02",
+                "title": "Digital Wallet",
+                "description": "Real-time wallet balance display: total earnings, settled and pending commissions, tips, and withdrawals. Complete financial transparency without needing an accountant."
+            },
+            {
+                "number": "03",
+                "title": "Leave & Shift Schedule",
+                "description": "Request single or multi-day leave with manager approval. View assigned shifts and unavailability blocks. Stay informed about public and salon holidays."
+            },
+            {
+                "number": "04",
+                "title": "Pay Slips & History",
+                "description": "View pay slips from previous periods. Full details: base salary, commission, tips, overtime, deductions, penalties, and loan installments."
+            }
+        ],
+        "benefits_title": "Benefits of the Personal Dashboard",
+        "benefits": [
+            {
+                "title": "Financial Transparency",
+                "description": "Staff always know their financial status. Less tension and fewer repeated questions to management."
+            },
+            {
+                "title": "Independence & Self-Management",
+                "description": "Reduced staff dependency on management for schedule and income information."
+            }
+        ]
+    },
+    "feature_staff_performance": {
+        "breadcrumb_current": "Staff Performance Evaluation",
+        "title": "Measure Staff Performance with Data, Not Opinion",
+        "description": "Zimo's precise performance evaluation tools show you which stylist drives the most sales, who has the highest productivity, and who earns the best client satisfaction. Make people decisions based on objective, transparent data. Say goodbye to guesswork and subjective judgment.",
+        "image_alt": "Zimo staff performance evaluation",
+        "section_1_title": "Performance Data That Empowers Your Decisions",
+        "section_1_desc": "Zimo's performance evaluation system automatically collects all operational data and turns it into Key Performance Indicators (KPIs). As a salon manager, instead of spending time gathering information, you can focus on analysis and improvement.",
+        "kpis_title": "Key Evaluation Indicators",
+        "kpis": [
+            {
+                "number": "01",
+                "title": "Sales & Commission",
+                "description": "Each staff member's sales broken down by service, total commissions earned, and average daily sales."
+            },
+            {
+                "number": "02",
+                "title": "Appointment Count & Productivity",
+                "description": "Number of appointments completed by each staff member in a given period. Completion rate vs. cancellation rate. Compare productivity across similar roles."
+            },
+            {
+                "number": "03",
+                "title": "Tips & Client Satisfaction",
+                "description": "Total tips received as an indicator of client satisfaction. Compare paid vs. pending tips. An indirect measure of service quality."
+            },
+            {
+                "number": "04",
+                "title": "Consumable Material Costs",
+                "description": "Automatic deduction of material costs from each staff member's earnings."
+            },
+            {
+                "number": "05",
+                "title": "Staff Ranking",
+                "description": "Staff comparison table: commissions, total sales, appointment count, and tips. Sales charts to identify your stars."
+            },
+            {
+                "number": "06",
+                "title": "Real-Time Report & History",
+                "description": "All indicators update in real time. View performance history across different periods and compare trends."
+            }
+        ],
+        "benefits_title": "Benefits of Performance Evaluation",
+        "benefits": [
+            {
+                "title": "Objective Decisions",
+                "description": "Based on numerical indicators, not emotions or personal preferences."
+            },
+            {
+                "title": "Identify Training Needs",
+                "description": "Discover which staff members need training or improvement."
+            }
+        ]
+    },
+    "feature_online_booking": {
+        "breadcrumb_current": "Online Booking",
+        "title": "Online Appointment Booking — Your Clients, 24/7, Without a Phone Call",
+        "description": "Let your clients book their appointments anytime, anywhere. Zimo's online booking widget integrates with your website and Instagram — clients book in 30 seconds. Move away from 100% phone-based reception and reduce human error to zero. Real-time sync with the salon calendar — no conflicts, no double-booking.",
+        "image_alt": "Zimo online booking widget",
+        "section_1_title": "The Smart Booking Engine — Behind the Scenes of What Clients See",
+        "section_1_desc": "Zimo's booking widget is far more than a simple form. Behind the scenes, the 7-layer validation engine ensures every booking is real and executable. It simultaneously checks: Is the branch active on that day and time? Is the selected staff member on shift? Are there any leaves or blocks on their personal calendar? Is the salon's capacity for that service full? And finally, does the slot conflict with another appointment? Result: green (available) and red (booked) slots in 10-minute increments — error-free.",
+        "features_title": "Key Online Booking Features",
+        "features_list": [
+            {
+                "number": "01",
+                "title": "Installable Widget for Website & Instagram",
+                "description": "One line of code on your site or Instagram bio — clients book without leaving the page. Fully responsive and mobile-optimized."
+            },
+            {
+                "number": "02",
+                "title": "Choose Staff & Service",
+                "description": "Clients can select their preferred staff by service or use the \"Anyone Available\" option. Service list with up-to-date pricing and duration is displayed."
+            },
+            {
+                "number": "03",
+                "title": "Automatic or Manual Confirmation",
+                "description": "The manager sets whether online bookings are confirmed instantly (auto-confirm) or go to a pending queue for review (manual confirm)."
+            },
+            {
+                "number": "04",
+                "title": "Three-Stage Reminder System",
+                "description": "Instant confirmation SMS, 24-hour reminder, and 2-hour reminder. No-show rates drop by up to 50%."
+            },
+            {
+                "number": "05",
+                "title": "Waitlist Management",
+                "description": "If a slot opens up, clients on the waitlist receive a notification. Fill empty capacity intelligently."
+            },
+            {
+                "number": "06",
+                "title": "Client Profile Storage",
+                "description": "After the first booking, the client's profile is saved. Future bookings take just two clicks with no repeated data entry."
+            }
+        ],
+        "benefits_title": "Benefits of Online Booking",
+        "benefits": [
+            {
+                "title": "Save Reception Team Time",
+                "description": "Reduce phone calls by 80%. Your front desk focuses on the client experience."
+            },
+            {
+                "title": "24/7 Accessibility",
+                "description": "Clients book at any hour, even on holidays."
+            },
+            {
+                "title": "Reduce No-Shows",
+                "description": "Smart three-stage reminders + online cancellation and rescheduling."
+            }
+        ],
+        "faq_title": "Frequently Asked Questions",
+        "faq": [
+            {
+                "q": "Can clients reschedule their appointments?",
+                "a": "Yes. Clients can cancel or reschedule from their panel or the link they received. Changes are instantly reflected in the salon calendar."
+            },
+            {
+                "q": "Is there an extra charge for online booking?",
+                "a": "No. The online booking widget is part of the Zimo platform at no additional cost."
+            }
+        ]
+    },
+    "footer": {
+        "tagline": "Make your beauty salon branch management smart and simple with Zimo",
+        "description": "Zimo is a smart CRM for unified management of appointments, branches, staff, settlement, and client loyalty for beauty salons.",
+        "columns": {
+            "zimo": {
+                "title": "Zimo",
+                "links": {
+                    "features": "Features",
+                    "pricing": "Pricing",
+                    "demo": "Request a Demo"
+                }
+            },
+            "support": {
+                "title": "Support",
+                "links": {
+                    "faq": "FAQ",
+                    "about": "About Us",
+                    "contact": "Contact Us"
+                }
+            },
+            "features": {
+                "title": "Features"
+            },
+            "more_features": {
+                "title": "More Features"
+            }
+        },
+        "copyright": "© 2026 Zimo. All rights reserved."
+    }
+}

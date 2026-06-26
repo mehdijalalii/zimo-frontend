@@ -1,0 +1,1289 @@
+{
+    "meta": {
+        "default_title": "Zimo | Güzellik Salonu CRM",
+        "default_description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır.",
+        "home": {
+            "title": "Zimo | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "features": {
+            "title": "Zimo Özellikleri | Akıllı Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "pricing": {
+            "title": "Zimo Fiyatlandırması | Salonunuzun Düzenine ve Büyümesine Yatırım",
+            "description": "Zimo, gelirinizi optimize etmek ve insan hatalarını ortadan kaldırmak için tasarlanmış bir araçtır. Gizli maliyetler olmadan şeffaf planlar ve yıllık ödemede 2 ay hediye."
+        },
+        "about": {
+            "title": "Hakkımızda | Zimo",
+            "description": "Zimo'nun hikayesi — İran'daki güzellik salonları ve zincir işletmeler için profesyonel çevrimiçi yönetim sistemi. Geleneksel sistemlerin sınırlamalarından kurtuluş."
+        },
+        "contact": {
+            "title": "İletişim | Zimo",
+            "description": "Zimo ile iletişime geçin — Güzellik salonları için ücretsiz demo, danışmanlık ve destek talebi."
+        },
+        "demo": {
+            "title": "Demo Talebi | Zimo",
+            "description": "Zimo güzellik salonu yönetim yazılımının ücretsiz çevrimiçi demo talebi."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular | Zimo",
+            "description": "Zimo güzellik salonu yönetim yazılımı, veri güvenliği ve destek hakkında sık sorulan sorulara yanıtlar."
+        },
+        "feature_appointments": {
+            "title": "Zimo Özelliği | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_branches": {
+            "title": "Zimo Özelliği | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_finance": {
+            "title": "Zimo Özelliği | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_loyalty": {
+            "title": "Zimo Özelliği | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_payroll": {
+            "title": "Zimo Özelliği | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_reporting": {
+            "title": "Zimo Özelliği | Güzellik Salonu CRM",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_security": {
+            "title": "Güvenlik | Zimo",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_marketing_crm": {
+            "title": "Pazarlama ve CRM | Zimo",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_staff_dashboard": {
+            "title": "Personel Kontrol Paneli | Zimo",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_staff_performance": {
+            "title": "Personel Performans Değerlendirmesi | Zimo",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        },
+        "feature_online_booking": {
+            "title": "Çevrimiçi Randevu | Zimo",
+            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+        }
+    },
+    "nav": {
+        "logo_badge": "Zi",
+        "logo_text": "Zimo",
+        "home": "Ana Sayfa",
+        "features": "Özellikler",
+        "pricing": "Fiyatlandırma",
+        "faq": "Sıkça Sorulan Sorular",
+        "about": "Hakkımızda",
+        "contact": "İletişim",
+        "demo": "Demo Talebi",
+        "login": "Panele Giriş",
+        "all_features": "Tüm Özellikleri Gör",
+        "mega": {
+            "appointments": {
+                "title": "Akıllı Randevu Sistemi",
+                "desc": "Çevrimiçi rezervasyon ve çakışma yönetimi"
+            },
+            "online_booking": {
+                "title": "Çevrimiçi Randevu",
+                "desc": "Web sitesi ve Instagram için randevu widget'ı"
+            },
+            "finance": {
+                "title": "Finans ve Mutabakat",
+                "desc": "Personel paylarının otomatik hesaplanması"
+            },
+            "branches": {
+                "title": "Şube Yönetimi",
+                "desc": "Tüm salonlarınızın tek merkezden kontrolü"
+            },
+            "loyalty": {
+                "title": "Sadakat Kulübü",
+                "desc": "Müşteri sadakat sistemi"
+            },
+            "payroll": {
+                "title": "Maaş ve Ücret",
+                "desc": "Personel dijital cüzdanı"
+            },
+            "reporting": {
+                "title": "Raporlama",
+                "desc": "Akıllı kar ve zarar analizi"
+            },
+            "staff_performance": {
+                "title": "Performans Değerlendirme",
+                "desc": "Personel KPI ve verimlilik analizi"
+            },
+            "staff_dashboard": {
+                "title": "Personel Paneli",
+                "desc": "Cüzdan, randevu ve maaş bordrosu"
+            },
+            "marketing_crm": {
+                "title": "Pazarlama",
+                "desc": "Kampanya ve müşteri iletişimi"
+            },
+            "security": {
+                "title": "Güvenlik",
+                "desc": "Veri gizliliği ve koruma"
+            }
+        },
+        "mobile": {
+            "home": "Ana Sayfa",
+            "features": "Özellikler",
+            "pricing": "Fiyatlandırma",
+            "faq": "Sıkça Sorulan Sorular",
+            "about": "Hakkımızda",
+            "contact": "İletişim",
+            "demo": "Demo Talebi",
+            "login": "Panele Giriş"
+        }
+    },
+    "hero": {
+        "kicker": "Tek ve Çok Şubeli Güzellik Salonları İçin Akıllı Yönetim Yazılımı",
+        "title": "Salonunuzu Zahmetsizce Yönetin; <br> Çevrimiçi Randevudan Anında Personel Mutabakatına",
+        "description": "Randevu alma ve karşılamadan mutabakat ve raporlamaya kadar salonunuzdaki tüm süreçler tek bir platformda. Karmaşa yok, hata yok, şubelerinizin büyümesine odaklanın.",
+        "demo_cta": "Ücretsiz Demo ve Danışmanlık Alın",
+        "features_cta": "Özellikleri İnceleyin",
+        "image_alt": "Zimo güzellik salonu yönetim yazılımı arayüzü"
+    },
+    "stats": {
+        "heading": "Sıfır",
+        "no_conflicts": "Randevu Çakışması",
+        "return_rate": "Müşteri Geri Dönüş Oranı Artışı",
+        "transparency": "Finansal İşlemlerde Şeffaflık",
+        "uptime": "Kesintisiz ve Güvenilir"
+    },
+    "highlights": {
+        "kicker": "Neden Zimo?",
+        "heading": "Salonunuz İçin Her Şey Tek Bir Yerde",
+        "lead": "Salon yönetiminin üç temel direği",
+        "items": [
+            {
+                "number": "01",
+                "title": "Akıllı ve Çevrimiçi Randevu Sistemi",
+                "description": "Canlı takvim, çakışmasız randevular. Resepsiyonist, tüm personelin durumunu tek bakışta görür ve saniyeler içinde rezervasyon yapar; karmaşa ve manuel hata olmadan."
+            },
+            {
+                "number": "02",
+                "title": "Entegre Salon Operasyonları",
+                "description": "Karşılamadan mutabakata; resepsiyon ekibi, stilistler ve yönetim arasında kusursuz iş akışı."
+            },
+            {
+                "number": "03",
+                "title": "Mutabakat ve Finansal Raporlama",
+                "description": "Personel paylarının otomatik hesaplanması, dijital cüzdan ve şeffaf yönetim raporları."
+            }
+        ],
+        "cta": "Tüm Özellikleri Gör →"
+    },
+    "how_it_works": {
+        "kicker": "Hızlı Başlangıç",
+        "heading": "3 Adımda Salonunuzu Akıllı Hale Getirin",
+        "steps": [
+            {
+                "number": "1",
+                "title": "Kayıt ve Kurulum",
+                "description": "Kurulum gerektirmez, donanım gerekmez. Salon bilgilerinizi, personelinizi ve hizmetlerinizi dakikalar içinde girin. Destek ekibimiz yanınızda."
+            },
+            {
+                "number": "2",
+                "title": "Akıllı Ayarlar",
+                "description": "Çalışma saatlerinizi, hizmet fiyatlarınızı, personel komisyon modellerinizi ve otomatik SMS'lerinizi işletmenize göre kişiselleştirin."
+            },
+            {
+                "number": "3",
+                "title": "Yönetim ve Büyüme",
+                "description": "Akıllı randevu sistemi, otomatik mutabakat ve anlık raporlar. Şubelerinizi geliştirmeye ve hizmet kalitenize odaklanın."
+            }
+        ]
+    },
+    "trust": {
+        "heading": "Zimo Salonunuzun Büyüme Yolunu Nasıl Açıyor?",
+        "lead": "Biz basit bir rezervasyon takviminden çok daha fazlasıyız; Zimo'nun temel farkı, salon işletmeciliğinin en gerçek sorunlarını çözmek için alt sistemlerin akıllı mimarisinde yatmaktadır.",
+        "items": [
+            {
+                "title": "Koordineli ve Entegre Çoklu Şube Yönetimi",
+                "description": "İster büyüyen tek şubeniz olsun ister 10 zincir şubeniz; salonlar arasında hızlı geçiş, canlı kasa kontrolü, dönüşümlü personel ve birleşik raporlarla tüm işletmeniz gözünüzün önünde."
+            },
+            {
+                "title": "Güvenli Veri Depolama",
+                "description": "Resepsiyonistin dizüstü bilgisayarının aniden çökmesi, sistemin virüs kapması veya salon bilgisayarının çalınması konusunda artık endişelenmeyin. Müşteri bilgileriniz ve fatura geçmişiniz tamamen bağımsız ve güvenli bir ortamda saklanır."
+            },
+            {
+                "title": "Finansal Otomasyon ve Komisyonda Yüksek Hassasiyet",
+                "description": "Personel komisyon formülleri, faturadaki sarf malzemesi maliyetleri, ikramiyeler, devamsızlık cezaları, kredi taksitleri ve avanslar en ufak bir insan hatası olmadan tek tıkla mutabakatı yapılır ve bordrolanır."
+            }
+        ]
+    },
+    "demo_cta": {
+        "heading": "Salonunuzu Daha Akıllı Yönetmeye Hazır mısınız?",
+        "lead": "Çevrimiçi bir demo ve danışmanlarımızla kısa bir görüşme, sistemimizin tüm modüllerinin işletmeniz için nasıl tasarlandığını görmeniz için yeterlidir.",
+        "demo_cta": "Demo Talep Et",
+        "features_cta": "Özellikleri Gör"
+    },
+    "features_page": {
+        "kicker": "Zimo Özellikleri",
+        "title": "Güzellik Salonunuzu Yönetmek İçin İhtiyacınız Olan Her Şey,<br class=\"hidden md:block\"> Tek Bir Akıllı Platformda",
+        "description": "Zimo, çevrimiçi randevu almadan finansal mutabakata ve yönetim raporlarına kadar tüm iş süreçlerinizi otomatikleştiren ve akıllı hale getiren, güzellik salonları için özel olarak tasarlanmış bir CRM'dir. Randevu çakışmaları, manuel komisyon hesaplamaları veya müşteri kaybı konusunda artık endişelenmeyin."
+    },
+    "features_grid": {
+        "items": [
+            {
+                "number": "1",
+                "title": "Akıllı Randevu Sistemi",
+                "description": "7 katmanlı doğrulama sistemi ile 30 saniyede randevu kaydı. Çakışma yok, hata yok. Telefon, yüz yüze ve çevrimiçi widget desteği.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "2",
+                "title": "Finans ve Mutabakat",
+                "description": "Benzersiz numaralı akıllı fatura, bölünmüş ödeme, indirim ve bahşiş. Otomatik mutabakat ile günlük kasa — sıfır fark.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "3",
+                "title": "Şube Yönetimi",
+                "description": "Her şubenin kendi çalışma saatleri, fiyatları ve personeli ile bağımsız kimliği. Tek tıkla şubeler arası geçiş — hepsi tek platformda.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "4",
+                "title": "Sadakat Kulübü",
+                "description": "Puan, ödül ve akıllı işlemlerle seviyelendirilmiş sadakat programı. Müşteri geri dönüş oranında %40'a varan artış.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "5",
+                "title": "Personel Maaş ve Cüzdanı",
+                "description": "Komisyon, bahşiş ve kesintilerin otomatik toplanmasıyla tek tıkla mutabakat. Her personel için tam şeffaflık sağlayan dijital cüzdan.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "6",
+                "title": "Yönetim Raporları",
+                "description": "Anlık KPI'larla 5 özel gösterge paneli. Satış, personel performansı, randevular ve sadakat analizi. Yetki tabanlı erişim.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "7",
+                "title": "Güvenlik ve Gizlilik",
+                "description": "Veri şifreleme, rol tabanlı erişim, günlük yedekleme ve tek kullanımlık şifre ile giriş. En üst düzeyde güvenlik.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "8",
+                "title": "Personel Performans Değerlendirmesi",
+                "description": "Satış, verimlilik ve bahşişten oluşan hassas KPI'lar. Nesnel verilerle yıldızları ve eğitim ihtiyaçlarını belirleyin.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "9",
+                "title": "Personel Kişisel Paneli",
+                "description": "Her personel, randevularını, anlık kazancını, komisyonunu ve maaş bordrosunu kişisel panelinde görür. Tam şeffaflık ve bağımsızlık.",
+                "details_link": "Detayları Gör"
+            },
+            {
+                "number": "10",
+                "title": "Pazarlama",
+                "description": "Tam müşteri profilleri, hedefli SMS kampanyaları, iletişim otomasyonu ve sadık müşteri tespiti. Geri dönüş oranında artış.",
+                "details_link": "Detayları Gör"
+            }
+        ]
+    },
+    "operations": {
+        "kicker": "Salon İş Akışı",
+        "heading": "Karşılamadan Mutabakata; Koordineli ve Hatasız Ekip Çalışması",
+        "description": "Resepsiyon ekibi, stilistler ve yönetim her randevunun durumundan anlık olarak haberdar olduğunda, hatalar en aza iner ve müşteri salonunuzda keyifli bir deneyim yaşar.",
+        "image_alt": "Zimo salon operasyon paneli",
+        "steps": [
+            {
+                "title": "Dinamik Takvim ve Hızlı Randevu Kaydı",
+                "description": "7 katmanlı sistem, salon kapasitesini, personel izinlerini ve kayıtlı randevuları eşzamanlı kontrol ederek 10 dakikalık aralıklarla gerçek slotları önerir. 30 saniyede hatasız randevu kaydı."
+            },
+            {
+                "title": "Karşılama ve Canlı Durum Takibi",
+                "description": "Müşteri varış süreci, onaydan salona girişe, hizmet başlangıcından mutabakata kadar 5 durumla şeffaf bir şekilde izlenir. 3 aşamalı otomatik hatırlatma SMS'i."
+            },
+            {
+                "title": "Otomatik Mutabakat ve Personel Cüzdanı",
+                "description": "Sarf malzemesi maliyetinin otomatik düşülmesinden sonra anlaşılan yüzdeye göre komisyon, anında personelin dijital cüzdanına yansır. Her stilist anlık kazancını görür."
+            },
+            {
+                "title": "Performans Analizi ve Yönetim Kararları",
+                "description": "Satış, personel performansı ve müşteri davranışına ilişkin anlık KPI'larla özel gösterge panelleri. Doğru verilerle fırsatları belirleyin ve gizli kayıpları önleyin."
+            }
+        ]
+    },
+    "pricing_page": {
+        "kicker": "Fiyatlandırma",
+        "title": "Salonunuzun Düzenine, Huzuruna ve Büyümesine Yatırım",
+        "description": "Zimo, günlük salon süreçlerini otomatikleştirerek insan hatalarını azaltır, ekip verimliliğini artırır ve işletmenizin performansına dair net bir görüş sağlar."
+    },
+    "pricing": {
+        "monthly": "Aylık",
+        "yearly": "Yıllık",
+        "billing_label": "Aylık ve yıllık fiyatlar arasında geçiş yap",
+        "two_months_free": "2 Ay Ücretsiz",
+        "custom_price": "Özel",
+        "custom_period": "İhtiyaca Göre",
+        "price_per_month": "₺ / Ay",
+        "price_per_year": "₺ / Yıl",
+        "request_demo": "Danışmanlık ve Demo Talep Edin",
+        "comparison": {
+            "kicker": "Karşılaştırma",
+            "title": "Tam Özellik Karşılaştırması",
+            "lead": "Tüm Zimo planlarını tek bakışta karşılaştırın",
+            "features_header": "Özellikler",
+            "custom_price": "Özel Fiyat",
+            "price": "Fiyat",
+            "two_months_free_yearly": "Yıllık ödemede 2 ay ücretsiz"
+        }
+    },
+    "contact_page": {
+        "kicker": "İletişim",
+        "title": "Bizimle İletişime Geçin",
+        "description": "Sorunuz, öneriniz veya desteğe mi ihtiyacınız var? Zimo ekibi sizi dinlemeye hazır."
+    },
+    "contact": {
+        "heading": "Salonunuzun Büyümesi Hakkında Konuşmaya Hazırız",
+        "lead": "Sorularınız mı var veya salonunuzun özel ihtiyaçları hakkında bize danışmak mı istiyorsunuz? Size yardımcı olmak için buradayız. Karşınızdaki formu doldurun veya doğrudan bizimle iletişime geçin. Zimo danışma ekibi en kısa sürede size yanıt verecektir.",
+        "phone_label": "Telefon Danışmanlığı",
+        "phone_number": "+90 212 000 00 00",
+        "hours_label": "Çalışma Saatleri",
+        "hours_weekdays": "Pazartesi'den Perşembe'ye: 09:00 - 18:00 - Cuma: 09:00 - 14:00",
+        "hours_weekend": "Cumartesi ve Resmî Tatiller: Çevrimiçi Destek",
+        "form": {
+            "name_label": "Adınız",
+            "name_placeholder": "Salon yöneticisinin adı ve soyadı",
+            "phone_label": "Telefon Numarası",
+            "phone_placeholder": "+90 5XX XXX XX XX",
+            "salon_label": "Salon veya İşletme Adı",
+            "salon_placeholder": "Güzellik salonunuzun adı",
+            "message_label": "Size nasıl yardımcı olabiliriz?",
+            "message_placeholder": "Örn: İkinci şube için danışmanlık almak istiyorum...",
+            "submit": "Zimo Ekibine Mesaj Gönder"
+        }
+    },
+    "demo_page": {
+        "kicker": "Ücretsiz Demo",
+        "title": "Demo Talebi",
+        "description": "Aşağıdaki formu doldurun, uzmanlarımız çevrimiçi demo ayarlamak için sizi arayacaktır."
+    },
+    "demo_form": {
+        "heading": "Salon Yönetimini Farklı Deneyimleyin",
+        "lead": "Zimo, salonunuzun ihtiyaçlarına göre kişiselleştirilen bir araçtır. Demo görüşmesinde, mevcut karmaşık süreçlerinizi Zimo'da nasıl basitleştirip otomatikleştireceğinizi tam olarak göstereceğiz.",
+        "steps": [
+            {
+                "number": "1",
+                "title": "Kişiye Özel ve Ücretsiz Demo",
+                "description": "Yazılım ortamında 20 dakikalık bir tur ve Zimo uzmanı tarafından sorularınızın yanıtlanması."
+            },
+            {
+                "number": "2",
+                "title": "Salonunuzun İhtiyaçlarının Teknik Analizi",
+                "description": "En iyi iş birliği teklifini sunmak için şube yapınızın, personelinizin ve komisyon modellerinizin incelenmesi."
+            },
+            {
+                "number": "3",
+                "title": "7 Günlük Deneme Süresi Hediyesi",
+                "description": "Demodan sonra sistemi kendi gerçek verilerinizle güvenli bir ortamda test edebilirsiniz."
+            }
+        ],
+        "form": {
+            "manager_name_label": "Salon Yöneticisi Adı",
+            "manager_name_placeholder": "Ad ve Soyad",
+            "phone_label": "Cep Telefonu",
+            "phone_placeholder": "+90 5XX XXX XX XX",
+            "salon_label": "Salon veya Marka Adı",
+            "salon_placeholder": "Güzellik işletmenizin adı",
+            "branches_label": "Şube Sayısı",
+            "branches_options": {
+                "1": "Tek Şube",
+                "2-3": "2-3 Şube",
+                "3+": "3'ten Fazla Şube (Zincir)"
+            },
+            "plan_label": "İstenen Plan",
+            "plan_options": {
+                "unsure": "Emin Değilim / Danışmanlık İhtiyacım Var",
+                "starter": "Başlangıç Planı",
+                "professional": "Profesyonel Plan",
+                "enterprise_custom": "Kurumsal / Özel Plan"
+            },
+            "message_label": "Özel bir endişeniz veya ihtiyacınız var mı?",
+            "message_placeholder": "Örn: Komisyon yönetimi benim için çok karmaşık hale geldi...",
+            "submit": "Danışmanlık ve Demo Talep Et",
+            "disclaimer": "Uzmanlarımız, demo zamanını ayarlamak için en geç 24 iş saati içinde sizi arayacaktır."
+        }
+    },
+    "faq_page": {
+        "kicker": "Sıkça Sorulan Sorular",
+        "title": "Aklınızda Soru mu Var? Cevapları Burada",
+        "description": "Zimo ailesine katılmadan önce çoğu salon yöneticisinin aklında bu sorular vardır. Tam bir güvenle adım atmak için cevapları inceleyin.",
+        "accordion_label": "Sıkça Sorulan Sorular",
+        "items": [
+            {
+                "question": "Eski yazılımlardaki salon verilerimiz Zimo'ya aktarılıyor mu?",
+                "answer": "Evet, kesinlikle. Teknik ekibimiz, verilerinizi herhangi bir sistemden (Excel veya eski Windows yazılımları) çıkarır ve müşteri kabul sürecinizde en ufak bir aksama olmadan Zimo çevrimiçi sistemine aktarır. İşleriniz bir gün bile durmaz."
+            },
+            {
+                "question": "İnternet kesintisi durumunda sisteme erişimimiz kesilir mi?",
+                "answer": "Hayır. Zimo sunucuları, en güvenilir yerel veri merkezlerinde barındırılır. Sistemimiz, en düşük internet hızlarında bile sorunsuz çalışacak şekilde optimize edilmiştir. Ayrıca, tam internet kesintisi durumunda randevuları geçici olarak kaydedebilir ve bağlantı sağlandıktan sonra çevrimiçi hale getirebilirsiniz."
+            },
+            {
+                "question": "Zimo'da karmaşık komisyon ve malzeme hesaplamaları nasıl yapılıyor?",
+                "answer": "Zimo, manuel hesaplamaları ortadan kaldırır. Komisyon formüllerini (kademeli veya sabit), sarf malzemesi maliyetlerini, kredileri ve avansları yalnızca bir kez tanımlarsınız. Ay sonunda Zimo, tek bir tıklamayla her personel için doğru maaş bordrosunu düzenler; böylece hesaplama hataları konusunda endişelenmenize gerek kalmaz."
+            },
+            {
+                "question": "Personelin de panele erişimi var mı?",
+                "answer": "Evet. Her personelin kendi kişisel paneli vardır. Günlük kazanç raporlarını, bahşişleri ve avans durumlarını görebilirler. Bu şeffaflık, personelin iş kalitesine odaklanmasını sağlar ve \"Benim payım ne kadar oldu?\" gibi zihinsel karmaşayı en aza indirir."
+            },
+            {
+                "question": "Birden fazla şube yönetmek için ayrı hesaplar satın almam gerekiyor mu?",
+                "answer": "Hayır. Zimo, zincir yönetimi için tasarlanmıştır. Tek bir yönetim paneli ile aynı anda birden fazla şubeyi kontrol edebilir, aralarında geçiş yapabilir ve toplu (tüm markayı incelemek için) veya ayrıntılı (her şubeyi incelemek için) raporlar alabilirsiniz."
+            },
+            {
+                "question": "Müşteri bilgilerinin güvenliği ne kadar garanti altında?",
+                "answer": "Bilgileriniz sizin \"varlığınız\"dır. Sistemimiz, gelişmiş şifrelemenin yanı sıra düzenli ve otomatik olarak yedekleme (Backup) yapar. Bir hard disk arızasıyla tüm salon kayıtlarının kaybolduğu çevrimdışı sistemlerin aksine, Zimo'da bilgileriniz en güvenli veri merkezlerinde her zaman korunur."
+            },
+            {
+                "question": "Zimo'yu kullanmak personel için karmaşık mı?",
+                "answer": "Zimo'yu \"stilistler\" için tasarladık, bilgisayar uzmanları için değil. Kullanıcı arayüzü oldukça basittir ve ilk eğitim oturumlarında personeliniz bir saatten kısa sürede tüm incelikleri öğrenir."
+            },
+            {
+                "question": "Daha sonra planımızı yükseltmek istersek mümkün mü?",
+                "answer": "Evet, kesinlikle. İstediğiniz zaman planınızı yükseltebilirsiniz. Fiyat farkı orantılı olarak hesaplanır ve tüm verileriniz ile ayarlarınız en ufak bir değişiklik olmadan yeni plana aktarılır. Yeniden geçiş veya yeniden kurulum gerekmez."
+            },
+            {
+                "question": "Gizli maliyetler var mı?",
+                "answer": "Hayır. Zimo'nun gizli maliyeti yoktur. Tüm fiyatlandırma ve hizmetler, fiyatlar sayfasında şeffaf bir şekilde belirtilmiştir. Kurulum, ilk eğitim, veri aktarımı veya destek için herhangi bir ücret alınmaz."
+            },
+            {
+                "question": "Nasıl demo alabilirim?",
+                "answer": "Demo talep sayfasında talebinizi iletmeniz yeterlidir. Ekibimiz, kısa bir görüşmede sistemi salonunuzun özel ihtiyaçlarına göre gösterir ve tüm sorularınızı yanıtlar."
+            }
+        ]
+    },
+    "about_page": {
+        "kicker": "Zimo Hakkında",
+        "title": "Güzellik Salonu Yönetiminde Bir Dönüşüm Hikayesi",
+        "description": "Zimo'da, güzellik salonu yöneticilerinin tüm odaklarının güzellik yaratmaya ve hizmet kalitesini artırmaya yönelik olması gerektiğine, karmaşık komisyon muhasebesi formülleri ve bilgisayar sorunlarıyla uğraşmamaları gerektiğine inanıyoruz!"
+    },
+    "about": {
+        "kicker": "Nasıl Başladık?",
+        "heading": "Eski Yazılımların Çağı Sona Erdi; Her Yerden, Her Zaman Yönetim",
+        "story_1": "Zimo fikri, büyük salonların karmaşası ve yöneticilerin bitmek bilmeyen şikayetlerinden doğdu. Resepsiyonistlerin telefon ve Instagram randevu çakışmalarıyla boğuştuğunu, salon yöneticilerinin ise ay sonlarını geç saatlere kadar komisyonlar, sarf malzemesi kesintileri, kredi taksitleri ve personel avanslarının yorucu hesaplamalarıyla geçirdiğini gördük.",
+        "story_2": "Kolları sıvadık ve tamamen çevrimiçi, entegre ve yerel bir platform oluşturduk. Zimo, farklı bileşenler arasında kusursuz bir koordinasyon sağlamak için tasarlandı; fiziksel olarak salonda bulunmayı veya belirli bir işletim sistemine bağımlı olmayı gerektirmeyen, kapsamlı yönetimi mümkün kılan bir platform.",
+        "stat_1_value": "%100",
+        "stat_1_label": "Finansal Veri ve Salon Kayıtlarının Sürekliliği",
+        "stat_2_value": "10 Dakikadan Az",
+        "stat_2_label": "Aylık Personel Komisyonu Hesaplama Süresi",
+        "image_alt": "Zimo platformunun hikayesi",
+        "mission": {
+            "title": "Misyonumuz",
+            "description": "Salonun karmaşık finansal ve personel süreçlerini otomatikleştirmek, böylece yöneticilerin marka büyümesine, personel eğitimine ve hizmet kalitesine odaklanmak için yeterli boş zamana sahip olmalarını sağlamak."
+        },
+        "vision": {
+            "title": "Vizyonumuz",
+            "description": "Güzellik sektörü için en modern, en güvenli ve en ölçeklenebilir yönetim platformunu yaratarak, birinci sınıf zincir işletmelerin büyümesi için ana zemin olmak."
+        },
+        "values": {
+            "title": "Temel Değerlerimiz",
+            "description": "Fiyatlandırmada tam şeffaflık, optimize edilmiş kodun sürekli geliştirilmesi, müşteri verilerinin gizliliği ve salonunuzun en yoğun çalışma saatlerinde gerçek insan desteği sağlamak."
+        },
+        "migration": {
+            "heading": "Mevcut Kayıtlarınızın Zimo'ya Sorunsuz Aktarımı",
+            "description": "Aktif salonların en büyük endişesi, yıllara dayanan müşteri geçmişini, dosyalarını veya personel hesaplarını kaybetme korkusudur. Zimo destek ekibi, tüm eski verilerinizi çıkarmak ve tamamen güvenli bir şekilde yeni sisteme aktarmak için bir iş ortağı gibi yanınızdadır.",
+            "items": [
+                "Yönetici, resepsiyonistler ve salon finans ekibinin eşzamanlı eğitimi",
+                "Hizmet SMS şablonlarının anında kurulumu"
+            ],
+            "stat_1_value": "24 Saat",
+            "stat_1_label": "Verilerinizin Tam Olarak Yüklenme Ortalama Süresi",
+            "stat_2_value": "%100",
+            "stat_2_label": "Zimo Sunucularında Finansal Verilerinizin Sürekli Koruması"
+        }
+    },
+    "feature_detail": {
+        "breadcrumb_home": "Ana Sayfa",
+        "breadcrumb_features": "Özellikler",
+        "demo_cta": "Ücretsiz Demo Talep Et",
+        "login_cta": "Panele Giriş",
+        "cta_section": {
+            "heading": "Salonunuzu Dönüştürmeye Hazır mısınız?",
+            "description": "Şimdi akıllı yöneticilere katılın ve işletmenizi büyütmek için Zimo'nun :feature özelliğini kullanın.",
+            "cta": "Demo Talep Et"
+        }
+    },
+    "feature_appointments": {
+        "breadcrumb_current": "Akıllı Randevu Sistemi",
+        "title": "Zimo Akıllı Randevu Sistemi — Salonunuzun Altın Zamanı Boşa Gitmesin",
+        "description": "Zimo, randevu kaydı öncesinde yedi katmanlı doğrulama ile yalnızca gerçek ve çakışmasız slotları gösterir. Şube tatilinden çalışma saatlerine, personel izninden önceden kaydedilmiş randevulara kadar her şey saniyeler içinde kontrol edilir. Sonuç: 30 saniyeden kısa sürede randevu kaydı, insan hatası yok, tekrar yok.",
+        "image_alt": "Zimo Akıllı Randevu Sistemi",
+        "why_smart_title": "Akıllı Randevu Sistemi Güzellik Salonları İçin Neden Gerekli?",
+        "why_smart_1": "Randevuları defter veya hafızayla yönetmek, güzellik salonu yöneticilerinin en büyük baş ağrılarından biridir. Randevu çakışmaları, önceki zamanın kaydedildiğini unutma, personel izinlerinin kayıtlı randevularla uyumsuzluğu — bu sorunlar yalnızca ekibin kafasını karıştırmakla kalmaz, aynı zamanda müşteri deneyimini ve salonun itibarını doğrudan etkiler. Randevular birden fazla kanaldan kaydedilebilir — hepsi çakışmasız, tek bir entegre takvimde.",
+        "why_smart_2": "<strong>Zimo</strong>, 7 katmanlı zamanlama derinliği ile tüm karmaşıklıkları akıllı bir şekilde yönetir. Sistem, şube tatil durumunu, şube çalışma saatlerini, personel çalışma saatlerini, mesai saatlerini, kayıtlı randevuları, izinleri ve erişilemezlik bloklarını eşzamanlı kontrol ederek gerçek boş slotları 10 dakikalık aralıklarla (esnek ve değiştirilebilir) gösterir. Sonuç: randevu çakışması sıfıra iner, kabul hızı katlanır.",
+        "step_by_step_title": "Adım Adım Çalışma Şekli",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Akıllı Müşteri Arama",
+                "description": "Resepsiyon görevlisi, ad veya telefon numarası ile arama yaparak müşteri dosyasını açar. Yeni müşteri de anında form aracılığıyla kaydedilir."
+            },
+            {
+                "number": "02",
+                "title": "Şube, Hizmet ve Personel Seçimi",
+                "description": "Şube, hizmet ve çeşidi seçilir. Sistem yalnızca o şubede ilgili hizmeti sunan yetkili personeli gösterir. Fiyat önceliği: Personel özel fiyatı → Çeşit fiyatı → Temel hizmet fiyatı."
+            },
+            {
+                "number": "03",
+                "title": "7 Katmanlı Zaman Slotu Derinliği",
+                "description": "1. Şube tatili 2. Şube çalışma saatleri 3. Personel çalışma saatleri 4. Şube ve personel çalışma saatlerinin kesişimi 5. Mevcut randevular 6. Erişilemezlik blokları (izin/devamsızlık) 7. 10 dakikalık aralıklarla slot oluşturma."
+            },
+            {
+                "number": "04",
+                "title": "5 Görsel Slot Türü ile Randevu Kaydı",
+                "description": "Her zaman slotu, durumunu belirli bir renkle gösterir: müsait, rezerve edilmiş, personel molası veya erişilemez. Uyarı ile mola sınırını aşmak için esnek randevu kaydı imkanı."
+            }
+        ],
+        "cycle_title": "Bir Randevunun Kayıttan Mutabakata Tam Döngüsü",
+        "cycle_items": [
+            {
+                "title": "Onay Bekliyor",
+                "description": "İlk kayıt — henüz onaylanmadı. Zorunlu iptal nedeni kaydı ile onaylama veya iptal etme imkanı. Kaynak belirtilir: telefon veya yüz yüze."
+            },
+            {
+                "title": "Onaylandı → Salonda",
+                "description": "Onaydan sonra müşteri salona gelir. Resepsiyon durumu \"Salonda\" olarak değiştirir."
+            },
+            {
+                "title": "Devam Ediyor → Tamamlandı",
+                "description": "Hizmet devam ediyor. Tamamlandığında durum \"Tamamlandı\" olarak değişir. İndirim, bahşiş, ekip komisyonu ve bölünmüş ödeme kaydı ile mutabakat sayfası açılır."
+            },
+            {
+                "title": "İptal Edildi",
+                "description": "Randevu, herhangi bir aşamada (tamamlanan hariç) iptal nedeni ve iptal eden kişi kaydedilerek iptal edilebilir. İptal edilen randevu, slot hesaplamalarında dikkate alınmaz."
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: Haftanın En Yoğun Günü, Karmaşa Olmadan",
+        "scenario": "Cumartesi öğle ve salon en yoğun gününü yaşıyor. Telefon sürekli çalıyor: \"Bu akşam için boş zamanınız var mı?\", \"Pazartesi günü X hanım gelebilir mi?\". Geleneksel yöntemde, resepsiyonist defteri karıştırmalı, personelle koordine olmalı ve yine de hata olasılığı yüksektir. Zimo'da, resepsiyonist müşterinin adını arar, hizmeti ve personeli seçer ve 7 katmanlı sistem anında gerçek slotları 5 renkle gösterir. Birkaç tıklama ve randevu kaydedilir — karmaşa yok, hata yok. Onay ve hatırlatma SMS'i de müşteriye gönderilir.",
+        "comparison_title": "Geleneksel Yöntemle Karşılaştırma",
+        "comparison_headers": [
+            "Özellik",
+            "Geleneksel Yöntem (Telefon / Defter)",
+            "Zimo Akıllı Randevu Sistemi"
+        ],
+        "comparison_rows": [
+            [
+                "Randevu Kayıt Hızı",
+                "Birkaç dakika — defter arama, hata olasılığı",
+                "30 saniyeden az — otomatik onay ile birkaç tıklama"
+            ],
+            [
+                "Randevu Çakışma Olasılığı",
+                "Yüksek — eşzamanlı kayıtta insan hatası",
+                "Sıfıra yakın — 7 katmanlı doğrulama sistemi"
+            ],
+            [
+                "Müşteriye Randevu Hatırlatma",
+                "Manuel ve düzensiz — genellikle unutulur",
+                "Otomatik — 3 aşamalı SMS"
+            ],
+            [
+                "İzin ve Devamsızlık Yönetimi",
+                "Manuel — unutkanlığa ve hataya açık",
+                "Akıllı — slotların otomatik kaldırılması ve randevulara etki uyarısı"
+            ],
+            [
+                "Randevu Yönetimine Harcanan Süre",
+                "Günde saatler — defter ve telefonla manuel koordinasyon",
+                "Birkaç dakika — renkli slotlarla hızlı kayıt"
+            ]
+        ],
+        "benefits_title": "Akıllı Randevu Sisteminin Temel Faydaları",
+        "benefits": [
+            {
+                "title": "Zamandan %80 Tasarruf",
+                "description": "Telefon görüşmelerinde önemli azalma ve resepsiyonistin daha değerli işler için zaman kazanması. 7 katmanlı sistemle 30 saniyede randevu kaydı."
+            },
+            {
+                "title": "Müşteri Devamsızlığında %50 Azalma",
+                "description": "Üç aşamalı otomatik hatırlatma, gelmeme oranını en aza indirir."
+            },
+            {
+                "title": "5 Renkli Slot ve Esnek Randevu",
+                "description": "Her zaman diliminin durumunu farklı renklerle anlık görüntüleme. Uyarı ile mola sınırını aşmak için esnek randevu aktivasyonu."
+            },
+            {
+                "title": "Hızlı ve Hatasız Kayıt",
+                "description": "Defter, gereksiz telefon görüşmesi ve manuel hesaplama gerektirmeden birkaç tıklamayla randevu kaydı."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Telefon ve yüz yüze randevu kaydı aynı takvimde yapılabiliyor mu?",
+                "a": "Evet. Tüm randevular — telefon ve yüz yüze — tek bir takvimde kaydedilir. 7 katmanlı sistem her türlü çakışmayı önler."
+            },
+            {
+                "q": "Personel izinli veya devamsız olursa ne olur?",
+                "a": "İzin veya devamsızlık kaydedildiğinde, o zaman aralığı tamamen kullanılamaz hale gelir. İzin onaylanırken, etkilenen randevu sayısı yöneticiye bildirilir."
+            },
+            {
+                "q": "Esnek randevu alma imkanı var mı?",
+                "a": "Evet. Ayarlarda \"Esnek Rezervasyon\" seçeneğini aktif ederek, mola veya kapanış saatini biraz aşan slotlar \"Uyarı\" etiketiyle seçilebilir hale gelir."
+            },
+            {
+                "q": "Hatırlatma SMS'i otomatik gönderiliyor mu?",
+                "a": "Evet. Sistem üç aşamada SMS gönderir: randevu onayı, 24 saat önce hatırlatma ve randevudan 2 saat önce hatırlatma — resepsiyonist müdahalesi gerekmez."
+            }
+        ]
+    },
+    "feature_branches": {
+        "breadcrumb_current": "Şube Yönetimi",
+        "title": "Her Şube Bağımsız; <br class=\"hidden md:block\"> Hepsinin Yönetimi Tek Platformda",
+        "description": "Zimo, salon şubelerinizi tamamen ayrı ayrı tanımlamanıza olanak tanır — temel bilgilerden özel çalışma saatlerine, farklı ödeme modelleriyle personel atamasına kadar. Her şubenin kendi bağımsız yapısı vardır, ancak hepsi tek bir platformda yönetilir. Tek tıkla şubeler arası geçiş imkanı.",
+        "image_alt": "Zimo Şube Yönetimi",
+        "section_1_title": "Şube Yapınızı Profesyonelce Tanımlayın",
+        "section_1_desc": "Güzellik salonunuzu birden fazla şubeye yaymak yeni zorluklar getirir. Her şubenin farklı çalışma saatleri, ayrı personel ve hizmetleri vardır. Geleneksel yöntemde, her şubenin ayrı bir defteri, ayrı bir sistemi ve ayrı bir muhasebecisi vardı. Zimo bu dengeyi kurar: her şube bağımsız çalışır, ancak hepsi tek bir kontrolde yönetilir.",
+        "capabilities_title": "Zimo'da Şube Yönetimi Özellikleri",
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Temel Bilgiler ve Şube Kimliği",
+                "description": "Tam konum ve iletişim bilgileriyle her şube için ayrı kimlik tanımlama. Her şubenin kendi özel kodu ve bağımsız durumu vardır."
+            },
+            {
+                "number": "02",
+                "title": "Her Gün İçin Özel Çalışma Saatleri",
+                "description": "Haftanın her günü (Pazartesi'den Pazar'a) için şube açılış ve kapanış saatlerinin hassas tanımı. Haftalık tatil günleri kaydedilebilir."
+            },
+            {
+                "number": "03",
+                "title": "Özel Tatiller ve Özel Günler",
+                "description": "Resmî tatillerin, kuruluş yıldönümlerinin veya özel günlerin şube takvimine kaydedilmesi. Bu günler rezervasyon için tamamen bloke edilir."
+            },
+            {
+                "number": "04",
+                "title": "Farklı Ödeme Modeliyle Personel Ataması",
+                "description": "Her personel, rolü (yönetici, stilist, resepsiyon), ödeme modeli (yüzdelik, sabit maaş, saatlik, karma) ve belirlenmiş komisyon yüzdesi ile şubeye atanır."
+            },
+            {
+                "number": "05",
+                "title": "Her Şube İçin Özel Fiyatlandırma",
+                "description": "Hizmet fiyatları şubeye göre farklılık gösterebilir. Şube fiyatı tanımlanmamışsa, hizmetin temel fiyatı kullanılır."
+            },
+            {
+                "number": "06",
+                "title": "Şubeler Arası Geçiş",
+                "description": "Tek tıkla şubeler arasında geçiş yapın veya \"Tüm Şubeler\" görünümünü seçin. Tüm sayfalar, randevular ve raporlar seçili şubeye göre filtrelenir."
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: İki Şube, İki Farklı Program",
+        "scenario": "Salonunuzun iki şubesi var: biri şehir merkezinde 09:00 - 22:00 (Cumartesi'den Perşembe'ye) çalışma saatleriyle, diğeri varoşlarda 10:00 - 20:00 (Cumartesi'den Cuma'ya) çalışma saatleriyle. Merkez şube için resmî tatilleri ve kuruluş yıldönümünü de kaydettiniz. Personel, her şubeye farklı ödeme modelleriyle atanmış: bazıları A şubesinde %40 saf komisyon, B şubesinde sabit maaş + %20 komisyon. Zimo ile tüm bu ayarları tek bir platformda yaparsınız. Tek yapmanız gereken üst menüden şubeyi değiştirmek, her şey o şubeye göre görüntülenecektir.",
+        "benefits_title": "Yapılandırılmış Yönetimin Faydaları",
+        "benefits": [
+            {
+                "title": "Şubelerin Operasyonel Bağımsızlığı",
+                "description": "Her şubenin kendi personeli, çalışma saatleri, hizmetleri ve finansal kasası vardır. Genel düzeyde ortak veriler ve her şube için bağımsız veriler."
+            },
+            {
+                "title": "Hızlı Bağlam Değiştirme",
+                "description": "Tek tıkla şubeler arasında geçiş yapın. Zimo, seçiminizi iş oturumu sonuna kadar hatırlar."
+            },
+            {
+                "title": "Esnek Personel Ataması",
+                "description": "Bir personel, A şubesinde yönetici ve B şubesinde stilist olabilir. Komisyon yüzdesi ve ödeme modeli şubeye göre farklılık gösterir."
+            },
+            {
+                "title": "Randevu Çakışmasını Önleme",
+                "description": "Sistem, tatil günlerinde veya her şubenin çalışma saatleri dışında randevu kaydedilmesini engeller. Şube devre dışı bırakılırsa, önceden kaydedilmiş randevular geçerli kalır."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Her şubenin ayrı çalışma saatleri var mı?",
+                "a": "Evet. Her şube için haftanın her günü ayrı ayrı açılış ve kapanış saatleri tanımlanır. Haftalık tatil günleri ve özel tatiller de ayrıdır."
+            },
+            {
+                "q": "Personel birden fazla şubede farklı rollerle çalışabilir mi?",
+                "a": "Evet. Bir personel A şubesinde yönetici ve B şubesinde stilist olabilir. Ancak bir şubede yalnızca bir role sahip olabilir."
+            },
+            {
+                "q": "Birden fazla şube yönetmek için ayrı hesap almam gerekir mi?",
+                "a": "Hayır. Tüm şubeler tek bir Zimo hesabında yönetilir. Panelin üst menüsünden şube seçerek her şey o şubeye göre görüntülenir."
+            }
+        ]
+    },
+    "feature_finance": {
+        "breadcrumb_current": "Akıllı Finans ve Mutabakat",
+        "title": "Şeffaf Finansal Yönetim; Anında Mutabakat, Sıfır Fark",
+        "description": "Güzellik salonunuzun karmaşık muhasebe formüllerini Zimo'ya bırakın. Benzersiz numaralı otomatik fatura düzenleme, bölünmüş ödeme kaydı (nakit + kart + puan), tanımlı yüzdelere göre anlık komisyon hesaplama, akıllı dağıtımla bahşiş yönetimi ve otomatik mutabakat ile kasa kapatma. Her şey şeffaf, doğru ve anlık hesaplanır.",
+        "image_alt": "Zimo Finans",
+        "section_1_title": "Güzellik Salonlarının Finansal Zorluklarını Sonsuza Dek Unutun",
+        "section_1_desc": "Güzellik salonu yöneticilerinin en büyük endişelerinden biri, finansal işlemlerin doğru yönetimidir. Karmaşık yüzdelere göre personel payının hesaplanması, bahşişin doğru dağıtımı, sarf malzemesi maliyetlerinin düşülmesi, avansların yönetimi ve günlük hesapların kapatılması. Bu alandaki küçük hatalar, personel memnuniyetsizliğine, ciddi anlaşmazlıklara ve mali kayıplara yol açabilir. Zimo, finansal süreçlerin tam otomasyonu ile işletmenize %100 şeffaflık kazandırır.",
+        "steps_title": "Fatura Düzenlemeden Nihai Mutabakata — Adım Adım",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Şeffaf Durumlarla Akıllı Fatura Düzenleme",
+                "description": "Hizmet tamamlandıktan hemen sonra, benzersiz numaralı fatura düzenlenir. Satır kalemleri: hizmet, indirim, vergi (ayarlanabilir), bahşiş ve ödemeler. Durumlar: Taslak → Ödeme Bekliyor → Ödendi → İade Edildi."
+            },
+            {
+                "number": "02",
+                "title": "Bölünmüş Ödeme (Split Payment)",
+                "description": "Müşteri tutarı birden fazla yöntemle ödeyebilir: kısmen nakit, kısmen kart, kalanı sadakat puanı ile. RRN, terminal numarası ve kartın son 4 hanesinin otomatik kaydı. Tüm ödemeler aktif kasa vardiyasına bağlanır."
+            },
+            {
+                "number": "03",
+                "title": "Katalogdan veya Manuel İndirim",
+                "description": "Yüzdelik veya sabit tutar olarak indirim. Her faturada hangi indirimin uygulanacağını belirtirsiniz. Basit ve karmaşasız."
+            },
+            {
+                "number": "04",
+                "title": "Akıllı Dağıtımla Bahşiş",
+                "description": "Üç dağıtım yöntemi: bireysel (bir personele), yüzdelik dağıtım (kalan algoritması ile birden fazla personele), ortak havuz (Pool). Ödeme yöntemi: nakit, kartlı veya fatura içinde."
+            },
+            {
+                "number": "05",
+                "title": "Komisyon ve Gelir Tanıma",
+                "description": "Komisyon, personelin şubeye atanmasında tanımlanan yüzdeye göre hesaplanır. Komisyon matrahı: kalem tutarı - malzeme maliyeti - indirim payı. Gelir tanıma, faturanın tamamen ödenmesinden sonra yapılır."
+            },
+            {
+                "number": "06",
+                "title": "Kasa Vardiyaları ve Defteri Kebir",
+                "description": "Tüm nakit ödemeler aktif kasa vardiyasına bağlanır. Vardiya sonunda Zimo beklenen bakiyeyi hesaplar ve gerçek bakiye ile karşılaştırır — farkları anında gösterir. Tüm olaylar kasa raporunda kaydedilir."
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: Hafta Sonu Yoğunluğunda Mutabakat",
+        "scenario": "Cuma akşamı, salon müşteri dolu. Keratin tedavisinden sonra bir müşteri, 6.000 TL'yi 3.000 TL nakit ve 3.000 TL kartla ödemek ve stilist için 500 TL bahşiş bırakmak istiyor. Operatör, mutabakat sayfasında nakit tutarı aktif kasa vardiyasına kaydeder, kart tutarını terminal bilgileriyle girer, bahşişi kaydeder — hepsi tek sayfada ve birkaç tıklamayla. Benzersiz numaralı fatura düzenlenir. Kasa ve personel cüzdanı otomatik olarak güncellenir. Gecenin sonunda yönetici vardiyayı kapatır ve sıfır farkı onaylar.",
+        "benefits_title": "Zimo Finans Sisteminin Faydaları",
+        "benefits": [
+            {
+                "title": "%100 Şeffaflık",
+                "description": "Personel anlık kazancını kişisel panelinde görür. Tüm ayrıntılarıyla fatura. Ay sonu tartışmalarının ve hesaplama belirsizliklerinin sonu."
+            },
+            {
+                "title": "Analize Hazır Detaylı Raporlar",
+                "description": "Brüt satış, tahsilat, iade, net satış, alacaklar, ortalama fatura, son 30 günlük günlük satış trendi ve ödeme yöntemi dağılımı."
+            },
+            {
+                "title": "Yönetim Zamanından Tasarruf",
+                "description": "Finansal hesaplamaların (komisyon, bahşiş, indirim, vergi) otomasyonu, yöneticinin saatlerce zamanını boşa çıkarır. Günlük kasa kapatma dakikalar içinde."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Salonun sabit giderleri (kira, faturalar) da kaydediliyor mu?",
+                "a": "Evet. Giderler bölümünde tüm sabit ve değişken giderleri kaydedebilirsiniz."
+            },
+            {
+                "q": "Para iadesi (refund) mümkün mü?",
+                "a": "Evet. İade süreci 4 aşamada gerçekleşir: Talep → Onay → Tamamlama → Kasa defterine kayıt. Nakit, kartlı veya kredi olarak tam veya kısmi iade. Personel komisyonu otomatik olarak geri alınır."
+            },
+            {
+                "q": "Her personelin komisyon yüzdesi nasıl belirleniyor?",
+                "a": "Komisyon yüzdesi, personelin şubeye atanmasında tanımlanır. Ayrıca her hizmet için personel başına özel komisyon da tanımlayabilirsiniz."
+            }
+        ]
+    },
+    "feature_loyalty": {
+        "breadcrumb_current": "Müşteri Sadakat Kulübü",
+        "title": "Akıllı Müşteri Sadakat Kulübü; Müşteri Geri Dönüş Oranında %40 Artış",
+        "description": "Zimo'nun çok seviyeli sadakat sistemi ile geçici müşterileri sadık danışanlara dönüştürün. Normal veya seviyelendirilmiş (Bronz → Gümüş → Altın) özel puan katsayılı sadakat programları. Kademeli son kullanma mantığıyla akıllı puanlama.",
+        "image_alt": "Zimo Sadakat Kulübü",
+        "section_1_title": "Mevcut Müşterilere Yatırım; Salonunuzun Sürdürülebilir Büyümesinin Anahtarı",
+        "section_1_desc": "Yeni bir müşteri kazanmanın, mevcut bir müşteriyi tutmaktan 5 ila 25 kat daha maliyetli olduğunu biliyor muydunuz? Rekabetçi güzellik salonu pazarında, bir sadakat stratejisine sahip olmak rekabetçi bir zorunluluktur. Kendilerine değer verildiğini hisseden müşteriler yalnızca geri gelmekle kalmaz, salonunuzu arkadaşlarına da tavsiye eder. Zimo, müşteri davranışlarını analiz etmenize ve her kategori için özel ödüller tanımlamanıza yardımcı olur.",
+        "steps_title": "Zimo Müşteri Sadakat Kulübünün Çalışma Şekli",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Normal veya Seviyelendirilmiş Sadakat Programı",
+                "description": "Tanımlanabilir iki tür program: tüm müşteriler için aynı puan oranına sahip normal veya her seviyede farklı puan oranına sahip seviyelendirilmiş. Puan hesaplama tabanını kendiniz belirlersiniz."
+            },
+            {
+                "number": "02",
+                "title": "Özel Avantajlarla Üyelik Seviyeleri",
+                "description": "Belirli yükseltme koşullarıyla farklı seviyeler tanımlama. Üst seviyeler daha yüksek puan katsayısına sahiptir ve her seviye için hoş geldin puanı ve özel avantajlar ayarlanabilir."
+            },
+            {
+                "number": "03",
+                "title": "Kademeli Son Kullanma Mantığıyla Puanlama",
+                "description": "Her puanın ayrı bir son kullanma tarihi vardır ve en eski puanlar önce sona erer. Puanların süresi dolmadan müşteriye hatırlatma gönderilir."
+            },
+            {
+                "number": "04",
+                "title": "Anlılık Bakiye ile Puan İşlemleri",
+                "description": "Altı tür işlem: puan kazanma, kullanma, süre sonu, manuel düzeltme, ödül ve arkadaş tavsiyesi. Her işlemden sonra anlık bakiye hesaplanır."
+            },
+            {
+                "number": "05",
+                "title": "Akıllı Limitle Mutabakat Sırasında Puan Kullanımı",
+                "description": "Müşteri, mutabakat sırasında puanlarını kullanabilir. Sistem, kullanılabilecek maksimum puanı akıllıca hesaplar ve bakiyeden fazla kullanım mümkün değildir."
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: Pasif Müşterileri Geri Kazanma",
+        "scenario": "Ayda bir gelen düzenli müşterilerinizden biri 45 gündür salona gelmemiş. Zimo sistemi bu müşteriyi otomatik olarak tespit eder. Önceden bir kampanya tanımladınız: \"Pasif müşterilere %20 indirim hediyesi SMS'i gönder.\" Sistem anında SMS'i kişiselleştirir ve gönderir: \"Merhaba Ayşe! Seni özledik. Senin için %20 indirimli özel bir sürprizimiz var. Kaçırma!\" Sonuç: Müşteri geri döner ve müşteri geri dönüş oranı %40 artar.",
+        "benefits_title": "Müşteri Sadakat Kulübünün Faydaları",
+        "benefits": [
+            {
+                "title": "%40 Geri Dönüş Oranı Artışı",
+                "description": "Müşteriler puanlarını harcamak veya özel ödüller almak için düzenli olarak geri döner. Hoş geldin puanları ve tavsiye ödülleri geri dönüş için ek motivasyon sağlar."
+            },
+            {
+                "title": "Hedefli ve Etkili Reklam",
+                "description": "Yalnızca ihtiyacı olan müşterilere özel teklifler gönderme. Doğum günü, yıldönümü ve süre sonu hatırlatma SMS'leri."
+            },
+            {
+                "title": "Ağızdan Ağıza Referans Sistemi",
+                "description": "Mutlu müşteriler en iyi pazarlama aracıdır. Sadakat kulübü özellikleriyle müşteriler markanızın elçilerine dönüşür."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Puanların son kullanma tarihi var mı?",
+                "a": "Evet. Puanların kaç gün sonra sona ereceğini siz belirlersiniz. Puanlar kademeli olarak sona erer ve son kullanmadan 30 gün önce hatırlatma gönderilir."
+            },
+            {
+                "q": "Sadakat seviyeleri kişiselleştirilebilir mi?",
+                "a": "Kesinlikle. Seviye adlarını, yükseltme koşulunu, puan katsayısını, hoş geldin puanını ve özel avantajları siz tanımlarsınız."
+            }
+        ]
+    },
+    "feature_payroll": {
+        "breadcrumb_current": "Personel Maaş ve Cüzdanı",
+        "title": "Tek Tıkla Maaş Mutabakatı; Tam Şeffaflık, Çifte Motivasyon",
+        "description": "Zimo'nun akıllı mutabakat sistemi, tüm komisyonları, bahşişleri, avansları, cezaları ve kredi taksitlerini otomatik olarak hesaplar. Tam döngü: Taslak → İnceleme → Onay → Anlık Görüntü ile Kilitleme → Ödeme. Tek tıkla mutabakat dönemi oluşturun, sistem tüm gelir olaylarını toplar. Her personel anlık kazancını dijital cüzdanında görür. Excel ve hesap makinesine veda edin.",
+        "image_alt": "Zimo Personel Paneli",
+        "section_1_title": "Finansal Şeffaflık; Güzellik Salonunda Güvenin Direği",
+        "section_1_desc": "İnsan kaynakları yönetiminin en büyük zorluklarından biri, finansal tartışmalar ve komisyon hesaplamalarıdır. Her ay, personel hesaplarını kapatmak için çok zaman ve enerji harcanır — ve yine de belirsizlikler vardır. \"Bu ay benim payım neden az?\", \"Falan müşterinin bahşişini ben mi aldım yoksa resepsiyonist mi?\", \"Aldığım avans hesabımdan düşüldü mü?\" Zimo, her personel için dijital cüzdan sağlayarak bu belirsizliği tamamen ortadan kaldırır. Her stilist, kişisel panele girerek tüm finansal detaylarını anında görür: günlük kazanç, her hizmetin komisyonu, bahşişler, kesintiler ve nihai bakiye.",
+        "steps_title": "Tam Maaş Mutabakat Döngüsü — Taslaktan Bordroya",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Çakışmasız Mutabakat Dönemi Tanımlama",
+                "description": "Belirli bir zaman aralığı ile dönem oluşturun. Her şube için dönemler çakışmasızdır. Yalnızca açık dönemler düzenlenebilir ve mutabakat oluşturulabilir."
+            },
+            {
+                "number": "02",
+                "title": "Olayların Otomatik Toplanması",
+                "description": "Sistem tüm gelir/kesinti kaynaklarını senkronize eder: hizmet komisyonları, bahşiş dağıtımı, sabit maaş (aylık hesaplama), saatlik ücret (onaylı mesai), gecikme ve devamsızlık cezaları, avanslar ve kredi taksitleri."
+            },
+            {
+                "number": "03",
+                "title": "İnceleme, Düzeltme ve Yeniden Oluşturma",
+                "description": "Taslak, incelemede veya onaylanmış durumlarda kayıtları inceleyebilir, manuel kalem ekleyebilir veya hesaplamaları yeniden oluşturabilirsiniz. Kaynaklardaki her değişiklik anında mutabakata yansır."
+            },
+            {
+                "number": "04",
+                "title": "Kilitleme ve Anlık Görüntü",
+                "description": "Son incelemeden sonra mutabakatı kilitlersiniz. Sistem, ayarların, olayların ve hesaplamaların anlık görüntüsünü alır. Kilitlendikten sonra mutabakat değiştirilemez ve mutabakatı yapılan kaynaklar işaretlenir."
+            },
+            {
+                "number": "05",
+                "title": "Ödeme Kaydı ve Maaş Bordrosu",
+                "description": "Ödeme yöntemini seçin ve mutabakatı sonlandırın. Her personel için gelirler, kesintiler ve net ödemenin tüm ayrıntılarını içeren maaş bordrosu düzenlenir."
+            },
+            {
+                "number": "06",
+                "title": "Avans, Kredi ve Otomatik Taksitler",
+                "description": "Avans ve kredilerin otomatik taksitlerle kaydı. Sistem, ödenmemiş avansları ve vadesi gelmiş taksitleri mutabakat sırasında maaş kesintisi olarak uygular."
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: Stressiz Ay Sonu",
+        "scenario": "30 Haziran, mutabakat zamanı. Finans müdürü Haziran mutabakat dönemine girer ve \"Mutabakat Oluştur\"a tıklar. Sistem anında tüm olayları toplar: %35 komisyonla 28 tamamlanmış randevu, dağıtılmış 1.200 TL bahşiş, onaylanmış 180 saat mesai (cezalı 2 gün devamsızlıkla), 5.000 TL avans ve 3 kredi taksiti. Yeni bir stilist için asgari garanti devreye girer ve 2.000 TL tamamlayıcı tutar ekler. Yönetici inceler, onaylar ve kilitler. Tüm bunlar 15 dakikada, hatasız ve tek bir telefon görüşmesi olmadan.",
+        "benefits_title": "Personel Paneli Faydaları",
+        "benefits": [
+            {
+                "title": "Daha Fazla Motivasyon ve Verimlilik",
+                "description": "Dijital cüzdanda ödüllerin ve günlük kazancın anlık görüntülenmesi, olumlu rekabet ruhu yaratır. Her stilist bugün ne kadar kazandığını bilir."
+            },
+            {
+                "title": "Anlaşmazlıkların Tamamen Ortadan Kalkması",
+                "description": "Komisyon, bahşiş, kesinti ve avans hesaplamalarında %100 şeffaflık = ay sonu tekrarlayan tartışmaların sonu. Her şey cüzdanda görülebilir."
+            },
+            {
+                "title": "Güvenlik ve Gizlilik",
+                "description": "Her personel yalnızca kendi cüzdan bilgilerine erişebilir. Banka hesap bilgileri (hesap no, kart no, IBAN) şifrelenmiş olarak saklanır."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Mutabakat kilitlendikten sonra değişiklik yapılabilir mi?",
+                "a": "Kilitlendikten sonra mutabakat değiştirilemez. Değişiklik yapmak için bir sonraki dönemde düzeltici bir mutabakat oluşturmanız gerekir. Ayrıca, kilitleme anındaki durumun anlık görüntüleri saklanır."
+            },
+            {
+                "q": "Asgari gelir garantisi ne anlama geliyor?",
+                "a": "Bir personelin toplam geliri garanti edilen asgari tutarın altındaysa, sistem farkı tamamlayıcı tutar olarak mutabakata ekler."
+            },
+            {
+                "q": "Devamsızlık maaşı nasıl etkiler?",
+                "a": "Onaylanan mesai saatleri saatlik ücrete dönüştürülür. Gecikme ve devamsızlık cezaları da otomatik olarak mutabakattan düşülür."
+            }
+        ]
+    },
+    "feature_reporting": {
+        "breadcrumb_current": "Yönetim Raporları",
+        "title": "Akıllı Veri Analizi; Tahmine Değil, Gerçeğe Dayalı Kararlar",
+        "description": "Zimo yönetim panelleri, ham günlük verileri stratejik bilgilere dönüştürür. Anlık satış, personel performansı, hizmet popülerliği, müşteri davranışı ve geri dönüş oranı — görsel ve dışa aktarılabilir grafikler halinde. Anlık KPI'larla özel paneller ve yetki tabanlı erişim. Artık belirsizlik içinde karar vermeyin.",
+        "image_alt": "Zimo Yönetim Raporlaması",
+        "section_1_title": "İş Zekası Güzellik Salonunuzun Hizmetinde",
+        "section_1_desc": "Bir güzellik salonunu doğru istatistikler olmadan yönetmek, geceleri farsız araba kullanmaya benzer. Salonunuzun kârlı olduğunu düşünebilirsiniz, ancak maliyetleri, müşteri geri dönüş oranını ve personel verimliliğini analiz etmeden gizli zayıf noktaları belirleyemezsiniz. Belirli bir hizmet en çok satışa sahip olabilir ancak düşük kârlılığa sahip olabilir. VIP müşterileriniz siz fark etmeden kayboluyor olabilir. Zimo'nun raporlama sistemi bu bilgi boşluğunu doldurur.",
+        "dashboards_title": "Akıllı Yönetim İçin Özel Paneller",
+        "dashboards": [
+            {
+                "number": "01",
+                "title": "Genel Görünüm (Overview)",
+                "description": "Salon performansının tek bakışta özeti; satış, randevular, yeni müşteriler ve sadakat durumu"
+            },
+            {
+                "number": "02",
+                "title": "Randevu Raporu",
+                "description": "Kayıttan tamamlama veya iptale kadar randevu durum analizi, kaynak ve durum istatistikleri"
+            },
+            {
+                "number": "03",
+                "title": "Finansal Rapor",
+                "description": "Günlük trend ve ödeme yöntemleriyle birlikte temel satış, tahsilat ve alacak göstergeleri"
+            },
+            {
+                "number": "04",
+                "title": "Personel Raporu",
+                "description": "Satış, randevu sayısı, bahşiş ve sarf malzemesi maliyetine göre personel performans karşılaştırması"
+            },
+            {
+                "number": "05",
+                "title": "Sadakat Raporu",
+                "description": "Görsel grafiklerle üye durumu ve puan işlemleri"
+            },
+            {
+                "number": "06",
+                "title": "Yetki Tabanlı Erişim",
+                "description": "Her panel ve KPI'nın ayrı izni vardır; yönetici tam erişim, operatör sınırlı erişim"
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: Anlık Verilerle Satış Düşüşünü Tespit Etme",
+        "scenario": "Bir zincir salon yöneticisi genel görünüm paneline girer. Merkez şube için randevu tamamlama oranı widget'ı %62'yi gösteriyor — oysa geçen ayki ortalama %85'ti. Tek tıklamayla randevu raporuna girer ve grafiği görür: %23 iptal! Grafikteki kaynak dağılımını incelediğinde, iptal edilen randevuların %70'inin telefon kaynaklı olduğunu fark eder. Şubeyi arayarak, resepsiyon telefonunun iki gündür arızalı olduğunu öğrenir. Sorun hemen çözülür — veriler olmasaydı, belki ay sonuna kadar fark edilmeyecekti.",
+        "benefits_title": "Raporlama Sisteminin Faydaları",
+        "benefits": [
+            {
+                "title": "Altın Fırsatları Belirleme",
+                "description": "Hedefli yatırım için yüksek kârlı hizmetleri, yıldız personeli ve sadık müşterileri keşfedin."
+            },
+            {
+                "title": "Gizli Kayıpları Önleme",
+                "description": "Satış düşüşü, müşteri kaybı veya personel verimliliğinde azalmayı — iş işten geçmeden — erken tespit edin."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Raporlar anlık olarak güncelleniyor mu?",
+                "a": "Evet. Her faturanın mutabakatından hemen sonra tüm grafikler ve istatistikler anında güncellenir. Dünün değil, anlık verileri görürsünüz."
+            },
+            {
+                "q": "Rapor aralığı ne kadar?",
+                "a": "Tüm paneller geçerli ayı gösterir. Günlük satış grafiği son 30 günü kapsar. Zaman aralığını kişiselleştirmek için gelişmiş filtreler mevcuttur."
+            },
+            {
+                "q": "Operatörler de raporlara erişebiliyor mu?",
+                "a": "Operatörler varsayılan olarak erişemez. Her panel ve KPI'nın yönetici tarafından ayarlanabilen ayrı bir izni vardır."
+            }
+        ]
+    },
+    "feature_security": {
+        "breadcrumb_current": "Güvenlik",
+        "title": "Müşteri Gizliliği ve Veri Güvenliği; Zimo'nun Sürekli Taahhüdü",
+        "description": "Müşteri bilgileriniz ve salonunuzun finansal verileri bizde en güvenli şekilde saklanır. Gelişmiş şifreleme, rol tabanlı erişim, günlük yedekleme ve güvenlik standartlarına uyum. Zimo, çok katmanlı güvenlik mimarisi ile verilerinizin gizliliği ve bütünlüğü konusunda size gönül rahatlığı sağlar.",
+        "image_alt": "Zimo Güvenlik",
+        "section_1_title": "Güvenlik Bir Seçenek Değil; Bir Zorunluluktur",
+        "section_1_desc": "Zimo'da güvenliği, sistem mimarimizin farklı katmanlarına yerleştirdik. Kullanıcı girişinden sunucuda veri depolamaya kadar her aşama yüksek güvenlik özeniyle tasarlanmıştır. Bize güveniyorsunuz — biz de bu güveni en yüksek güvenlik standartlarıyla karşılıyoruz.",
+        "layers_title": "Zimo Güvenlik Katmanları",
+        "layers": [
+            {
+                "number": "01",
+                "title": "Veri Şifreleme",
+                "description": "Veritabanındaki tüm hassas veriler gelişmiş algoritmalarla şifrelenir. Müşteri bilgileri en üst düzey güvenlikte saklanır."
+            },
+            {
+                "number": "02",
+                "title": "Rol Tabanlı Erişim (RBAC)",
+                "description": "Çok katmanlı kimlik doğrulama ve yetkilendirme sistemi. Her kullanıcı yalnızca salon yöneticisinin tanımladığı verilere ve özelliklere erişebilir. Operatör finansal raporlara erişemez."
+            },
+            {
+                "number": "03",
+                "title": "Otomatik Günlük Yedekleme",
+                "description": "Sistem, tüm verilerin otomatik olarak günlük yedeğini alır. Herhangi bir sorun durumunda, veriler en kısa sürede geri yüklenir."
+            },
+            {
+                "number": "04",
+                "title": "Tek Kullanımlık Şifre (OTP)",
+                "description": "Şifre girerek giriş yapma seçeneğinin yanı sıra SMS ile gönderilen tek kullanımlık şifre ile panele giriş."
+            },
+            {
+                "number": "05",
+                "title": "Güvenli Yönlendirme ve HTTPS",
+                "description": "Kullanıcı tarayıcısı ile sunucu arasındaki tüm iletişim HTTPS protokolü ve SSL sertifikası ile şifrelenir. Yolda hiçbir veri dinlenemez."
+            },
+            {
+                "number": "06",
+                "title": "Tam Aktivite Günlüğü",
+                "description": "Tüm kullanıcı aktiviteleri kaydedilir ve saklanır. Salon yöneticisi, hassas verilere erişimin tam geçmişini inceleyebilir."
+            }
+        ],
+        "benefits_title": "Güvenlik Garantileri",
+        "benefits": [
+            {
+                "title": "Gizliliğin Korunması",
+                "description": "Müşterilerin kişisel bilgileri asla üçüncü taraflarla paylaşılmaz."
+            },
+            {
+                "title": "Standartlara Uygunluk",
+                "description": "Zimo'nun güvenlik mimarisi, uluslararası veri güvenliği standartlarına göre tasarlanmıştır."
+            }
+        ]
+    },
+    "feature_marketing_crm": {
+        "breadcrumb_current": "Pazarlama",
+        "title": "Müşterilerinizi Tanıyın, Onlarla İletişime Geçin ve Sadık Hale Getirin",
+        "description": "Zimo sadece bir salon yönetim sistemi değildir. Kalbinde, tüm müşteri verilerinizi tek bir yerde toplayan güçlü bir CRM bulunur. Ziyaret geçmişinden rezervasyonlara, zevklerden önemli günlere kadar. Entegre pazarlama araçlarıyla hedefli kampanyalar yürütebilir, sadık müşterileri belirleyebilir ve geri dönüş oranını önemli ölçüde artırabilirsiniz.",
+        "image_alt": "Zimo Pazarlama CRM",
+        "section_1_title": "Her Müşteri Eksiksiz Bir Profil; İlk Temastan Son Rezervasyona",
+        "section_1_desc": "Telefon görüşmesi veya yüz yüze başvuru yoluyla yeni bir müşteri kaydedildiğinde, Zimo otomatik olarak onun için eksiksiz bir profil oluşturur. Bu profil; iletişim bilgileri, randevu geçmişi, alınan hizmetler, ödenen tutarlar, sadakat puanları, zevkler, özel günler (doğum günü, evlilik yıldönümü) ve hatta personel notlarını içerir. Bu bilgilerle her müşteri için kişiselleştirilmiş bir deneyim sunabilirsiniz.",
+        "tools_title": "Entegre Pazarlama Araçları",
+        "tools": [
+            {
+                "number": "01",
+                "title": "Hedefli SMS Kampanyası",
+                "description": "Belirli müşteri gruplarına SMS gönderme: sadık müşteriler, bir aydan uzun süredir gelmeyenler, özel günler. Her kampanyanın geri dönüş oranı takibi..."
+            },
+            {
+                "number": "02",
+                "title": "Müşteri Segmentasyonu",
+                "description": "Müşterileri şu kriterlere göre sınıflandırma: ziyaret sayısı, rezervasyon tutarı, son ziyaret, popüler hizmet türü, sadakat puanı ve ziyaret edilen şube."
+            },
+            {
+                "number": "03",
+                "title": "İletişim Otomasyonu",
+                "description": "Otomatik gönderim: yeni müşterilere hoş geldin mesajı, randevu hatırlatma, doğum günü kutlaması ve belirli bir süre gelmeyenleri geri çağırma."
+            },
+            {
+                "number": "04",
+                "title": "VIP ve Kaybetme Riskindeki Müşterileri Belirleme",
+                "description": "Sistem, sadık müşterileri (VIP) otomatik olarak belirler ve kaybetme riski olan müşteriler için uyarı verir."
+            }
+        ],
+        "scenario_title": "Gerçek Senaryo: Pasif Müşterileri Geri Kazanma",
+        "scenario": "Zimo, 60 gündür gelmeyen müşterilerin listesini otomatik olarak hazırlar. Popüler hizmetleri için %20 indirim kodu içeren bir reklam SMS'i gönderirsiniz. Sonuç: Bu müşterilerin %35'i bir hafta içinde geri döner. Zimo, kampanyanın etkinliğini ölçmeniz için bu kampanyanın geri dönüş oranını size gösterir.",
+        "benefits_title": "CRM Faydaları",
+        "benefits": [
+            {
+                "title": "Geri Dönüş Oranında Artış",
+                "description": "Hedefli ve kişiselleştirilmiş iletişimle müşterileri salonunuza geri getirin."
+            },
+            {
+                "title": "Hedefli Kampanyalar",
+                "description": "Tüm müşterilere değil, belirli müşterilere mesaj gönderme. Pazarlama YG'sini artırın."
+            }
+        ]
+    },
+    "feature_staff_dashboard": {
+        "breadcrumb_current": "Personel Kişisel Paneli",
+        "title": "Her Personelin Kendi Kişisel Paneli Vardır; Randevulardan Maaşa",
+        "description": "Stilistleriniz, Zimo kişisel paneline girerek işleriyle ilgili tüm bilgileri tek bakışta görür: bugün ve yarının randevuları, anlık kazanç, komisyonlar, bahşişler, izinler ve maaş bordrosu. Yöneticiyi aramaya gerek yok, kafa karışıklığı yok. Herkes için tam finansal şeffaflık ve hassas iş planlaması.",
+        "image_alt": "Zimo Personel Kişisel Paneli",
+        "section_1_title": "Şeffaflık ve Anlık Bilgi ile Personeli Güçlendirme",
+        "section_1_desc": "Güzellik salonu personelinin en büyük sorunlarından biri, finansal şeffaflık eksikliği ve belirsiz planlamadır. Zimo, her personele kişisel bir panel sağlayarak bu sorunu çözer. Her stilist, hesabına giriş yaparak yöneticiye veya muhasebeciye danışmadan işiyle ilgili tüm detayları öğrenir. Bu şeffaflık, iş memnuniyetini artırır, işten ayrılmayı azaltır ve verimliliği iyileştirir.",
+        "sections_title": "Kişisel Panel Bölümleri",
+        "sections": [
+            {
+                "number": "01",
+                "title": "Randevu Takvimi",
+                "description": "Bugün ve yarının randevularını tüm detaylarıyla görüntüleme: müşteri adı, hizmet, başlangıç ve bitiş zamanı. Randevu onaylama veya iptal etme imkanı."
+            },
+            {
+                "number": "02",
+                "title": "Dijital Cüzdan",
+                "description": "Cüzdan bakiyesinin anlık gösterimi: toplam gelir, mutabakatı yapılmış ve bekleyen komisyonlar, bahşişler ve çekimler. Muhasebeciye ihtiyaç duymadan tam finansal şeffaflık."
+            },
+            {
+                "number": "03",
+                "title": "İzin ve Vardiya Programı",
+                "description": "Yönetici onayı ile bir günlük veya çok günlük izin talebi. Belirlenmiş vardiyaları ve erişilemezlik bloklarını görüntüleme. Resmî tatiller ve salon tatillerinden haberdar olma."
+            },
+            {
+                "number": "04",
+                "title": "Maaş Bordrosu ve Geçmiş",
+                "description": "Geçmiş dönemlerin maaş bordrosunu görüntüleme. Tam detay: temel maaş, komisyon, bahşiş, fazla mesai, kesintiler, cezalar ve kredi taksitleri."
+            }
+        ],
+        "benefits_title": "Kişisel Panel Faydaları",
+        "benefits": [
+            {
+                "title": "Finansal Şeffaflık",
+                "description": "Personel her zaman mali durumundan haberdardır. Yönetimle ilgili gerginlik ve tekrarlayan soruların azalması."
+            },
+            {
+                "title": "Bağımsızlık ve Öz Yönetim",
+                "description": "Personelin program ve kazanç bilgisi için yönetime olan bağımlılığının azalması."
+            }
+        ]
+    },
+    "feature_staff_performance": {
+        "breadcrumb_current": "Personel Performans Değerlendirmesi",
+        "title": "Personel Performansını Veriyle Ölçün, Zevkle Değil",
+        "description": "Zimo, hassas performans değerlendirme araçlarıyla hangi stilistin en çok satışı yaptığını, hangisinin daha yüksek verimliliğe sahip olduğunu ve kimin en fazla müşteri memnuniyetini sağladığını size gösterir. Personel kararlarınızı nesnel ve şeffaf verilere dayanarak alın. Tahmin ve kişisel yargılara veda edin.",
+        "image_alt": "Zimo Personel Performans Değerlendirmesi",
+        "section_1_title": "Size Karar Gücü Veren Performans Verileri",
+        "section_1_desc": "Zimo performans değerlendirme sistemi, tüm operasyonel verileri otomatik olarak toplar ve bunları temel performans göstergelerine (KPI) dönüştürür. Salon yöneticisi olarak bilgi toplamak için zaman harcamak yerine analiz ve iyileştirmeye odaklanabilirsiniz.",
+        "kpis_title": "Temel Değerlendirme Göstergeleri",
+        "kpis": [
+            {
+                "number": "01",
+                "title": "Satış ve Komisyon",
+                "description": "Her personelin hizmet bazında satış tutarı, elde edilen toplam komisyon ve ortalama günlük satış."
+            },
+            {
+                "number": "02",
+                "title": "Randevu Sayısı ve Verimlilik",
+                "description": "Belirli bir zaman aralığında her personel tarafından tamamlanan randevu sayısı. Randevu tamamlama ve iptal oranı. Benzer personel arasında verimlilik karşılaştırması."
+            },
+            {
+                "number": "03",
+                "title": "Bahşiş ve Müşteri Memnuniyeti",
+                "description": "Müşteri memnuniyetinin bir göstergesi olarak alınan toplam bahşiş. Ödenmiş ve bekleyen bahşiş karşılaştırması. Hizmet kalitesiyle dolaylı bağlantı."
+            },
+            {
+                "number": "04",
+                "title": "Sarf Malzemesi Maliyeti",
+                "description": "Her personelin gelirinden sarf malzemesi maliyetinin otomatik düşülmesi."
+            },
+            {
+                "number": "05",
+                "title": "Personel Sıralaması",
+                "description": "Personel karşılaştırma tablosu: komisyon, toplam satış, randevu sayısı ve bahşiş. Yıldızları belirlemek için satış grafiği."
+            },
+            {
+                "number": "06",
+                "title": "Anlık Rapor ve Geçmiş",
+                "description": "Tüm göstergeler anlık olarak güncellenir. Farklı dönemler için performans geçmişini görüntüleme ve trendleri karşılaştırma."
+            }
+        ],
+        "benefits_title": "Performans Değerlendirmenin Faydaları",
+        "benefits": [
+            {
+                "title": "Nesnel Kararlar",
+                "description": "Duygulara veya kişisel zevke göre değil, sayısal göstergelere dayalı."
+            },
+            {
+                "title": "Eğitim İhtiyaçlarını Belirleme",
+                "description": "Hangi personelin eğitime veya iyileştirmeye ihtiyacı olduğunu öğrenin."
+            }
+        ]
+    },
+    "feature_online_booking": {
+        "breadcrumb_current": "Çevrimiçi Randevu",
+        "title": "Çevrimiçi Randevu Alma; Müşterileriniz 7/24, Telefon Görüşmesine Gerek Kalmadan",
+        "description": "Müşterilerinizin istedikleri zaman ve yerden randevu almalarına izin verin. Zimo çevrimiçi randevu widget'ı, web sitenize ve Instagram'ınıza kurulur ve müşteriler 30 saniyede randevu alır. %100 telefon kabulünden uzaklaşın ve insan hatasını sıfıra indirin. Salon takvimiyle anlık koordinasyon — çakışma ve tekrar yok.",
+        "image_alt": "Zimo Çevrimiçi Randevu Widget'ı",
+        "section_1_title": "Akıllı Rezervasyon Motoru; Müşterinin Gördüğünün Perde Arkası",
+        "section_1_desc": "Zimo rezervasyon widget'ı basit bir form değildir. Perde arkasında, kaydedilen her randevunun tamamen gerçek ve uygulanabilir olmasını sağlamak için 7 katmanlı doğrulama sistemi çalışır. Bu motor eşzamanlı olarak şunları kontrol eder: Şube o gün ve saatte aktif mi? İlgili personel vardiyada mı? Personelin kişisel takviminde izin veya blok kaydı var mı? O hizmet için salon kapasitesi dolmuş mu? Ve son olarak, başka bir randevuyla zaman çakışması var mı? Sonuç: 10 dakikalık aralıklarla yeşil (müsait) ve kırmızı (dolu) slotlar — hatasız.",
+        "features_title": "Çevrimiçi Randevunun Temel Özellikleri",
+        "features_list": [
+            {
+                "number": "01",
+                "title": "Web Sitesi ve Instagram'a Kurulabilen Widget",
+                "description": "Sitede veya Instagram biyografisinde tek bir kod satırı — müşteriler sayfadan ayrılmadan randevu alır. Tamamen duyarlı ve mobil için optimize."
+            },
+            {
+                "number": "02",
+                "title": "İstenen Personel ve Hizmet Seçimi",
+                "description": "Müşteri, hizmete göre istediği personeli seçebilir veya \"Müsait Olan\" seçeneğini kullanabilir. Hizmet listesi güncel fiyat ve süreyle görüntülenir."
+            },
+            {
+                "number": "03",
+                "title": "Otomatik veya Manuel Onay",
+                "description": "Salon yöneticisi, çevrimiçi randevuların hemen onaylanmasını (otomatik onay) veya inceleme için bekleme sırasına alınmasını (manuel onay) ayarlar."
+            },
+            {
+                "number": "04",
+                "title": "Üç Aşamalı Hatırlatma",
+                "description": "Hemen onay SMS'i, 24 saat önce hatırlatma ve 2 saat önce hatırlatma. Devamsızlık oranı %50'ye kadar düşer."
+            },
+            {
+                "number": "05",
+                "title": "Bekleme Sırası Yönetimi",
+                "description": "Bir slot boşalırsa, bekleme sırasındaki müşterilere bildirim gönderilir. Yapay zeka ile boş kapasite doldurma."
+            },
+            {
+                "number": "06",
+                "title": "Müşteri Profili Kaydetme",
+                "description": "İlk rezervasyondan sonra müşteri profili sistemde saklanır. Sonraki randevular iki tıklamayla ve tekrar bilgi girişi gerektirmeden alınır."
+            }
+        ],
+        "benefits_title": "Çevrimiçi Randevunun Faydaları",
+        "benefits": [
+            {
+                "title": "Resepsiyon Ekibinin Zamanından Tasarruf",
+                "description": "Telefon görüşmelerinde %80 azalma. Resepsiyon ekibi müşteri deneyimine odaklanır."
+            },
+            {
+                "title": "7/24 Erişim",
+                "description": "Müşteriler günün her saati ve hatta tatil günlerinde bile randevu alabilir."
+            },
+            {
+                "title": "Müşteri Devamsızlığında Azalma",
+                "description": "Üç aşamalı akıllı hatırlatma + çevrimiçi iptal ve değiştirme imkanı."
+            }
+        ],
+        "faq_title": "Sıkça Sorulan Sorular",
+        "faq": [
+            {
+                "q": "Müşteri randevuyu değiştirebilir mi?",
+                "a": "Evet. Müşteri, panelinden veya aldığı bağlantıdan randevuyu iptal edebilir veya değiştirebilir. Değişiklikler anında salon takvimine yansır."
+            },
+            {
+                "q": "Çevrimiçi randevu için ek ücret var mı?",
+                "a": "Hayır. Çevrimiçi randevu widget'ı Zimo platformunun bir parçasıdır ve ayrı bir ücreti yoktur."
+            }
+        ]
+    },
+    "footer": {
+        "tagline": "Güzellik salonu şube yönetiminizi Zimo ile akıllı ve basit hale getirin",
+        "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve müşteri sadakatini birleşik olarak yöneten akıllı bir CRM'dir.",
+        "columns": {
+            "zimo": {
+                "title": "Zimo",
+                "links": {
+                    "features": "Özellikler",
+                    "pricing": "Fiyatlandırma",
+                    "demo": "Demo Talebi"
+                }
+            },
+            "support": {
+                "title": "Destek",
+                "links": {
+                    "faq": "Sıkça Sorulan Sorular",
+                    "about": "Hakkımızda",
+                    "contact": "İletişim"
+                }
+            },
+            "features": {
+                "title": "Özellikler"
+            },
+            "more_features": {
+                "title": "Diğer Özellikler"
+            }
+        },
+        "copyright": "© 2026 Zimo. Tüm hakları saklıdır."
+    }
+}
