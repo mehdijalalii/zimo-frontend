@@ -20,7 +20,7 @@ export default async function HomePage({
       <HomeHero locale={typedLocale} translations={messages} />
       <HomeHighlights locale={typedLocale} translations={messages} />
       <HomeHowItWorks translations={messages} />
-      <HomeStats translations={messages} />
+      <HomeStats locale={typedLocale} translations={messages} />
       <HomeTrust translations={messages} />
     </>
   );
