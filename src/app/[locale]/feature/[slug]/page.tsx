@@ -115,7 +115,7 @@ export default async function FeatureDetailPage({
 
   return (
     <section className="section-block pt-32 overflow-x-hidden">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl overflow-hidden">
         {/* Hero - Full width, 2 columns: text + image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="space-y-6">
@@ -139,7 +139,7 @@ export default async function FeatureDetailPage({
             <div className="relative z-10 overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-[0_48px_80px_-16px_rgba(132,20,116,0.18)]">
               <Image src={getDashboardImage(typedLocale)} alt={imageAlt} width={800} height={500} className="w-full object-cover" />
             </div>
-            <div className="absolute -bottom-10 -left-10 -z-10 h-80 w-80 rounded-full bg-[#841474]/5 blur-[100px]" />
+            <div className={`absolute -bottom-10 ${typedLocale === 'fa' ? '-right-10' : '-left-10'} -z-10 h-80 w-80 rounded-full bg-[#841474]/5 blur-[100px]`} />
           </div>
         </div>
 
@@ -200,7 +200,7 @@ export default async function FeatureDetailPage({
                 <h3 className="text-2xl font-bold text-gray-900">{scenarioTitle}</h3>
                 <div className="relative rounded-2xl border border-gray-200 bg-gray-50/50 p-8 shadow-sm md:p-10">
                   <div className={`absolute inset-y-0 ${typedLocale === 'fa' ? 'right-0 rounded-r-2xl' : 'left-0 rounded-l-2xl'} w-1.5 bg-[#841474]`} />
-                  <svg className="absolute left-8 top-8 h-10 w-10 text-[#841474]/5 md:h-12 md:w-12" fill="currentColor" viewBox="0 0 32 32">
+                  <svg className={`absolute top-8 h-10 w-10 text-[#841474]/5 md:h-12 md:w-12 ${typedLocale === 'fa' ? 'right-8' : 'left-8'}`} fill="currentColor" viewBox="0 0 32 32">
                     <path d="M10 8v8H6v-8h4zm12 0v8h-4v-8h4zM10 4a4 4 0 00-4 4v8a4 4 0 004 4h4v-4h-4v-4h4V8a4 4 0 00-4-4zm12 0a4 4 0 00-4 4v8a4 4 0 004 4h4v-4h-4v-4h4V8a4 4 0 00-4-4z" />
                   </svg>
                   <p className="relative z-10 text-lg italic leading-relaxed text-gray-700 md:text-xl">{scenario}</p>
