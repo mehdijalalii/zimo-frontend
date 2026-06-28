@@ -114,7 +114,7 @@ export default async function FeatureDetailPage({
   const faq = (feature.faq ?? []) as { q: string; a: string }[];
 
   return (
-    <section className="section-block pt-40">
+    <section className="section-block pt-40 overflow-x-hidden">
       <div className="mx-auto max-w-6xl">
         {/* Hero - Full width, 2 columns: text + image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
@@ -212,7 +212,7 @@ export default async function FeatureDetailPage({
             {comparisonTitle && comparisonHeaders.length > 0 && (
               <div className="space-y-8">
                 <h3 className="text-2xl font-bold text-gray-900">{comparisonTitle}</h3>
-                <div className="overflow-hidden rounded-3xl border border-gray-200 shadow-sm">
+                <div className="overflow-x-auto rounded-3xl border border-gray-200 shadow-sm">
                   <table className={`w-full border-collapse ${typedLocale === 'fa' ? 'text-right' : 'text-left'}`}>
                     <thead className="bg-gray-100/80">
                       <tr className={`divide-x ${typedLocale === 'fa' ? 'divide-x-reverse' : ''} divide-gray-200`}>
