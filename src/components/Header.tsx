@@ -141,6 +141,7 @@ const localeFlags: Record<string, string> = {
 };
 
 function LanguageSwitcher({ locale }: { locale: string }) {
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
   const getLangHref = (targetLocale: string) => {
@@ -162,14 +163,18 @@ function LanguageSwitcher({ locale }: { locale: string }) {
   ];
 
   return (
-    <div className="relative group/lang">
-      <button className="flex items-center gap-1 rounded-full border border-gray-200 bg-white px-3 py-2 text-sm font-bold text-gray-700 transition hover:bg-gray-50">
+    <div className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        onBlur={() => setTimeout(() => setOpen(false), 150)}
+        className="flex items-center gap-1 rounded-full border border-gray-200 bg-white px-3 py-2 text-sm font-bold text-gray-700 transition hover:bg-gray-50"
+      >
         {localeFlags[locale] || localeFlags.fa}
         <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div className={`invisible absolute top-full z-50 mt-1 w-36 translate-y-2 opacity-0 transition-all duration-200 group-hover/lang:visible group-hover/lang:translate-y-0 group-hover/lang:opacity-100 ${locale === 'fa' ? 'left-0' : 'right-0'}`}>
+      <div className={`absolute top-full z-50 mt-1 w-36 transition-all duration-200 ${open ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-2 opacity-0'} ${locale === 'fa' ? 'left-0' : 'right-0'}`}>
         <div className="overflow-hidden rounded-xl border border-gray-100 bg-white shadow-xl">
           {langOptions.map((opt) => (
             <Link
