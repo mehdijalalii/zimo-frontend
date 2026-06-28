@@ -114,7 +114,7 @@ export default async function FeatureDetailPage({
   const faq = (feature.faq ?? []) as { q: string; a: string }[];
 
   return (
-    <section className="section-block pt-40 overflow-x-hidden">
+    <section className="section-block pt-32 overflow-x-hidden">
       <div className="mx-auto max-w-6xl">
         {/* Hero - Full width, 2 columns: text + image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
