@@ -204,11 +204,10 @@ function MobileLangLink({ locale, target, pathname, children }: { locale: string
 }
 
 function isActive(pathname: string, locale: string, slug: string): boolean {
-  const prefix = locale === 'fa' ? '' : `/${locale}`;
-  const href = slug === 'home' ? (prefix || '/') : `${prefix}/${slug}`;
   if (slug === 'home') {
-    return pathname === '/' || pathname === `/${locale}`;
+    return pathname === `/${locale}` || pathname === '/';
   }
+  const href = `/${locale}/${slug}`;
   return pathname.startsWith(href);
 }
 
