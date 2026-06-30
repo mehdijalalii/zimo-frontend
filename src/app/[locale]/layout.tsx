@@ -4,6 +4,7 @@ import { getMessages } from "@/i18n/request";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DemoCta from "@/components/home/DemoCta";
+import Chatwoot from "@/components/Chatwoot";
 import "../fonts.css";
 
 export function generateStaticParams() {
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
         <main className="pt-16">{children}</main>
         <DemoCta locale={typedLocale} translations={messages} />
         <Footer locale={typedLocale} translations={messages} />
+        <Chatwoot />
       </body>
     </html>
   );

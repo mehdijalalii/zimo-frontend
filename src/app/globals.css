@@ -346,3 +346,26 @@
     border-radius: 999px;
   }
 }
+
+@layer components {
+  #chatwoot-widget-container iframe,
+  .woot-widget-holder,
+  .woot-elements--text,
+  .woot--bubble-holder {
+    font-family: "IRANSansX", Tahoma, sans-serif !important;
+    direction: rtl !important;
+  }
+
+  #chatwoot-live-chat {
+    font-family: "IRANSansX", sans-serif !important;
+  }
+
+  #chatwoot-live-chat * {
+    font-family: "IRANSansX", sans-serif !important;
+  }
+
+  .woot-widget-holder,
+  .woot-widget-holder *:not(span):not(i) {
+    font-family: "IRANSansX" !important;
+  }
+}
