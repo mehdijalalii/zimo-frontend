@@ -38,7 +38,7 @@ export default async function LocaleLayout({
         <main className="pt-16">{children}</main>
         <DemoCta locale={typedLocale} translations={messages} />
         <Footer locale={typedLocale} translations={messages} />
-        <Chatwoot />
+        <Chatwoot locale={typedLocale} />
       </body>
     </html>
   );

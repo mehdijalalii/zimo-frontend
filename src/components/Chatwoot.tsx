@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 interface ChatwootConfig {
   locale: string;
@@ -28,18 +28,32 @@ const locales: Record<string, ChatwootConfig> = {
   },
 };
 
-function getChatConfig(): ChatwootConfig {
-  const path = window.location.pathname;
-  const lang =
-    Object.keys(locales).find((code) => path.includes(`/${code}`)) || "fa";
-  return locales[lang];
+function destroyChatwoot() {
+  const w = window as any;
+  if (w.$chatwoot) {
+    w.$chatwoot.toggle("close");
+    const holder = document.querySelector(".woot-widget-holder");
+    if (holder) holder.remove();
+    const bubble = document.querySelector(".woot--bubble-holder");
+    if (bubble) bubble.remove();
+    const container = document.querySelector("#chatwoot-widget-container");
+    if (container) container.remove();
+    delete w.$chatwoot;
+    delete w.chatwootSDK;
+  }
 }
 
-export default function Chatwoot() {
-  useEffect(() => {
-    const config = getChatConfig();
+export default function Chatwoot({ locale }: { locale: string }) {
+  const currentLocale = useRef(locale);
 
-    (window as any).chatwootSettings = {
+  useEffect(() => {
+    const config = locales[locale] || locales.fa;
+    if (!config.websiteToken) return;
+
+    destroyChatwoot();
+
+    const w = window as any;
+    w.chatwootSettings = {
       position: config.position,
       locale: config.locale,
       type: "standard",
@@ -49,16 +63,19 @@ export default function Chatwoot() {
     const script = document.createElement("script");
     script.src = `${BASE_URL}/packs/js/sdk.js`;
     script.async = true;
-
     document.body.appendChild(script);
 
     script.onload = () => {
-      (window as any).chatwootSDK.run({
+      w.chatwootSDK.run({
         websiteToken: config.websiteToken,
         baseUrl: BASE_URL,
       });
     };
-  }, []);
+
+    return () => {
+      destroyChatwoot();
+    };
+  }, [locale]);
 
   return null;
 }
