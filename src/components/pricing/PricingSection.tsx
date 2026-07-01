@@ -1,6 +1,8 @@
 'use client';
 
+import { useRef } from 'react';
 import Link from 'next/link';
+import { motion, useInView } from 'framer-motion';
 import type { Locale } from '@/i18n/config';
 import type { Plan, ComparisonFeature } from '@/data/pricing';
 
@@ -63,13 +65,33 @@ export default function PricingSection({
 }) {
   const dir = locale === 'fa' ? 'rtl' : 'ltr';
 
+  const cardsRef = useRef<HTMLDivElement>(null);
+  const cardsInView = useInView(cardsRef, { once: true, margin: '-60px' });
+  const tableRef = useRef<HTMLDivElement>(null);
+  const tableInView = useInView(tableRef, { once: true, margin: '-60px' });
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const } },
+  };
+
   return (
     <>
       {/* Cards */}
-      <div className="grid items-stretch gap-4 lg:grid-cols-3">
+      <motion.div
+        ref={cardsRef}
+        initial="hidden"
+        animate={cardsInView ? 'visible' : 'hidden'}
+        variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
+        className="grid items-stretch gap-4 lg:grid-cols-3"
+      >
         {plans.map((plan) => {
           return (
-            <div key={plan.id} className="relative">
+            <motion.div
+              key={plan.id}
+              className="relative"
+              variants={cardVariants}
+            >
               <article
                 className={`relative flex flex-col h-full overflow-hidden rounded-3xl bg-white p-8 transition-all ${
                   plan.is_featured
@@ -106,13 +128,19 @@ export default function PricingSection({
                 {translations.request_demo}
               </Link>
             </article>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
 
       {/* Comparison Table */}
-      <section className="mt-32">
+      <motion.section
+        ref={tableRef}
+        initial={{ opacity: 0, y: 30 }}
+        animate={tableInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="mt-32"
+      >
         <div className="mb-10 text-center md:mb-12">
           <p className="section-kicker mx-auto mb-4">{translations.comparison.kicker}</p>
           <h2 className="text-3xl font-bold text-gray-900">{translations.comparison.title}</h2>
@@ -186,7 +214,7 @@ export default function PricingSection({
             </tfoot>
           </table>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
