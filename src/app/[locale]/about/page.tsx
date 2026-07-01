@@ -33,6 +33,20 @@ export async function generateMetadata({
     openGraph: {
       title: meta.about.title,
       description: meta.about.description,
+      images: [
+        {
+          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
+          alt: meta.about.title,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.about.title,
+      description: meta.about.description,
+      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
     },
   };
 }
@@ -46,8 +60,22 @@ export default async function AboutPage({
   const typedLocale = locale as Locale;
   const messages = getMessages(typedLocale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Zimo",
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/logo/zimo-${typedLocale === 'tr' ? 'en' : typedLocale}.webp`,
+    description: messages.meta.about.description,
+    sameAs: [],
+  };
+
   return (
     <section className="section-block pt-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-6xl">
         {/* Hero */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">

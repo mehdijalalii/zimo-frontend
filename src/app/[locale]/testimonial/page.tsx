@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import Link from 'next/link';
@@ -5,6 +6,10 @@ import Link from 'next/link';
 function getPrefix(locale: string) {
   return locale === 'fa' ? '' : `/${locale}`;
 }
+
+export const metadata: Metadata = {
+  robots: { index: false },
+};
 
 export default async function TestimonialPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

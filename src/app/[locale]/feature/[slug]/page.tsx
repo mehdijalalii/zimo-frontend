@@ -62,6 +62,20 @@ export async function generateMetadata({
     openGraph: {
       title: pageMeta?.title ?? meta.default_title,
       description: pageMeta?.description ?? meta.default_description,
+      images: [
+        {
+          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
+          alt: pageMeta?.title ?? meta.default_title,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageMeta?.title ?? meta.default_title,
+      description: pageMeta?.description ?? meta.default_description,
+      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
     },
   };
 }
@@ -152,8 +166,58 @@ export default async function FeatureDetailPage({
   const faqTitle = (feature.faq_title ?? '') as string;
   const faq = (feature.faq ?? []) as { q: string; a: string }[];
 
+  const featurePageName = title.replace(/<[^>]*>/g, '');
+  const prefix = typedLocale === 'fa' ? '' : `/${typedLocale}`;
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: featureDetail.breadcrumb_home,
+          item: `${SITE_URL}${prefix || '/'}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: featureDetail.breadcrumb_features,
+          item: `${SITE_URL}${prefix}/features`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: breadcrumbCurrent,
+          item: `${SITE_URL}${prefix}/feature/${slug}`,
+        },
+      ],
+    },
+    ...(faq.length > 0
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faq.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.a,
+              },
+            })),
+          },
+        ]
+      : []),
+  ];
+
   return (
     <section className="section-block pt-32 overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-6xl overflow-hidden">
         {/* Hero - Full width, 2 columns: text + image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
@@ -317,6 +381,40 @@ export default async function FeatureDetailPage({
                 </div>
               )}
             </div>
+          </div>
+        </div>
+
+        {/* Related Features */}
+        <div className="mt-24">
+          <h3 className="mb-8 text-center text-2xl font-bold text-gray-900">
+            {typedLocale === 'fa' ? 'قابلیت‌های مرتبط' :
+             typedLocale === 'en' ? 'Related Features' :
+             'İlgili Özellikler'}
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {validSlugs
+              .filter((s) => s !== slug)
+              .slice(0, 6)
+              .map((relatedSlug) => {
+                const relatedKey = translationKeyMap[relatedSlug];
+                const pageMeta = messages.meta;
+                const relatedMeta = pageMeta[relatedKey as keyof typeof pageMeta] as { title: string; description: string } | undefined;
+                const relatedPrefix = typedLocale === 'fa' ? '' : `/${typedLocale}`;
+                return (
+                  <Link
+                    key={relatedSlug}
+                    href={`${relatedPrefix}/feature/${relatedSlug}`}
+                    className="group rounded-2xl border border-gray-100 bg-white p-6 transition-all hover:-translate-y-1 hover:border-[#841474]/20 hover:shadow-lg"
+                  >
+                    <h4 className="mb-2 text-sm font-bold text-[#841474] group-hover:underline">
+                      {relatedMeta?.title ?? relatedSlug}
+                    </h4>
+                    <p className="text-xs leading-relaxed text-gray-500 line-clamp-2">
+                      {relatedMeta?.description ?? ''}
+                    </p>
+                  </Link>
+                );
+              })}
           </div>
         </div>
 

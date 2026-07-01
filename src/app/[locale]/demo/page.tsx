@@ -31,6 +31,20 @@ export async function generateMetadata({
     openGraph: {
       title: meta.demo.title,
       description: meta.demo.description,
+      images: [
+        {
+          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
+          alt: meta.demo.title,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.demo.title,
+      description: meta.demo.description,
+      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
     },
   };
 }

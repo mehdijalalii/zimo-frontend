@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 
 const SITE_URL = "https://zimo.beauty";
 const locales = ["fa", "en", "tr"] as const;
+const lastModified = new Date("2025-01-01");
 
 const pages = [
   { slug: "", priority: 1.0, changeFrequency: "weekly" as const },
@@ -30,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     urls.push({
       url: `${SITE_URL}/${page.slug}`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates: {
@@ -48,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     urls.push({
       url: `${SITE_URL}/feature/${slug}`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {

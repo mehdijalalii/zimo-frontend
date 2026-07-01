@@ -33,6 +33,20 @@ export async function generateMetadata({
     openGraph: {
       title: meta.pricing.title,
       description: meta.pricing.description,
+      images: [
+        {
+          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
+          alt: meta.pricing.title,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.pricing.title,
+      description: meta.pricing.description,
+      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
     },
   };
 }
@@ -48,8 +62,28 @@ export default async function PricingPage({
   const plans = getStaticPlans(typedLocale);
   const comparisonFeatures = getStaticComparisonFeatures(typedLocale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Zimo CRM",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url: SITE_URL,
+    offers: plans.map((plan) => ({
+      "@type": "Offer",
+      name: plan.name,
+      price: plan.price,
+      priceCurrency: typedLocale === 'fa' ? 'IRR' : typedLocale === 'tr' ? 'TRY' : 'USD',
+      description: plan.landing_subtitle,
+    })),
+  };
+
   return (
     <section className="section-block pt-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center md:mb-12">
           <p className="section-kicker mx-auto mb-4">

@@ -1,78 +1,74 @@
 {
     "meta": {
-        "default_title": "Beauty Salon CRM",
-        "default_description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons.",
+        "default_title": "Beauty Salon Management Software | Zimo CRM",
+        "default_description": "Zimo is a specialized Persian CRM for beauty salons — manage appointments, branches, staff settlements, and loyalty programs.",
         "home": {
-            "title": "Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Beauty Salon Management Software | Zimo CRM",
+            "description": "Zimo — specialized CRM for Iranian beauty salons. Smart appointment scheduling, multi-branch management, staff payroll, and customer loyalty."
         },
         "features": {
-            "title": "Features | Smart Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Zimo Features | Smart Beauty Salon CRM",
+            "description": "Explore Zimo's features: online booking, financial management, staff dashboards, marketing tools, and customer loyalty programs."
         },
         "pricing": {
             "title": "Pricing | Invest in Your Salon's Growth & Organization",
             "description": "Zimo is a tool to optimize revenue and eliminate human errors. Transparent plans, no hidden costs, with 2 months free on annual payments."
         },
         "about": {
-            "title": "About Us",
+            "title": "About Zimo | Our Story in Beauty Salon Management",
             "description": "The story of Zimo — an online specialized management system for beauty salons and chains. Breaking free from the limitations of traditional systems."
         },
         "contact": {
-            "title": "Contact Us",
-            "description": "Get in touch with Zimo — request a free demo, consultation, and support for beauty salons."
+            "title": "Contact Zimo | Beauty Salon Consultation & Support",
+            "description": "Get in touch with Zimo — request a free demo, expert consultation, and 24/7 support for beauty salon management."
         },
         "demo": {
-            "title": "Request a Demo",
-            "description": "Request a free online demo of the Zimo beauty salon management software."
+            "title": "Free Demo Request | Zimo Beauty Salon Management Software",
+            "description": "Request a free online demo of Zimo beauty salon management software and see the features in action."
         },
         "faq": {
-            "title": "FAQ",
-            "description": "Answers to frequently asked questions about Zimo beauty salon management software, data security, and support."
+            "title": "FAQ | Zimo Beauty Salon Management Software",
+            "description": "Answers to frequently asked questions about Zimo beauty salon software, data security, pricing, and support."
         },
         "feature_appointments": {
-            "title": "Zimo Feature | Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Online Booking System | Zimo Beauty Salon CRM",
+            "description": "Smart online appointment scheduling for beauty salons. Calendar management, conflict prevention, and automatic customer reminders."
         },
         "feature_branches": {
-            "title": "Zimo Feature | Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Multi-Branch Management | Zimo Beauty Salon CRM",
+            "description": "Manage multiple beauty salon branches from a single dashboard. Comparative reporting and full operational control."
         },
         "feature_finance": {
-            "title": "Zimo Feature | Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Financial Management & Settlements | Zimo Beauty Salon CRM",
+            "description": "Accurate salon accounting with Zimo. Automatic commission calculation, income reports, expense tracking, and transparent settlements."
         },
         "feature_loyalty": {
-            "title": "Zimo Feature | Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Customer Loyalty Program | Zimo Beauty Salon CRM",
+            "description": "Build customer loyalty with Zimo. Automatic point systems, targeted SMS campaigns, and increased customer retention rates."
         },
         "feature_payroll": {
-            "title": "Zimo Feature | Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Staff Payroll & Salary Calculation | Zimo Beauty Salon CRM",
+            "description": "Automatic payroll calculation for salon staff based on commission, sales percentage, and overtime with Zimo."
         },
         "feature_reporting": {
-            "title": "Zimo Feature | Beauty Salon CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Reporting & Data Analytics | Zimo Beauty Salon CRM",
+            "description": "Comprehensive analytics dashboard with financial reports, staff performance metrics, and customer behavior insights."
         },
         "feature_security": {
-            "title": "Security",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
-        },
-        "feature_marketing_crm": {
-            "title": "Marketing & CRM",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Data Security & Privacy | Zimo Beauty Salon CRM",
+            "description": "Advanced data security for beauty salons. Encryption, automatic backups, and staff access control with Zimo."
         },
         "feature_staff_dashboard": {
-            "title": "Staff Dashboard",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Staff Personal Dashboard | Zimo Beauty Salon CRM",
+            "description": "Personal panel for each salon staff member to view appointments, income, points, and performance metrics in Zimo."
         },
         "feature_staff_performance": {
-            "title": "Staff Performance Evaluation",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+            "title": "Staff Performance Evaluation | Zimo Beauty Salon CRM",
+            "description": "Track and evaluate staff performance based on key metrics like revenue, customer satisfaction, and retention rates."
         },
-        "feature_online_booking": {
-            "title": "Online Booking",
-            "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
+        "feature_marketing_crm": {
+            "title": "Marketing & Customer Relationship Management | Zimo Beauty Salon CRM",
+            "description": "Digital marketing tools and CRM for beauty salons. Bulk SMS, advertising campaigns, and automated customer follow-up."
         }
     },
     "nav": {
