@@ -1,6 +1,40 @@
+import type { Metadata } from 'next';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import ContactForm from '@/components/contact/ContactForm';
+
+const SITE_URL = "https://zimo.beauty";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const typedLocale = locale as Locale;
+  const messages = getMessages(typedLocale);
+  const meta = messages.meta;
+
+  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
+  const canonical = `${SITE_URL}${prefix}/contact`;
+
+  return {
+    title: `${meta.contact.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
+    description: meta.contact.description,
+    alternates: {
+      canonical,
+      languages: {
+        fa: `${SITE_URL}/contact`,
+        en: `${SITE_URL}/en/contact`,
+        tr: `${SITE_URL}/tr/contact`,
+      },
+    },
+    openGraph: {
+      title: meta.contact.title,
+      description: meta.contact.description,
+    },
+  };
+}
 
 export default async function ContactPage({
   params,

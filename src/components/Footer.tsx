@@ -6,6 +6,7 @@ interface FooterProps {
   translations: {
     nav: {
       mega: Record<string, { title: string; desc: string }>;
+      logo_alt: string;
     };
     footer: {
       tagline: string;
@@ -51,10 +52,11 @@ export default function Footer({ locale, translations }: FooterProps) {
               <Link href={getHref(locale, 'home')} className="flex items-center">
                 <span className="inline-flex items-center rounded-xl bg-white px-5 py-3">
                   <Image
-                    src={`/images/logo/zimo-${locale === 'tr' ? 'en' : locale}.png`}
-                    alt="Zimo CRM"
+                    src={`/images/logo/zimo-${locale === 'tr' ? 'en' : locale}.webp`}
+                    alt={translations.nav.logo_alt}
                     width={28}
                     height={28}
+                    sizes="28px"
                     className="h-7 w-auto"
                   />
                 </span>

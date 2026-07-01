@@ -71,6 +71,7 @@ export default function HomeHero({ locale, translations }: HomeHeroProps) {
                 alt={hero.image_alt}
                 width={1200}
                 height={600}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
                 className="h-full min-h-[320px] w-full object-cover md:min-h-[360px]"
                 priority
               />

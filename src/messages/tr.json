@@ -1,33 +1,33 @@
 {
     "meta": {
-        "default_title": "Zimo | Güzellik Salonu CRM",
+        "default_title": "Güzellik Salonu CRM",
         "default_description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır.",
         "home": {
-            "title": "Zimo | Güzellik Salonu CRM",
+            "title": "Güzellik Salonu CRM",
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "features": {
-            "title": "Zimo Özellikleri | Akıllı Güzellik Salonu CRM",
+            "title": "Özellikleri | Akıllı Güzellik Salonu CRM",
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "pricing": {
-            "title": "Zimo Fiyatlandırması | Salonunuzun Düzenine ve Büyümesine Yatırım",
+            "title": "Fiyatlandırma | Salonunuzun Düzenine ve Büyümesine Yatırım",
             "description": "Zimo, gelirinizi optimize etmek ve insan hatalarını ortadan kaldırmak için tasarlanmış bir araçtır. Gizli maliyetler olmadan şeffaf planlar ve yıllık ödemede 2 ay hediye."
         },
         "about": {
-            "title": "Hakkımızda | Zimo",
+            "title": "Hakkımızda",
             "description": "Zimo'nun hikayesi — İran'daki güzellik salonları ve zincir işletmeler için profesyonel çevrimiçi yönetim sistemi. Geleneksel sistemlerin sınırlamalarından kurtuluş."
         },
         "contact": {
-            "title": "İletişim | Zimo",
+            "title": "İletişim",
             "description": "Zimo ile iletişime geçin — Güzellik salonları için ücretsiz demo, danışmanlık ve destek talebi."
         },
         "demo": {
-            "title": "Demo Talebi | Zimo",
+            "title": "Demo Talebi",
             "description": "Zimo güzellik salonu yönetim yazılımının ücretsiz çevrimiçi demo talebi."
         },
         "faq": {
-            "title": "Sıkça Sorulan Sorular | Zimo",
+            "title": "Sıkça Sorulan Sorular",
             "description": "Zimo güzellik salonu yönetim yazılımı, veri güvenliği ve destek hakkında sık sorulan sorulara yanıtlar."
         },
         "feature_appointments": {
@@ -55,29 +55,30 @@
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "feature_security": {
-            "title": "Güvenlik | Zimo",
+            "title": "Güvenlik",
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "feature_marketing_crm": {
-            "title": "Pazarlama ve CRM | Zimo",
+            "title": "Pazarlama ve CRM",
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "feature_staff_dashboard": {
-            "title": "Personel Kontrol Paneli | Zimo",
+            "title": "Personel Kontrol Paneli",
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "feature_staff_performance": {
-            "title": "Personel Performans Değerlendirmesi | Zimo",
+            "title": "Personel Performans Değerlendirmesi",
             "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         },
         "feature_online_booking": {
-            "title": "Çevrimiçi Randevu | Zimo",
-            "description": "Zimo, güzellik salonları için randevu, şube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
+            "title": "Çevrimiçi Randevu",
+            "description": "Zimo, güzellik salonları için randevu, шube, personel, mutabakat ve sadakat kulübü yönetimini sağlayan Türkçe CRM yazılımıdır."
         }
     },
     "nav": {
         "logo_badge": "Zi",
         "logo_text": "Zimo",
+        "logo_alt": "Zimo - Güzellik Salonu CRM",
         "home": "Ana Sayfa",
         "features": "Özellikler",
         "pricing": "Fiyatlandırma",

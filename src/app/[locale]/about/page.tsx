@@ -1,6 +1,41 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import { getDashboardImage } from '@/lib/utils';
+
+const SITE_URL = "https://zimo.beauty";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const typedLocale = locale as Locale;
+  const messages = getMessages(typedLocale);
+  const meta = messages.meta;
+
+  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
+  const canonical = `${SITE_URL}${prefix}/about`;
+
+  return {
+    title: `${meta.about.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
+    description: meta.about.description,
+    alternates: {
+      canonical,
+      languages: {
+        fa: `${SITE_URL}/about`,
+        en: `${SITE_URL}/en/about`,
+        tr: `${SITE_URL}/tr/about`,
+      },
+    },
+    openGraph: {
+      title: meta.about.title,
+      description: meta.about.description,
+    },
+  };
+}
 
 export default async function AboutPage({
   params,
@@ -49,9 +84,12 @@ export default async function AboutPage({
           </div>
           <div className="relative">
             <div className="relative z-10 overflow-hidden rounded-[2.5rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)]">
-              <img
+              <Image
                 src={getDashboardImage(typedLocale)}
                 alt={messages.about.image_alt}
+                width={800}
+                height={500}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full object-cover"
               />
             </div>

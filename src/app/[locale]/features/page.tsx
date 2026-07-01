@@ -1,8 +1,42 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import FadeIn from '@/components/animations/FadeIn';
 import { StaggerChildren, StaggerItem } from '@/components/animations/StaggerChildren';
+
+const SITE_URL = "https://zimo.beauty";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const typedLocale = locale as Locale;
+  const messages = getMessages(typedLocale);
+  const meta = messages.meta;
+
+  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
+  const canonical = `${SITE_URL}${prefix}/features`;
+
+  return {
+    title: `${meta.features.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
+    description: meta.features.description,
+    alternates: {
+      canonical,
+      languages: {
+        fa: `${SITE_URL}/features`,
+        en: `${SITE_URL}/en/features`,
+        tr: `${SITE_URL}/tr/features`,
+      },
+    },
+    openGraph: {
+      title: meta.features.title,
+      description: meta.features.description,
+    },
+  };
+}
 
 function getFeatureHref(locale: string, featureSlug: string): string {
   const prefix = locale === 'fa' ? '' : `/${locale}`;

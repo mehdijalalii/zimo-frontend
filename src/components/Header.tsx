@@ -23,6 +23,7 @@ interface HeaderProps {
       demo: string;
       login: string;
       all_features: string;
+      logo_alt: string;
       mega: Record<string, { title: string; desc: string }>;
     };
   };
@@ -228,10 +229,11 @@ export default function Header({ locale, translations }: HeaderProps) {
         <div className="flex items-center gap-4">
           <Link href={getHref(locale, 'home')} className="flex items-center">
             <Image
-              src={`/images/logo/zimo-${locale === 'tr' ? 'en' : locale}.png`}
-              alt="Zimo CRM"
+              src={`/images/logo/zimo-${locale === 'tr' ? 'en' : locale}.webp`}
+              alt={nav.logo_alt}
               width={36}
               height={36}
+              sizes="36px"
               className="h-9 w-auto"
             />
           </Link>

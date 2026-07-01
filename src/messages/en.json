@@ -1,33 +1,33 @@
 {
     "meta": {
-        "default_title": "Zimo | Beauty Salon CRM",
+        "default_title": "Beauty Salon CRM",
         "default_description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons.",
         "home": {
-            "title": "Zimo | Beauty Salon CRM",
+            "title": "Beauty Salon CRM",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "features": {
-            "title": "Zimo Features | Smart Beauty Salon CRM",
+            "title": "Features | Smart Beauty Salon CRM",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "pricing": {
-            "title": "Zimo Pricing | Invest in Your Salon's Growth & Organization",
+            "title": "Pricing | Invest in Your Salon's Growth & Organization",
             "description": "Zimo is a tool to optimize revenue and eliminate human errors. Transparent plans, no hidden costs, with 2 months free on annual payments."
         },
         "about": {
-            "title": "About Us | Zimo",
+            "title": "About Us",
             "description": "The story of Zimo — an online specialized management system for beauty salons and chains. Breaking free from the limitations of traditional systems."
         },
         "contact": {
-            "title": "Contact Us | Zimo",
+            "title": "Contact Us",
             "description": "Get in touch with Zimo — request a free demo, consultation, and support for beauty salons."
         },
         "demo": {
-            "title": "Request a Demo | Zimo",
+            "title": "Request a Demo",
             "description": "Request a free online demo of the Zimo beauty salon management software."
         },
         "faq": {
-            "title": "FAQ | Zimo",
+            "title": "FAQ",
             "description": "Answers to frequently asked questions about Zimo beauty salon management software, data security, and support."
         },
         "feature_appointments": {
@@ -55,29 +55,30 @@
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "feature_security": {
-            "title": "Security | Zimo",
+            "title": "Security",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "feature_marketing_crm": {
-            "title": "Marketing & CRM | Zimo",
+            "title": "Marketing & CRM",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "feature_staff_dashboard": {
-            "title": "Staff Dashboard | Zimo",
+            "title": "Staff Dashboard",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "feature_staff_performance": {
-            "title": "Staff Performance Evaluation | Zimo",
+            "title": "Staff Performance Evaluation",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         },
         "feature_online_booking": {
-            "title": "Online Booking | Zimo",
+            "title": "Online Booking",
             "description": "Zimo is a Persian CRM for managing appointments, branches, staff, settlements, and the client loyalty club for beauty salons."
         }
     },
     "nav": {
         "logo_badge": "Zi",
         "logo_text": "Zimo",
+        "logo_alt": "Zimo - Beauty Salon CRM",
         "home": "Home",
         "features": "Features",
         "pricing": "Pricing",

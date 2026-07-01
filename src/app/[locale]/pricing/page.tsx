@@ -1,7 +1,41 @@
+import type { Metadata } from 'next';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import PricingSection from '@/components/pricing/PricingSection';
 import { getStaticPlans, getStaticComparisonFeatures } from '@/data/pricing';
+
+const SITE_URL = "https://zimo.beauty";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const typedLocale = locale as Locale;
+  const messages = getMessages(typedLocale);
+  const meta = messages.meta;
+
+  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
+  const canonical = `${SITE_URL}${prefix}/pricing`;
+
+  return {
+    title: `${meta.pricing.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
+    description: meta.pricing.description,
+    alternates: {
+      canonical,
+      languages: {
+        fa: `${SITE_URL}/pricing`,
+        en: `${SITE_URL}/en/pricing`,
+        tr: `${SITE_URL}/tr/pricing`,
+      },
+    },
+    openGraph: {
+      title: meta.pricing.title,
+      description: meta.pricing.description,
+    },
+  };
+}
 
 export default async function PricingPage({
   params,

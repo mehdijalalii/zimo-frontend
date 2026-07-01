@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "زیمو | CRM سالن زیبایی",
-  description: "زیمو CRM فارسی برای مدیریت نوبت، شعبه، پرسنل، تسویه و باشگاه زیباجویان سالن‌های زیبایی است.",
+  metadataBase: new URL("https://zimo.beauty"),
   icons: {
     icon: "/favicon.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#841474",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,21 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 
-function getDashboardImage(locale: string): string {
-  if (locale === 'fa') return '/images/landing/zimo-dashboard.png';
-  return `/images/landing/zimo-dashboard-${locale}.png`;
-}
-
-function getHref(locale: string, slug: string): string {
-  const prefix = locale === 'fa' ? '' : `/${locale}`;
-  if (slug === 'home') return prefix || '/';
-  if (slug === 'features') return `${prefix}/features`;
-  if (slug === 'demo') return `${prefix}/demo`;
-  return prefix || '/';
-}
+const SITE_URL = "https://zimo.beauty";
 
 const validSlugs = [
   'appointments', 'finance', 'branches', 'loyalty', 'payroll',
@@ -37,6 +27,55 @@ const translationKeyMap: Record<string, string> = {
 
 export async function generateStaticParams() {
   return validSlugs.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!validSlugs.includes(slug)) return {};
+  const typedLocale = locale as Locale;
+  const messages = getMessages(typedLocale);
+  const meta = messages.meta;
+
+  const key = translationKeyMap[slug];
+  const pageMeta = meta[key as keyof typeof meta] as { title: string; description: string } | undefined;
+
+  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
+  const canonical = `${SITE_URL}${prefix}/feature/${slug}`;
+
+  const siteName = typedLocale === "fa" ? "زیمو" : "Zimo";
+  return {
+    title: `${pageMeta?.title ?? meta.default_title} | ${siteName}`,
+    description: pageMeta?.description ?? meta.default_description,
+    alternates: {
+      canonical,
+      languages: Object.fromEntries(
+        ["fa", "en", "tr"].map((loc) => [
+          loc,
+          `${SITE_URL}${loc === "fa" ? "" : `/${loc}`}/feature/${slug}`,
+        ])
+      ),
+    },
+    openGraph: {
+      title: pageMeta?.title ?? meta.default_title,
+      description: pageMeta?.description ?? meta.default_description,
+    },
+  };
+}
+
+function getDashboardImage(locale: string): string {
+  return `/images/landing/zimo-dashboard-${locale}.webp`;
+}
+
+function getHref(locale: string, slug: string): string {
+  const prefix = locale === 'fa' ? '' : `/${locale}`;
+  if (slug === 'home') return prefix || '/';
+  if (slug === 'features') return `${prefix}/features`;
+  if (slug === 'demo') return `${prefix}/demo`;
+  return prefix || '/';
 }
 
 const benefitIcons = [
@@ -137,7 +176,7 @@ export default async function FeatureDetailPage({
           </div>
           <div className="relative group lg:pl-4">
             <div className="relative z-10 overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-[0_48px_80px_-16px_rgba(132,20,116,0.18)]">
-              <Image src={getDashboardImage(typedLocale)} alt={imageAlt} width={800} height={500} className="w-full object-cover" />
+              <Image src={getDashboardImage(typedLocale)} alt={imageAlt} width={800} height={500} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 600px" className="w-full object-cover" />
             </div>
             <div className={`absolute -bottom-10 ${typedLocale === 'fa' ? '-right-10' : '-left-10'} -z-10 h-80 w-80 rounded-full bg-[#841474]/5 blur-[100px]`} />
           </div>
