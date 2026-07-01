@@ -19,43 +19,46 @@ const featureSlugs = [
   'reporting', 'security', 'staff-performance', 'staff-dashboard', 'marketing-crm',
 ];
 
+function getAlternates(slug: string): Record<string, string> {
+  const languages: Record<string, string> = {};
+  for (const locale of locales) {
+    const prefix = locale === "fa" ? "" : `/${locale}`;
+    languages[locale] = `${SITE_URL}${prefix}/${slug}`;
+  }
+  return languages;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
 
   for (const page of pages) {
-    const languages: Record<string, string> = {};
     for (const locale of locales) {
       const prefix = locale === "fa" ? "" : `/${locale}`;
-      languages[locale] = `${SITE_URL}${prefix}/${page.slug}`;
+      urls.push({
+        url: `${SITE_URL}${prefix}/${page.slug}`,
+        lastModified,
+        changeFrequency: page.changeFrequency,
+        priority: page.priority,
+        alternates: {
+          languages: getAlternates(page.slug),
+        },
+      });
     }
-
-    urls.push({
-      url: `${SITE_URL}/${page.slug}`,
-      lastModified,
-      changeFrequency: page.changeFrequency,
-      priority: page.priority,
-      alternates: {
-        languages,
-      },
-    });
   }
 
   for (const slug of featureSlugs) {
-    const languages: Record<string, string> = {};
     for (const locale of locales) {
       const prefix = locale === "fa" ? "" : `/${locale}`;
-      languages[locale] = `${SITE_URL}${prefix}/feature/${slug}`;
+      urls.push({
+        url: `${SITE_URL}${prefix}/feature/${slug}`,
+        lastModified,
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: {
+          languages: getAlternates(`feature/${slug}`),
+        },
+      });
     }
-
-    urls.push({
-      url: `${SITE_URL}/feature/${slug}`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-      alternates: {
-        languages,
-      },
-    });
   }
 
   return urls;
