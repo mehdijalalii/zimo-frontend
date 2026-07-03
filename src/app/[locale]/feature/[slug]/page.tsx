@@ -213,7 +213,7 @@ export default async function FeatureDetailPage({
   ];
 
   return (
-    <section className="section-block pt-32 overflow-x-hidden">
+    <section className="section-block pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
