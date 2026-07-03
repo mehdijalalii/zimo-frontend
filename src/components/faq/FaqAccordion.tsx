@@ -36,7 +36,7 @@ export default function FaqAccordion({
             <button
               type="button"
               onClick={() => toggle(index)}
-              className="flex w-full cursor-pointer items-center justify-between gap-4 px-4 py-4 text-right sm:px-6"
+              className="flex w-full cursor-pointer items-center justify-between gap-4 px-4 py-4 text-start sm:px-6"
               aria-expanded={isOpen}
             >
               <span className="flex-1 text-sm font-semibold text-gray-900 sm:text-base">
