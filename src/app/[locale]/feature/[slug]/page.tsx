@@ -221,7 +221,7 @@ export default async function FeatureDetailPage({
       <div className="mx-auto max-w-6xl">
         {/* Hero - Full width, 2 columns: text + image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 min-w-0">
             <nav className="flex items-center gap-2 text-sm text-gray-500">
               <Link href={getHref(typedLocale, 'home')} className="hover:text-[#841474]">{featureDetail.breadcrumb_home}</Link>
               <span>/</span>
@@ -238,7 +238,7 @@ export default async function FeatureDetailPage({
               <Link href="https://zimo.beauty/login" className="btn-secondary">{featureDetail.login_cta}</Link>
             </div>
           </div>
-          <div className="relative group lg:pl-4">
+          <div className="relative group lg:pl-4 min-w-0">
             <div className="relative z-10 overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-[0_48px_80px_-16px_rgba(132,20,116,0.18)]">
               <Image src={getDashboardImage(typedLocale)} alt={imageAlt} width={800} height={500} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 600px" className="w-full object-cover" />
             </div>
@@ -249,7 +249,7 @@ export default async function FeatureDetailPage({
         {/* Content + Sidebar - 3 columns */}
         <div className="mt-24 grid gap-16 lg:grid-cols-3">
           {/* Left: Main Content */}
-          <div className="lg:col-span-2 space-y-12">
+          <div className="lg:col-span-2 space-y-12 min-w-0">
             {/* Section 1 */}
             {section1Title && (
               <div className="space-y-8">
@@ -340,7 +340,7 @@ export default async function FeatureDetailPage({
           </div>
 
           {/* Right: Sticky Sidebar */}
-          <div className="space-y-8">
+          <div className="space-y-8 min-w-0">
             <div className="sticky top-28 space-y-8">
               {/* Benefits */}
               {benefits.length > 0 && (
