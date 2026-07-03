@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import type { Locale } from '@/i18n/config';
@@ -17,6 +17,11 @@ type PricingTranslations = {
   price_per_year: string;
   request_demo: string;
   contact_us: string;
+  feature_cards: {
+    title: string;
+    title_bold: string;
+    cards: { title: string; description: string }[];
+  };
   comparison: {
     kicker: string;
     title: string;
@@ -25,7 +30,7 @@ type PricingTranslations = {
     custom_price: string;
     price: string;
     two_months_free_yearly: string;
-    rows?: { label: string; values: (boolean | string)[] }[];
+    rows?: { category?: string; label: string; values: (boolean | string)[] }[];
   };
 };
 
@@ -37,19 +42,37 @@ function getHref(locale: string, page: string): string {
 function CellValue({ value }: { value: boolean | string | null }) {
   if (value === null || value === undefined || value === false) {
     return (
-      <svg className="mx-auto h-5 w-5 lg:h-6 lg:w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="mx-auto h-5 w-5 lg:h-6 lg:w-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       </svg>
     );
   }
   if (typeof value === 'string') {
-    return <span className="font-medium text-gray-900 text-xs lg:text-sm">{value}</span>;
+    return <span className="font-semibold text-gray-900 text-xs lg:text-sm">{value}</span>;
   }
   return (
     <svg className="mx-auto h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
     </svg>
   );
+}
+
+function formatPrice(locale: Locale, price: number): string {
+  if (locale === 'fa') {
+    return `${price.toLocaleString('fa-IR')} تومان`;
+  }
+  if (locale === 'tr') {
+    return `₺${price.toLocaleString('tr-TR')}`;
+  }
+  return `$${price}`;
+}
+
+function getYearlyPrice(monthlyPrice: number): number {
+  return monthlyPrice * 10;
+}
+
+function getMonthlyFromYearly(yearlyPrice: number): number {
+  return Math.round(yearlyPrice / 10);
 }
 
 export default function PricingSection({
@@ -64,6 +87,7 @@ export default function PricingSection({
   comparisonFeatures: ComparisonFeature[];
 }) {
   const dir = locale === 'fa' ? 'rtl' : 'ltr';
+  const [isYearly, setIsYearly] = useState(false);
 
   const cardsRef = useRef<HTMLDivElement>(null);
   const cardsInView = useInView(cardsRef, { once: true, margin: '-60px' });
@@ -75,8 +99,61 @@ export default function PricingSection({
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const } },
   };
 
+  function getDisplayPrice(plan: Plan): number | null {
+    if (plan.price === null || plan.price === 0 || typeof plan.price === 'string') return null;
+    if (isYearly) return getYearlyPrice(plan.price);
+    return plan.price;
+  }
+
+  function getPriceLabel(): string {
+    if (isYearly) {
+      return locale === 'fa' ? 'هر شعبه' : locale === 'tr' ? 'Yıl / Şube' : 'yr per branch';
+    }
+    return locale === 'fa' ? 'هر شعبه' : locale === 'tr' ? 'Ay / Şube' : 'mo per branch';
+  }
+
+  function getTablePriceLabel(): string {
+    if (isYearly) {
+      return locale === 'fa' ? 'هر شعبه / سال' : locale === 'tr' ? 'Şube / Yıl' : 'branch / yr';
+    }
+    return locale === 'fa' ? 'هر شعبه / ماه' : locale === 'tr' ? 'Şube / Ay' : 'branch / mo';
+  }
+
   return (
     <>
+      {/* Billing Toggle */}
+      <div className="mb-10 flex justify-center">
+        <div className="relative inline-flex flex-col items-center">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 whitespace-nowrap mb-1 self-end">
+            {translations.two_months_free}
+          </span>
+          <div className="flex items-center rounded border border-gray-900">
+          <button
+            type="button"
+            onClick={() => setIsYearly(false)}
+            className={`px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors rounded-sm ${
+              !isYearly
+                ? 'bg-gray-900 text-white'
+                : 'bg-transparent text-gray-900 hover:bg-gray-100'
+            }`}
+          >
+            {translations.monthly}
+          </button>
+          <button
+            type="button"
+            onClick={() => setIsYearly(true)}
+            className={`px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors rounded-sm ${
+              isYearly
+                ? 'bg-gray-900 text-white'
+                : 'bg-transparent text-gray-900 hover:bg-gray-100'
+            }`}
+          >
+            {translations.yearly}
+          </button>
+        </div>
+        </div>
+      </div>
+
       {/* Cards */}
       <motion.div
         ref={cardsRef}
@@ -86,6 +163,8 @@ export default function PricingSection({
         className="grid items-stretch gap-4 lg:grid-cols-3"
       >
         {plans.map((plan) => {
+          const isCustom = plan.pricing_type === 'custom' || plan.price === null || plan.price === 0;
+          const displayPrice = getDisplayPrice(plan);
           return (
             <motion.div
               key={plan.id}
@@ -93,41 +172,86 @@ export default function PricingSection({
               variants={cardVariants}
             >
               <article
-                className={`relative flex flex-col h-full overflow-hidden rounded-3xl bg-white p-8 transition-all ${
+                className={`relative flex flex-col h-full overflow-hidden rounded-lg border p-6 transition-all ${
                   plan.is_featured
-                    ? 'border border-[#841474] ring-2 ring-[#841474]/20 shadow-2xl z-10'
-                    : 'border border-gray-100 shadow-sm hover:shadow-lg'
+                    ? 'border-[#841474] bg-gray-50 shadow-lg z-10'
+                    : 'border-gray-200 bg-white'
                 }`}
               >
-                <h3 className="text-xl font-bold text-gray-900">{plan.name}</h3>
+                {/* Badge */}
+                <h3 className={`w-fit whitespace-nowrap px-5 py-2 text-sm font-bold uppercase tracking-widest ${
+                  plan.is_featured ? 'bg-[#841474] text-white' : 'bg-gray-100 text-gray-700'
+                }`}>{plan.name}</h3>
+
+                {/* Subtitle */}
                 {plan.landing_subtitle && (
-                  <p className="mt-1 text-sm text-gray-500">{plan.landing_subtitle}</p>
+                  <p className="mt-4 text-sm text-gray-500">{plan.landing_subtitle}</p>
                 )}
 
-                <p className="mt-5 text-base font-bold text-[#841474]">{translations.contact_us}</p>
+                {/* Price */}
+                <div className="mt-1 mb-4 min-h-[80px] flex flex-col justify-end">
+                  {isCustom ? (
+                    <p className="text-2xl font-bold text-[#841474]">{translations.contact_us}</p>
+                  ) : (
+                    <>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-4xl font-bold text-gray-900">{formatPrice(locale, displayPrice!)}</span>
+                        <span className="text-sm text-gray-500">/ {getPriceLabel()}</span>
+                      </div>
+                    </>
+                  )}
+                </div>
 
-              <ul className="flex-1 space-y-3 pt-6 mt-5 pb-0">
-                {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#841474]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    {feature.text}
-                  </li>
-                ))}
-              </ul>
+                {/* Tagline */}
+                {plan.tagline && (
+                  <p className={`mt-5 text-sm font-semibold leading-relaxed text-gray-700 ${locale === 'fa' ? 'text-right' : 'text-left'}`}>{plan.tagline}</p>
+                )}
 
-              <Link
-                href={getHref(locale, 'demo')}
-                className={`mt-8 mx-8 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-bold transition-all ${
-                  plan.is_featured
-                    ? 'bg-[#841474] text-white shadow-lg shadow-[#841474]/20 hover:bg-[#6b105d] hover:shadow-[#841474]/40'
-                    : 'border border-gray-200 bg-white text-gray-700 hover:bg-gray-50'
-                }`}
-              >
-                {translations.request_demo}
-              </Link>
-            </article>
+                {/* CTA Button */}
+                <Link
+                  href={isCustom ? getHref(locale, 'contact') : getHref(locale, 'demo')}
+                  className={`mt-6 w-full inline-flex items-center justify-between gap-2 border px-5 py-3 text-sm font-bold uppercase tracking-wider transition-colors ${
+                    plan.is_featured
+                      ? 'border-[#841474] bg-[#841474] text-white hover:bg-[#6b105d]'
+                      : 'border-gray-900 bg-transparent text-gray-900 hover:bg-gray-900 hover:text-white'
+                  }`}
+                >
+                  <span>{translations.request_demo}</span>
+                  <svg className={`h-3 w-3 ${locale === 'fa' ? 'rotate-90' : '-rotate-90'}`} viewBox="0 0 12 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M.253.623a.857.857 0 0 1 1.212 0l4.537 4.536L10.54.623a.857.857 0 0 1 1.212 1.212L6.608 6.978a.857.857 0 0 1-1.212 0L.253 1.835a.857.857 0 0 1 0-1.212Z" />
+                  </svg>
+                </Link>
+
+                {/* Features */}
+                <div className="mt-8 grid gap-y-4">
+                  <h5 className={`text-sm font-semibold mt-4 uppercase tracking-wider text-gray-400 ${locale === 'fa' ? 'text-right' : 'text-left'}`}>
+                    {plan.code === 'starter'
+                      ? (locale === 'fa' ? 'شامل امکانات:' : locale === 'tr' ? 'Dahil Olanlar:' : 'What\'s included:')
+                      : plan.code === 'professional'
+                      ? (locale === 'fa' ? 'شامل امکانات پایه و همچنین:' : locale === 'tr' ? 'Başlangıç artı:' : 'Essentials plus:')
+                      : (locale === 'fa' ? 'شامل امکانات حرفه‌ای و همچنین:' : locale === 'tr' ? 'Profesyonel artı:' : 'Professional plus:')
+                    }
+                  </h5>
+                  <ul className="grid gap-y-3">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-2.5 text-sm text-gray-600">
+                        <svg className="h-3 w-3 shrink-0 text-gray-400" viewBox="0 0 11 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" clipRule="evenodd" d="M10.648.977c.22.22.22.576 0 .796L4.46 7.96a.563.563 0 0 1-.795 0L.852 5.148a.563.563 0 0 1 .796-.796l2.414 2.415 5.79-5.79c.22-.22.576-.22.796 0Z" />
+                        </svg>
+                        <span>{feature.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* View all features */}
+                <a
+                  href="#comparison"
+                  className={`mt-6 block underline text-sm font-semibold text-gray-600 hover:text-gray-900 ${locale === 'fa' ? 'text-right' : 'text-left'}`}
+                >
+                  {locale === 'fa' ? 'مشاهده همه قابلیت‌ها' : locale === 'tr' ? 'Tüm özellikleri görüntüle' : 'View all features'}
+                </a>
+              </article>
             </motion.div>
           );
         })}
@@ -135,6 +259,7 @@ export default function PricingSection({
 
       {/* Comparison Table */}
       <motion.section
+        id="comparison"
         ref={tableRef}
         initial={{ opacity: 0, y: 30 }}
         animate={tableInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -172,25 +297,55 @@ export default function PricingSection({
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
-              {(translations.comparison.rows || []).map((row, i) => (
-                <tr key={i} className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200 transition-colors even:bg-gray-50/50 hover:bg-[#841474]/5">
-                  <td className="p-3 lg:p-5 font-medium text-gray-900 text-xs lg:text-sm">{row.label}</td>
-                  {row.values.map((val, j) => (
-                    <td key={j} className="p-3 lg:p-5 text-center">
-                      <CellValue value={val} />
-                    </td>
-                  ))}
-                </tr>
-              ))}
+              {(translations.comparison.rows || []).map((row, i) => {
+                const isCategory = !!row.category;
+                if (isCategory) {
+                  return (
+                    <tr key={i} className="bg-gray-50">
+                      <td colSpan={4} className="px-3 py-3 lg:px-5 lg:py-4">
+                        <span className="text-xs lg:text-sm font-bold uppercase tracking-wider text-[#841474]">
+                          {row.category}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                }
+                return (
+                  <tr key={i} className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200 transition-colors hover:bg-[#841474]/5">
+                    <td className="p-3 lg:p-5 font-medium text-gray-700 text-xs lg:text-sm">{row.label}</td>
+                    {row.values.map((val, j) => (
+                      <td key={j} className="p-3 lg:p-5 text-center">
+                        <CellValue value={val} />
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
             </tbody>
             <tfoot className="bg-[#841474]/5">
               <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
                 <th className="whitespace-nowrap p-3 lg:p-5 font-bold text-[#841474] text-xs lg:text-base"></th>
-                {plans.map((plan) => (
+                {plans.map((plan) => {
+                  const isCustom = plan.pricing_type === 'custom' || plan.price === null || plan.price === 0;
+                  const displayPrice = getDisplayPrice(plan);
+                  return (
                     <th key={plan.id} className={`whitespace-nowrap p-3 lg:p-5 text-center font-bold ${plan.is_featured ? 'text-[#841474]' : 'text-gray-900'}`}>
-                      <span className="text-base font-bold text-[#841474]">{translations.contact_us}</span>
+                      {isCustom ? (
+                        <span className="text-sm font-bold text-[#841474]">{translations.contact_us}</span>
+                      ) : (
+                        <div>
+                          {isYearly && (
+                            <span className="block text-xs text-gray-400 line-through mb-0.5">
+                              {formatPrice(locale, plan.price as number)}
+                            </span>
+                          )}
+                          <span className="text-lg font-extrabold text-gray-900">{formatPrice(locale, displayPrice!)}</span>
+                          <span className="block text-[10px] text-gray-500 mt-0.5">/ {getTablePriceLabel()}</span>
+                        </div>
+                      )}
                     </th>
-                ))}
+                  );
+                })}
               </tr>
               <tr className="[&>:not(:first-child)]:border-r [&>:not(:first-child)]:border-gray-200">
                 <th className="whitespace-nowrap p-3 lg:p-5"></th>
@@ -205,7 +360,7 @@ export default function PricingSection({
                         <svg className="h-3 w-3 lg:h-3.5 lg:w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                         </svg>
-                        <span>{translations.request_demo}</span>
+                  <span>{isCustom ? translations.contact_us : translations.request_demo}</span>
                       </Link>
                     </th>
                   );

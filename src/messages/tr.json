@@ -320,7 +320,12 @@
     "pricing_page": {
         "kicker": "Fiyatlandırma",
         "title": "Salonunuzun Düzenine, Huzuruna ve Büyümesine Yatırım",
-        "description": "Zimo, günlük salon süreçlerini otomatikleştirerek insan hatalarını azaltır, ekip verimliliğini artırır ve işletmenizin performansına dair net bir görüş sağlar."
+        "description": "Zimo, günlük salon süreçlerini otomatikleştirerek insan hatalarını azaltır, ekip verimliliğini artırır ve işletmenizin performansına dair net bir görüş sağlar.",
+        "plans": [
+            "Profesyonel araçlarla işinizi kurun ve müşterilerinize kusursuz bir deneyim sunun.",
+            "Büyük randevu, personel ve operasyon ihtiyaçları için gelişmiş özellikler.",
+            "Profesyonel planın her şeyi artı büyük ölçekli salonlar için ekstra değer."
+        ]
     },
     "pricing": {
         "monthly": "Aylık",
@@ -342,26 +347,413 @@
             "price": "Fiyat",
             "two_months_free_yearly": "Yıllık ödemede 2 ay ücretsiz",
             "rows": [
-                { "label": "Özel Domain Bağlantısı", "values": [false, false, true] },
-                { "label": "Şube Sayısı", "values": ["1", "3", "Sınırsız"] },
-                { "label": "Personel Sayısı", "values": ["7", "10", "Sınırsız"] },
-                { "label": "Akıllı Randevu (7 katmanlı)", "values": [true, true, true] },
-                { "label": "Özel Geliştirme", "values": [false, false, true] },
-                { "label": "İzin Yönetimi", "values": [false, true, true] },
-                { "label": "Personel Devam Takibi", "values": [false, true, true] },
-                { "label": "Müşteri Adayı Yönetimi", "values": [true, true, true] },
-                { "label": "Çevrimiçi Erişim", "values": [true, true, true] },
-                { "label": "Otomatik SMS", "values": [true, true, true] },
-                { "label": "Dijital Müşteri Profili", "values": [true, true, true] },
-                { "label": "Kasa & Vardiyalar", "values": [false, true, true] },
-                { "label": "Sadakat Programları", "values": [false, true, true] },
-                { "label": "Merkezi Şube Yönetimi", "values": [false, false, true] },
-                { "label": "Müşteri Kulübü", "values": [false, true, true] },
-                { "label": "Finansal & Maaş Otomasyonu", "values": [false, true, true] },
-                { "label": "Kredi & Avans Yönetimi", "values": [false, true, true] },
-                { "label": "Akıllı Dönemlik SMS", "values": [false, true, true] },
-                { "label": "Destek", "values": ["Çevrimiçi", "7/24", "Özel"] },
-                { "label": "Raporlama", "values": ["Temel", "İleri", "Özel"] }
+                {
+                    "category": "RANDEVU",
+                    "label": "Çevrimiçi Rezervasyon",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Akıllı Randevu (7 katmanlı)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "E-posta/SMS Hatırlatma",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Çoklu Personel Randevusu",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Check-in & Walk-ins",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Grup Rezervasyonu",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Esnek Rezervasyon",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "MÜŞTERİ YÖNETİMİ",
+                    "label": "Dijital Müşteri Profili",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Otomatik SMS (hoşgeldin, doğum günü)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Danışma Formları",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Müşteri Notları (tıbbi, tercih)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Referans Takibi",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "PERSONEL YÖNETİMİ",
+                    "label": "Personel Profilleri",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Personel Çizelgesi",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Personel Bazlı Fiyatlandırma",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Komisyon Takibi",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "İzin Yönetimi",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Devam & Mesai Takibi",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Roller & İzinler",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "ÖDEME & FATURA",
+                    "label": "Fatura & Ödeme",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Kasa & Vardiyalar",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "İndirim & Fiyat Değişikliği",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Hediye Kartları",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Bölünmüş Ödeme",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "İadeler",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "FİNANS & MAAŞ",
+                    "label": "Temel Finansal Raporlar",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Maaş Otomasyonu",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Hesap & Maaş Bordrosu",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Kredi & Avans Yönetimi",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "SADAKAT & PAZARLAMA",
+                    "label": "Sadakat Programı (puan & seviye)",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Üyelik & Paketler",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Akıllı Dönemlik SMS",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Müşteri Adayı Yönetimi (CRM)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "RAPORLAR",
+                    "label": "Standart Raporlar",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Gelişmiş Raporlar",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Özel Raporlar",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "category": "ÇOKLU ŞUBE",
+                    "label": "Şubeler",
+                    "values": [
+                        "1",
+                        "3",
+                        "Sınırsız"
+                    ]
+                },
+                {
+                    "label": "Personel",
+                    "values": [
+                        "3",
+                        "15",
+                        "Sınırsız"
+                    ]
+                },
+                {
+                    "label": "Müşteriler",
+                    "values": [
+                        "100",
+                        "500",
+                        "Sınırsız"
+                    ]
+                },
+                {
+                    "label": "Aylık SMS",
+                    "values": [
+                        "50",
+                        "200",
+                        "Sınırsız"
+                    ]
+                },
+                {
+                    "label": "Hizmetler",
+                    "values": [
+                        "10",
+                        "50",
+                        "Sınırsız"
+                    ]
+                },
+                {
+                    "label": "Merkezi Şube Yönetimi",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "label": "Şubelerarası Raporlama",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "category": "DESTEK",
+                    "label": "Çevrimiçi Destek",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "7/24 Destek",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Özel Hesap Yöneticisi",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "label": "Yerinde Eğitim",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                }
+            ]
+        },
+        "feature_cards": {
+            "title": "Karıştırın ve",
+            "title_bold": "daha fazla özellik",
+            "cards": [
+                {
+                    "title": "Akıllı SMS",
+                    "description": "Otomatik randevu hatırlatmaları, doğum günü kutlamaları, yıldönüm mesajları ve dönemlik sadakat bildirimleri gönderin."
+                },
+                {
+                    "title": "Sadakat Programı",
+                    "description": "Puan sistemleri, seviye kademeleri ve üyelik planlarıyla müşteri sadakatini artırın."
+                },
+                {
+                    "title": "Müşteri Adayı Yönetimi",
+                    "description": "Çeşitli kaynaklardan müşteri adaylarını toplayın, etkileşimleri takip edin ve potansiyel müşterileri sadık müşterilere dönüştürün."
+                },
+                {
+                    "title": "Çoklu Şube Yönetimi",
+                    "description": "Şubeler arası raporlama, personel rotasyonu ve birleşik finansal mutabakat ile merkezi kontrol."
+                }
             ]
         }
     },

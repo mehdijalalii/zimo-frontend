@@ -320,7 +320,12 @@
     "pricing_page": {
         "kicker": "Pricing",
         "title": "Invest in Your Salon's Organization, Peace of Mind & Growth",
-        "description": "Zimo automates your daily salon operations, reduces human error, boosts team productivity, and gives you a crystal-clear view of your business performance."
+        "description": "Zimo automates your daily salon operations, reduces human error, boosts team productivity, and gives you a crystal-clear view of your business performance.",
+        "plans": [
+            "Start strong with professional tools and deliver an exceptional experience to every client.",
+            "Advanced features for growing teams with complex scheduling, staff, and operations.",
+            "Everything in Professional plus extra value for large-scale, high-performance salons."
+        ]
     },
     "pricing": {
         "monthly": "Monthly",
@@ -342,26 +347,413 @@
             "price": "Price",
             "two_months_free_yearly": "2 months free with annual payment",
             "rows": [
-                { "label": "Custom Domain Connection", "values": [false, false, true] },
-                { "label": "Branch Limit", "values": ["1", "3", "Unlimited"] },
-                { "label": "Staff Limit", "values": ["7", "10", "Unlimited"] },
-                { "label": "Smart Appointment (7-layer)", "values": [true, true, true] },
-                { "label": "Custom Development", "values": [false, false, true] },
-                { "label": "Leave Management", "values": [false, true, true] },
-                { "label": "Staff Attendance", "values": [false, true, true] },
-                { "label": "Lead Management", "values": [true, true, true] },
-                { "label": "Online Access", "values": [true, true, true] },
-                { "label": "Automated SMS", "values": [true, true, true] },
-                { "label": "Digital Client Profile", "values": [true, true, true] },
-                { "label": "Cash Register & Shifts", "values": [false, true, true] },
-                { "label": "Loyalty Programs", "values": [false, true, true] },
-                { "label": "Centralized Branch Mgmt", "values": [false, false, true] },
-                { "label": "Client Club", "values": [false, true, true] },
-                { "label": "Financial & Payroll Automation", "values": [false, true, true] },
-                { "label": "Loan & Advance Mgmt", "values": [false, true, true] },
-                { "label": "Smart Periodic SMS", "values": [false, true, true] },
-                { "label": "Support", "values": ["Online", "24/7", "Dedicated"] },
-                { "label": "Reporting", "values": ["Basic", "Advanced", "Custom"] }
+                {
+                    "category": "SCHEDULING",
+                    "label": "Online Booking",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Smart Scheduling (7-layer)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Email/SMS Reminders",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Multi-staff Appointments",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Check-in & Walk-ins",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Group Booking",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Flexible Booking",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "CLIENT MANAGEMENT",
+                    "label": "Digital Client Profiles",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Automated SMS (welcome, birthday)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Consultation Forms",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Client Notes (medical, preference)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Referral Tracking",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "STAFF MANAGEMENT",
+                    "label": "Staff Profiles",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Staff Scheduling",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Staff-specific Prices",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Commission Tracking",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Leave Management",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Attendance & Timeclock",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Roles & Permissions",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "PAYMENTS & INVOICING",
+                    "label": "Invoicing & Checkout",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Cash Register & Shifts",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Discounts & Price Overrides",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Gift Cards",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Split Payments",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Refunds",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "FINANCE & PAYROLL",
+                    "label": "Basic Financial Reports",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Payroll Automation",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Settlement & Payslips",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Loan & Advance Management",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "LOYALTY & MARKETING",
+                    "label": "Loyalty Program (points & tiers)",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Memberships & Packages",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Smart Periodic SMS",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Lead Management (CRM)",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "category": "REPORTS",
+                    "label": "Standard Reports",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Advanced Reports",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Custom Reports",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "category": "MULTI-BRANCH",
+                    "label": "Branches",
+                    "values": [
+                        "1",
+                        "3",
+                        "Unlimited"
+                    ]
+                },
+                {
+                    "label": "Staff",
+                    "values": [
+                        "3",
+                        "15",
+                        "Unlimited"
+                    ]
+                },
+                {
+                    "label": "Clients",
+                    "values": [
+                        "100",
+                        "500",
+                        "Unlimited"
+                    ]
+                },
+                {
+                    "label": "Monthly SMS",
+                    "values": [
+                        "50",
+                        "200",
+                        "Unlimited"
+                    ]
+                },
+                {
+                    "label": "Services",
+                    "values": [
+                        "10",
+                        "50",
+                        "Unlimited"
+                    ]
+                },
+                {
+                    "label": "Centralized Branch Mgmt",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "label": "Cross-branch Reporting",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "category": "SUPPORT",
+                    "label": "Online Support",
+                    "values": [
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "24/7 Support",
+                    "values": [
+                        false,
+                        true,
+                        true
+                    ]
+                },
+                {
+                    "label": "Dedicated Account Manager",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                },
+                {
+                    "label": "On-site Training",
+                    "values": [
+                        false,
+                        false,
+                        true
+                    ]
+                }
+            ]
+        },
+        "feature_cards": {
+            "title": "Mix and match",
+            "title_bold": "more features",
+            "cards": [
+                {
+                    "title": "Smart SMS",
+                    "description": "Send automated appointment reminders, birthday greetings, anniversary messages, and periodic loyalty statements. No setup cost."
+                },
+                {
+                    "title": "Loyalty Program",
+                    "description": "Build customer loyalty with point systems, tier levels, and membership plans. Increase retention and repeat visits."
+                },
+                {
+                    "title": "Lead Management",
+                    "description": "Capture leads from multiple sources, track interactions, and convert prospects into loyal clients with built-in CRM."
+                },
+                {
+                    "title": "Multi-Branch Management",
+                    "description": "Centralized control over multiple branches with cross-branch reporting, staff rotation, and unified financial settlements."
+                }
             ]
         }
     },
