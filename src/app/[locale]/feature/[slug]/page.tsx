@@ -218,7 +218,7 @@ export default async function FeatureDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Hero - Full width, 2 columns: text + image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="space-y-6">
