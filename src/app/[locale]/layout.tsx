@@ -113,7 +113,7 @@ export default async function LocaleLayout({
       </head>
       <body suppressHydrationWarning style={{ fontFamily: "'IRANSansX', sans-serif" }} className="min-h-screen bg-background text-foreground">
         <Header locale={typedLocale} translations={messages} />
-        <main className="pt-16">{children}</main>
+        <main className="pt-16 overflow-x-hidden">{children}</main>
         <DemoCta locale={typedLocale} translations={messages} />
         <Footer locale={typedLocale} translations={messages} />
         <Chatwoot locale={typedLocale} />
