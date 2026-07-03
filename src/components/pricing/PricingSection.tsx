@@ -195,7 +195,7 @@ export default function PricingSection({
                   ) : (
                     <>
                       <div className="flex items-baseline gap-2">
-                        <span className="text-4xl font-bold text-gray-900">{formatPrice(locale, displayPrice!)}</span>
+                        <span className="text-3xl font-bold text-gray-900">{formatPrice(locale, displayPrice!)}</span>
                         <span className="text-sm text-gray-500">/ {getPriceLabel()}</span>
                       </div>
                     </>
