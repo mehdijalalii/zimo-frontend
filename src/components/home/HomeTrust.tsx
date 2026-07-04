@@ -15,7 +15,7 @@ export default function HomeTrust({ translations }: HomeTrustProps) {
   const { trust } = translations;
 
   return (
-    <section className="section-block">
+    <section className="section-block bg-[#841474]/[0.12]">
       <div className="mx-auto max-w-6xl">
         <FadeIn direction="up" className="mb-12 flex flex-col items-center text-center">
           <h2 className="section-heading section-heading--center">

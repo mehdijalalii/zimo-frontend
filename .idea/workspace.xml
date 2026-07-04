@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32aa94b8-d922-41e8-bf0f-2d3d36fa801d" name="Changes" comment="change favicon">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mimocode/plans/1782919551949-silent-garden.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mimocode/plans/1782935055746-crisp-river.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mimocode/plans/1783097022139-misty-orchid.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hermes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mimocode/plans/1783097022139-misty-orchid.md" beforeDir="false" afterPath="$PROJECT_DIR$/.mimocode/plans/1783097022139-misty-orchid.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing/PricingSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pricing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pricing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/messages/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/fa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/tr.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +85,8 @@
       <workItem from="1782903042429" duration="3458000" />
       <workItem from="1782918609663" duration="15825000" />
       <workItem from="1783002477579" duration="1806000" />
-      <workItem from="1783068255447" duration="23255000" />
+      <workItem from="1783068255447" duration="30370000" />
+      <workItem from="1783147129459" duration="5334000" />
     </task>
     <task id="LOCAL-00001" summary="change favicon">
       <option name="closed" value="true" />

@@ -6,6 +6,8 @@ import HomeHighlights from '@/components/home/HomeHighlights';
 import HomeHowItWorks from '@/components/home/HomeHowItWorks';
 import HomeStats from '@/components/home/HomeStats';
 import HomeTrust from '@/components/home/HomeTrust';
+import HomePricing from '@/components/home/HomePricing';
+import { getStaticPlans } from '@/data/pricing';
 
 const SITE_URL = "https://zimo.beauty";
 
@@ -49,6 +51,7 @@ export default async function HomePage({
   const { locale } = await params;
   const typedLocale = locale as Locale;
   const messages = getMessages(typedLocale);
+  const plans = getStaticPlans(typedLocale);
 
   return (
     <>
@@ -57,6 +60,7 @@ export default async function HomePage({
       <HomeHowItWorks translations={messages} />
       <HomeStats translations={messages} />
       <HomeTrust translations={messages} />
+      <HomePricing locale={typedLocale} plans={plans} translations={messages.pricing} />
     </>
   );
 }
