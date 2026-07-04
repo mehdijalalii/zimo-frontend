@@ -29,7 +29,7 @@ const plans: Record<Locale, Plan[]> = {
       code: 'starter',
       landing_subtitle: 'برای تیم‌های کوچک با نیازهای ساده',
       tagline: 'شروع قدرتمند؛ ابزارهای ضروری برای مدیریت نوبت‌ها و حسابداری سالن‌های مستقل.',
-      price: 2390000,
+      price: 4990000,
       pricing_type: 'fixed',
       is_featured: false,
       ribbon_text: null,
@@ -38,7 +38,7 @@ const plans: Record<Locale, Plan[]> = {
         { text: 'پروفایل دیجیتال مشتری' },
         { text: 'صورت‌حساب و تسویه' },
         { text: 'گزارش‌های استاندارد' },
-        { text: 'پشتیبانی آنلاین' },
+        { text: 'پشتیبانی آنلاین و تلفنی' },
       ],
       comparison_values: {
         branches: { active: false, custom_text: '۱' },
@@ -55,16 +55,16 @@ const plans: Record<Locale, Plan[]> = {
       code: 'professional',
       landing_subtitle: 'برای کسب‌وکارهای در حال رشد',
       tagline: 'فراتر از مدیریت؛ با اتوماسیون هوشمند، تیم خود را هماهنگ کنید و بهره‌وری سالن را به حداکثر برسانید.',
-      price: 3990000,
+      price: 7990000,
       pricing_type: 'fixed',
       is_featured: true,
       ribbon_text: 'محبوب‌ترین',
       features: [
         { text: 'مدیریت مرخصی و حضور' },
         { text: 'صندوق و شیفت' },
-        { text: 'برنامه وفاداری و اشتراک' },
+        { text: 'برنامه‌های وفاداری' },
         { text: 'اتوماسیون حقوق و دستمزد' },
-        { text: 'پشتیبانی ۲۴/۷' },
+        { text: 'پیامک دوره‌ای هوشمند' },
       ],
       comparison_values: {
         branches: { active: false, custom_text: '۳' },
@@ -118,7 +118,7 @@ const plans: Record<Locale, Plan[]> = {
         'Digital Client Profiles',
         'Invoicing & Checkout',
         'Standard Reports',
-        'Online Support',
+        'Online & Phone Support',
       ].map((text) => ({ text })),
       comparison_values: {
         branches: { active: false, custom_text: '1' },
@@ -142,9 +142,9 @@ const plans: Record<Locale, Plan[]> = {
       features: [
         'Leave Management & Attendance',
         'Cash Register & Shifts',
-        'Loyalty Program & Memberships',
+        'Loyalty Programs',
         'Payroll Automation',
-        '24/7 Support',
+        'Smart Periodic SMS',
       ].map((text) => ({ text })),
       comparison_values: {
         branches: { active: false, custom_text: '3' },
@@ -198,7 +198,7 @@ const plans: Record<Locale, Plan[]> = {
         'Dijital Müşteri Profili',
         'Fatura & Ödeme',
         'Standart Raporlar',
-        'Çevrimiçi Destek',
+        'Çevrimiçi & Telefon Desteği',
       ].map((text) => ({ text })),
       comparison_values: {
         branches: { active: false, custom_text: '1' },
@@ -222,9 +222,9 @@ const plans: Record<Locale, Plan[]> = {
       features: [
         'İzin & Devam Yönetimi',
         'Kasa & Vardiyalar',
-        'Sadakat Programı & Üyelikler',
+        'Sadakat Programları',
         'Maaş Otomasyonu',
-        '7/24 Destek',
+        'Akıllı Dönemsel SMS',
       ].map((text) => ({ text })),
       comparison_values: {
         branches: { active: false, custom_text: '3' },

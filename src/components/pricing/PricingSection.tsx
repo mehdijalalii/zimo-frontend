@@ -269,7 +269,7 @@ export default function PricingSection({
                             </span>
                           )}
                           <span className="text-lg font-extrabold text-gray-900">{formatPrice(locale, displayPrice!)}</span>
-                          <span className="block text-[10px] text-gray-500 mt-0.5">/ {getTablePriceLabel()}</span>
+                          <span className="block text-[10px] text-gray-500 mt-0.5">{getTablePriceLabel()}</span>
                         </div>
                       )}
                     </th>

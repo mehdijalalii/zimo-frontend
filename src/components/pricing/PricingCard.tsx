@@ -20,7 +20,7 @@ function formatPrice(locale: Locale, price: number): string {
 }
 
 function getPriceLabel(locale: Locale): string {
-  return locale === 'fa' ? 'ازای هر شعبه' : locale === 'tr' ? '/ Şube' : '/ branch';
+  return locale === 'fa' ? 'به ازای هر شعبه' : locale === 'tr' ? '/ Şube' : '/ branch';
 }
 
 type PricingCardTranslations = {
@@ -74,7 +74,7 @@ export default function PricingCard({
         ) : (
           <div className="flex items-baseline gap-2">
             <span className="text-3xl font-bold text-gray-900">{formatPrice(locale, plan.price as number)}</span>
-            <span className="text-sm text-gray-500">/ {getPriceLabel(locale)}</span>
+            <span className="text-sm text-gray-500"> {getPriceLabel(locale)}</span>
           </div>
         )}
       </div>
