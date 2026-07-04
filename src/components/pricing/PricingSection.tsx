@@ -173,7 +173,7 @@ export default function PricingSection({
             >
               <PricingCard
                 locale={locale}
-                plan={plan}
+                plan={{ ...plan, price: isCustom ? null : getDisplayPrice(plan) }}
                 ctaHref={isCustom ? getHref(locale, 'contact') : getHref(locale, 'demo')}
                 ctaLabel={translations.request_demo}
                 showFeatures={true}
