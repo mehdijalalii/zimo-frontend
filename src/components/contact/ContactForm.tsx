@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { submitContact } from '@/lib/api';
 
 interface ContactFormProps {
   translations: {
@@ -18,6 +19,38 @@ interface ContactFormProps {
 
 export default function ContactForm({ translations: t }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    const name = (data.get('name') as string || '').trim();
+    const phone = (data.get('phone') as string || '').trim();
+    const salon = (data.get('salon') as string || '').trim();
+    const message = (data.get('message') as string || '').trim();
+
+    if (!name || !phone || !message) return;
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      await submitContact({
+        name,
+        email_or_phone: phone,
+        subject: salon || undefined,
+        message,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'خطا در ارسال پیام');
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <div className="rounded-[28px] border border-[var(--color-zimo-border)] bg-white p-6 shadow-[var(--shadow-zimo-card)] md:p-8">
@@ -32,25 +65,28 @@ export default function ContactForm({ translations: t }: ContactFormProps) {
           <p className="mt-2 text-gray-600">تیم زیمو در سریع‌ترین زمان پاسخگوی شماست.</p>
         </div>
       ) : (
-        <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          {error && (
+            <div className="rounded-xl bg-red-50 p-3 text-sm text-red-600">{error}</div>
+          )}
           <div>
             <label className="mb-1.5 block text-sm font-bold text-gray-700">{t.name_label}</label>
-            <input type="text" placeholder={t.name_placeholder} required className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
+            <input name="name" type="text" placeholder={t.name_placeholder} required className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
           </div>
           <div>
             <label className="mb-1.5 block text-sm font-bold text-gray-700">{t.phone_label}</label>
-            <input type="tel" placeholder={t.phone_placeholder} required dir="ltr" className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
+            <input name="phone" type="tel" placeholder={t.phone_placeholder} required dir="ltr" className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
           </div>
           <div>
             <label className="mb-1.5 block text-sm font-bold text-gray-700">{t.salon_label}</label>
-            <input type="text" placeholder={t.salon_placeholder} className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
+            <input name="salon" type="text" placeholder={t.salon_placeholder} className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
           </div>
           <div>
             <label className="mb-1.5 block text-sm font-bold text-gray-700">{t.message_label}</label>
-            <textarea rows={4} placeholder={t.message_placeholder} className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
+            <textarea name="message" rows={4} placeholder={t.message_placeholder} required className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#841474] focus:ring-2 focus:ring-[#841474]/10" />
           </div>
-          <button type="submit" className="w-full rounded-xl bg-[#841474] py-3.5 text-sm font-bold text-white transition hover:bg-[#6b105d]">
-            {t.submit}
+          <button type="submit" disabled={loading} className="w-full rounded-xl bg-[#841474] py-3.5 text-sm font-bold text-white transition hover:bg-[#6b105d] disabled:opacity-50">
+            {loading ? '...' : t.submit}
           </button>
         </form>
       )}

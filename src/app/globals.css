@@ -269,6 +269,28 @@
     justify-content: space-between;
   }
 
+  .zimo-input,
+  .zimo-textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--color-zimo-border);
+    background: var(--color-zimo-surface);
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+  }
+
+  .zimo-input:focus,
+  .zimo-textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(132, 20, 116, 0.08);
+  }
+
+  .zimo-textarea {
+    resize: none;
+  }
+
   .accordion-item {
     border: 1px solid var(--color-zimo-border);
     background: var(--color-zimo-surface);
