@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32aa94b8-d922-41e8-bf0f-2d3d36fa801d" name="Changes" comment="change favicon">
+    <list default="true" id="32aa94b8-d922-41e8-bf0f-2d3d36fa801d" name="Changes" comment="hide phone number from contact us page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mimocode/plans/1783097022139-misty-orchid.md" beforeDir="false" afterPath="$PROJECT_DIR$/.mimocode/plans/1783097022139-misty-orchid.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing/PricingSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/fa.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +83,7 @@
       <workItem from="1783002477579" duration="1806000" />
       <workItem from="1783068255447" duration="30370000" />
       <workItem from="1783147129459" duration="5334000" />
+      <workItem from="1783229571928" duration="1789000" />
     </task>
     <task id="LOCAL-00001" summary="change favicon">
       <option name="closed" value="true" />
@@ -96,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782537302405</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hide phone number from contact us page">
+      <option name="closed" value="true" />
+      <created>1783230770548</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783230770548</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="change favicon" />
+    <MESSAGE value="hide phone number from contact us page" />
+    <option name="LAST_COMMIT_MESSAGE" value="hide phone number from contact us page" />
   </component>
 </project>
