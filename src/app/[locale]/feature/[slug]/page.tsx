@@ -235,7 +235,7 @@ export default async function FeatureDetailPage({
             </div>
             <div className="flex flex-wrap gap-4 pt-1">
               <Link href={getHref(typedLocale, 'demo')} className="btn-primary">{featureDetail.demo_cta}</Link>
-              <Link href="https://zimo.beauty/login" className="btn-secondary">{featureDetail.login_cta}</Link>
+              {/*<Link href="https://zimo.beauty/login" className="btn-secondary">{featureDetail.login_cta}</Link>*/}
             </div>
           </div>
           <div className="relative group lg:pl-4 min-w-0">
