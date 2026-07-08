@@ -105,6 +105,7 @@ export default async function LocaleLayout({
   return (
     <html lang={typedLocale} dir={dir}>
       <head>
+        <meta name="enamad" content="23808545" />
         <link rel="preload" href="/fonts/iransansx/IRANSansXV.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
