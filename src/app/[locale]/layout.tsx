@@ -28,12 +28,12 @@ export async function generateMetadata({
   const basePath = typedLocale === "fa" ? "" : `/${typedLocale}`;
   const canonical = `${SITE_URL}${basePath || "/"}`;
 
-  const ogImages = locales.map((loc) => ({
-    url: `${SITE_URL}/images/landing/zimo-dashboard-${loc}.webp`,
+  const ogImage = {
+    url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
     alt: meta.home.title,
     width: 1200,
     height: 630,
-  }));
+  };
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -53,13 +53,13 @@ export async function generateMetadata({
       siteName: "Zimo CRM",
       title: meta.home.title,
       description: meta.home.description,
-      images: ogImages,
+      images: ogImage,
     },
     twitter: {
       card: "summary_large_image",
       title: meta.home.title,
       description: meta.home.description,
-      images: ogImages.map((img) => img.url),
+      images: ogImage.url,
     },
   };
 }
