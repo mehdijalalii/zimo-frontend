@@ -111,6 +111,16 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y9SHF971S"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3Y9SHF971S');`,
+          }}
+        />
       </head>
       <body suppressHydrationWarning style={{ fontFamily: "'IRANSansX', sans-serif" }} className="min-h-screen bg-background text-foreground">
         <Header locale={typedLocale} translations={messages} />
