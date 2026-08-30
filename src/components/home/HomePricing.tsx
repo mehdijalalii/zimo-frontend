@@ -100,7 +100,7 @@ export default function HomePricing({
               >
                 <PricingCard
                   locale={locale}
-                  plan={{ ...plan, price: isCustom ? null : getDisplayPrice(plan) }}
+                  plan={{ ...plan, price: isCustom ? null : getDisplayPrice(plan), original_price: !isCustom && isYearly && plan.original_price ? plan.original_price * 10 : plan.original_price }}
                   ctaHref={isCustom ? getHref(locale, 'contact') : getHref(locale, 'pricing')}
                   ctaLabel={isCustom ? translations.contact_us : translations.request_demo}
                   showFeatures={true}

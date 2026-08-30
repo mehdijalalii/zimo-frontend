@@ -173,7 +173,7 @@ export default function PricingSection({
             >
               <PricingCard
                 locale={locale}
-                plan={{ ...plan, price: isCustom ? null : getDisplayPrice(plan) }}
+                plan={{ ...plan, price: isCustom ? null : getDisplayPrice(plan), original_price: !isCustom && isYearly && plan.original_price ? plan.original_price * 10 : plan.original_price }}
                 ctaHref={isCustom ? getHref(locale, 'contact') : getHref(locale, 'demo')}
                 ctaLabel={translations.request_demo}
                 showFeatures={true}
@@ -265,7 +265,12 @@ export default function PricingSection({
                         <div>
                           {isYearly && (
                             <span className="block text-xs text-gray-400 line-through mb-0.5">
-                              {formatPrice(locale, plan.price as number)}
+                              {formatPrice(locale, plan.original_price ? plan.original_price * 10 : plan.price as number)}
+                            </span>
+                          )}
+                          {!isYearly && plan.original_price && (
+                            <span className="block text-xs text-gray-400 line-through mb-0.5">
+                              {formatPrice(locale, plan.original_price)}
                             </span>
                           )}
                           <span className="text-lg font-extrabold text-gray-900">{formatPrice(locale, displayPrice!)}</span>

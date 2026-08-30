@@ -72,9 +72,14 @@ export default function PricingCard({
         {isCustom ? (
           <p className="text-2xl font-bold text-[#841474]">{translations.contact_us}</p>
         ) : (
-          <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-gray-900">{formatPrice(locale, plan.price as number)}</span>
-            <span className="text-sm text-gray-500"> {getPriceLabel(locale)}</span>
+          <div className="flex flex-col gap-1">
+            {plan.original_price && (
+              <span className="text-lg text-gray-400 line-through">{formatPrice(locale, plan.original_price)}</span>
+            )}
+            <div className="flex items-baseline gap-2">
+              <span className="text-3xl font-bold text-gray-900">{formatPrice(locale, plan.price as number)}</span>
+              <span className="text-sm text-gray-500"> {getPriceLabel(locale)}</span>
+            </div>
           </div>
         )}
       </div>

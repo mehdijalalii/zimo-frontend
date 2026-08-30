@@ -7,6 +7,7 @@ export interface Plan {
   landing_subtitle: string | null;
   tagline: string | null;
   price: string | number | null;
+  original_price: number | null;
   pricing_type: 'fixed' | 'custom';
   is_featured: boolean;
   ribbon_text: string | null;
@@ -29,7 +30,8 @@ const plans: Record<Locale, Plan[]> = {
       code: 'starter',
       landing_subtitle: 'برای تیم‌های کوچک با نیازهای ساده',
       tagline: 'شروع قدرتمند؛ ابزارهای ضروری برای مدیریت نوبت‌ها و حسابداری سالن‌های مستقل.',
-      price: 4990000,
+      price: 3990000,
+      original_price: 4990000,
       pricing_type: 'fixed',
       is_featured: false,
       ribbon_text: null,
@@ -55,7 +57,8 @@ const plans: Record<Locale, Plan[]> = {
       code: 'professional',
       landing_subtitle: 'برای کسب‌وکارهای در حال رشد',
       tagline: 'فراتر از مدیریت؛ با اتوماسیون هوشمند، تیم خود را هماهنگ کنید و بهره‌وری سالن را به حداکثر برسانید.',
-      price: 7990000,
+      price: 5990000,
+      original_price: 7990000,
       pricing_type: 'fixed',
       is_featured: true,
       ribbon_text: 'محبوب‌ترین',
@@ -82,6 +85,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'برای مجموعه‌های حرفه‌ای و پیشرفته',
       tagline: 'مدیریت یکپارچه؛ راهکاری جامع برای هماهنگی شعب و تحلیل داده‌ها جهت رشد پایدار مجموعه‌های بزرگ.',
       price: null,
+      original_price: null,
       pricing_type: 'custom',
       is_featured: false,
       ribbon_text: null,
@@ -110,6 +114,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'For small teams with simple needs',
       tagline: 'A Powerful Start; Essential tools for managing bookings and accounting for independent salons.',
       price: 52,
+      original_price: null,
       pricing_type: 'fixed',
       is_featured: false,
       ribbon_text: null,
@@ -136,6 +141,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'For growing self-care businesses',
       tagline: 'Advanced Capabilities; Designed for teams handling complex scheduling, staff, and operations.',
       price: 86,
+      original_price: null,
       pricing_type: 'fixed',
       is_featured: false,
       ribbon_text: 'Most Popular',
@@ -162,6 +168,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'For professional, high-performance salons',
       tagline: 'Professional Excellence; Professional-tier features, plus exclusive scaling tools for salon groups.',
       price: 121,
+      original_price: null,
       pricing_type: 'fixed',
       is_featured: true,
       ribbon_text: null,
@@ -190,6 +197,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'Küçük ekipler için basit ihtiyaçlar',
       tagline: 'Güçlü Bir Başlangıç; Bağımsız salonların randevu ve ön muhasebe yönetimi için temel araçlar.',
       price: 990,
+      original_price: null,
       pricing_type: 'fixed',
       is_featured: false,
       ribbon_text: null,
@@ -216,6 +224,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'Büyüyen bakım işletmeleri için',
       tagline: 'Gelişmiş Özellikler; Karmaşık randevu, personel ve operasyon yönetimi için ideal.',
       price: 1690,
+      original_price: null,
       pricing_type: 'fixed',
       is_featured: false,
       ribbon_text: 'En Popüler',
@@ -242,6 +251,7 @@ const plans: Record<Locale, Plan[]> = {
       landing_subtitle: 'Profesyonel, yüksek performanslı salonlar için',
       tagline: 'Profesyonel Mükemmellik; Profesyonel plana ek olarak, büyük gruplara özel çözümler.',
       price: 2590,
+      original_price: null,
       pricing_type: 'fixed',
       is_featured: true,
       ribbon_text: null,

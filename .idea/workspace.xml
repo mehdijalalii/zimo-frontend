@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32aa94b8-d922-41e8-bf0f-2d3d36fa801d" name="Changes" comment="hide phone number from contact us page">
+    <list default="true" id="32aa94b8-d922-41e8-bf0f-2d3d36fa801d" name="Changes" comment="change pricing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomePricing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomePricing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing/PricingCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing/PricingSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pricing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pricing.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,24 +28,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mehdi/Documents/MyProjects/zimo-new-site&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/mehdi/Documents/MyProjects/zimo-new-site/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/Users/mehdi/Documents/MyProjects/zimo-new-site",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/mehdi/Documents/MyProjects/zimo-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/logo" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -84,6 +93,8 @@
       <workItem from="1783068255447" duration="30370000" />
       <workItem from="1783147129459" duration="5334000" />
       <workItem from="1783229571928" duration="1789000" />
+      <workItem from="1787744840242" duration="1553000" />
+      <workItem from="1788096785500" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="change favicon">
       <option name="closed" value="true" />
@@ -101,7 +112,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783230770548</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change logo">
+      <option name="closed" value="true" />
+      <created>1786115084770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786115084770</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change logo">
+      <option name="closed" value="true" />
+      <created>1786115092936</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786115092936</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change pricing">
+      <option name="closed" value="true" />
+      <created>1788097397353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788097397353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +156,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change favicon" />
     <MESSAGE value="hide phone number from contact us page" />
-    <option name="LAST_COMMIT_MESSAGE" value="hide phone number from contact us page" />
+    <MESSAGE value="change logo" />
+    <MESSAGE value="change pricing" />
+    <option name="LAST_COMMIT_MESSAGE" value="change pricing" />
   </component>
 </project>
