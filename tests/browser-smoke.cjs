@@ -79,6 +79,10 @@ const base = process.env.SEO_BASE_URL || 'http://localhost:3100';
         return false;
       }).map(n=>n.textContent));
       assert.deepEqual(invisible, []);
+      if (path === '/' || path === '/en' || path === '/tr') {
+        const heroImage = plain.locator('main img[src*="zimo-dashboard"]').first();
+        assert((await heroImage.evaluate(img => img.currentSrc)).endsWith('-750.webp'), 'mobile browser should select the small dashboard image');
+      }
       result.push({check:'mobile headings and pricing visible without JavaScript', path, passed:true});
     }
     await plain.screenshot({path:'/tmp/zimo-seo-mobile-nojs.png', fullPage:true});

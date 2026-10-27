@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { getDashboardImage } from '@/lib/utils';
+import DashboardImage from '@/components/DashboardImage';
 import FadeIn from '@/components/animations/FadeIn';
 
 interface HomeHeroProps {
@@ -66,11 +65,9 @@ export default function HomeHero({ locale, translations }: HomeHeroProps) {
         <div className="relative mx-auto mt-12 max-w-5xl md:mt-14">
           <div className="relative">
             <div className="relative z-10 overflow-hidden rounded-[2.5rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)]">
-              <Image
-                src={getDashboardImage(locale)}
+              <DashboardImage
+                locale={locale}
                 alt={hero.image_alt}
-                width={2880}
-                height={locale === 'fa' ? 1906 : 1869}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
                 className="w-full object-cover"
                 preload

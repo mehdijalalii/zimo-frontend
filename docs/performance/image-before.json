@@ -1,0 +1,149 @@
+{
+  "label": "image-before",
+  "lighthouseVersion": "13.5.0",
+  "formFactor": "mobile",
+  "throttling": {
+    "rttMs": 150,
+    "throughputKbps": 1638.4,
+    "requestLatencyMs": 562.5,
+    "downloadThroughputKbps": 1474.5600000000002,
+    "uploadThroughputKbps": 675,
+    "cpuSlowdownMultiplier": 4
+  },
+  "chromeFlags": "--headless=new --no-sandbox",
+  "repetitions": {
+    "fa-home": 3
+  },
+  "records": [
+    {
+      "route": "fa-home",
+      "path": "/",
+      "run": 1,
+      "score": 92.0,
+      "metrics": {
+        "first-contentful-paint": 1069.8624,
+        "largest-contentful-paint": 3319.8624,
+        "speed-index": 1069.8624,
+        "total-blocking-time": 43.5,
+        "cumulative-layout-shift": 0
+      },
+      "warnings": [],
+      "requestCount": 39,
+      "transferBytes": 507164,
+      "firstPartyScriptBytes": 169370,
+      "firstPartyScriptRequests": 11,
+      "analyticsStatus": [
+        -1
+      ],
+      "chatRequestCount": 0,
+      "lcpElement": [
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+          "selector": "div.relative > div.relative > div.relative > img.w-full",
+          "boundingRect": {
+            "top": 630,
+            "bottom": 872,
+            "left": 23,
+            "right": 389,
+            "width": 366,
+            "height": 242
+          },
+          "snippet": "<img alt=\"نمای نرم‌افزار زیمو برای مدیریت سالن زیبایی\" width=\"2880\" height=\"1906\" decoding=\"async\" data-nimg=\"1\" class=\"w-full object-cover\" style=\"color:transparent\" sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px\" srcset=\"/_next/image?url=%2Fimages%2Flanding%2Fzimo-dashboard-fa.webp&amp;w=640&amp;q=75 6…\" src=\"http://localhost:3102/_next/image?url=%2Fimages%2Flanding%2Fzimo-dashboard…\">",
+          "nodeLabel": "نمای نرم‌افزار زیمو برای مدیریت سالن زیبایی"
+        }
+      ],
+      "largestContentfulPaint": "3.3 s"
+    },
+    {
+      "route": "fa-home",
+      "path": "/",
+      "run": 2,
+      "score": 94.0,
+      "metrics": {
+        "first-contentful-paint": 1063.6605,
+        "largest-contentful-paint": 3078.075625,
+        "speed-index": 1063.6605,
+        "total-blocking-time": 43,
+        "cumulative-layout-shift": 0
+      },
+      "warnings": [],
+      "requestCount": 39,
+      "transferBytes": 507261,
+      "firstPartyScriptBytes": 169370,
+      "firstPartyScriptRequests": 11,
+      "analyticsStatus": [
+        -1
+      ],
+      "chatRequestCount": 0,
+      "lcpElement": [
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+          "selector": "div.relative > div.relative > div.relative > img.w-full",
+          "boundingRect": {
+            "top": 630,
+            "bottom": 872,
+            "left": 23,
+            "right": 389,
+            "width": 366,
+            "height": 242
+          },
+          "snippet": "<img alt=\"نمای نرم‌افزار زیمو برای مدیریت سالن زیبایی\" width=\"2880\" height=\"1906\" decoding=\"async\" data-nimg=\"1\" class=\"w-full object-cover\" style=\"color:transparent\" sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px\" srcset=\"/_next/image?url=%2Fimages%2Flanding%2Fzimo-dashboard-fa.webp&amp;w=640&amp;q=75 6…\" src=\"http://localhost:3102/_next/image?url=%2Fimages%2Flanding%2Fzimo-dashboard…\">",
+          "nodeLabel": "نمای نرم‌افزار زیمو برای مدیریت سالن زیبایی"
+        }
+      ],
+      "largestContentfulPaint": "3.1 s"
+    },
+    {
+      "route": "fa-home",
+      "path": "/",
+      "run": 3,
+      "score": 97.0,
+      "metrics": {
+        "first-contentful-paint": 1064.4319,
+        "largest-contentful-paint": 2564.4319000000005,
+        "speed-index": 1064.4319,
+        "total-blocking-time": 35.5,
+        "cumulative-layout-shift": 0
+      },
+      "warnings": [],
+      "requestCount": 39,
+      "transferBytes": 507261,
+      "firstPartyScriptBytes": 169370,
+      "firstPartyScriptRequests": 11,
+      "analyticsStatus": [
+        -1
+      ],
+      "chatRequestCount": 0,
+      "lcpElement": [
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+          "selector": "div.relative > div.relative > div.relative > img.w-full",
+          "boundingRect": {
+            "top": 630,
+            "bottom": 872,
+            "left": 23,
+            "right": 389,
+            "width": 366,
+            "height": 242
+          },
+          "snippet": "<img alt=\"نمای نرم‌افزار زیمو برای مدیریت سالن زیبایی\" width=\"2880\" height=\"1906\" decoding=\"async\" data-nimg=\"1\" class=\"w-full object-cover\" style=\"color:transparent\" sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px\" srcset=\"/_next/image?url=%2Fimages%2Flanding%2Fzimo-dashboard-fa.webp&amp;w=640&amp;q=75 6…\" src=\"http://localhost:3102/_next/image?url=%2Fimages%2Flanding%2Fzimo-dashboard…\">",
+          "nodeLabel": "نمای نرم‌افزار زیمو برای مدیریت سالن زیبایی"
+        }
+      ],
+      "largestContentfulPaint": "2.6 s"
+    }
+  ],
+  "homeMedians": {
+    "score": 94.0,
+    "firstPartyScriptBytes": 169370,
+    "largest-contentful-paint": 3078.075625,
+    "total-blocking-time": 43,
+    "cumulative-layout-shift": 0
+  }
+}

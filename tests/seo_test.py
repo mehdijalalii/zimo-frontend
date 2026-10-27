@@ -204,12 +204,17 @@ class SEOTests(unittest.TestCase):
                 self.assertEqual(len(images), 1)
                 self.assertEqual((images[0]['width'], images[0]['height']), ('2880', height))
                 self.assertNotEqual(images[0].get('loading'), 'lazy')
-                self.assertTrue(any(link.get('rel') == 'preload' and link.get('as') == 'image' for link in p.links))
+                self.assertIn('/images/landing/responsive/zimo-dashboard-', images[0].get('srcset', ''))
+                self.assertNotIn('/_next/image', images[0].get('src', ''))
+                self.assertTrue(any(link.get('rel') == 'preload' and link.get('as') == 'image'
+                                    and '/images/landing/responsive/zimo-dashboard-' in link.get('imagesrcset', '')
+                                    for link in p.links))
         for path, height in [('/feature/finance', '1906'), ('/en/feature/finance', '1869'), ('/tr/feature/finance', '1869')]:
             with self.subTest(path=path):
                 images = [img for img in self.pages[path].images if 'zimo-dashboard' in img.get('src', '')]
                 self.assertEqual(len(images), 1)
                 self.assertEqual((images[0]['width'], images[0]['height']), ('2880', height))
+                self.assertEqual(images[0].get('loading'), 'lazy')
 
     def test_homepage_pricing_accessibility(self):
         for path in ['/', '/en', '/tr']:

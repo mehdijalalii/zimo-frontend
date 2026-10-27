@@ -2,7 +2,8 @@
 
 Usage: python3 scripts/perf-measure.py before http://localhost:3102
        python3 scripts/perf-measure.py after http://localhost:3102 [route-name]
-Requires Chrome and `npx lighthouse`; raw reports go to /tmp/zimo-perf-<label>/.
+Requires Chrome and Lighthouse 13.5.0. Set LIGHTHOUSE_BIN to a local executable
+to avoid registry resolution. Raw reports go to /tmp/zimo-perf-<label>/.
 """
 import json
 import os
@@ -25,7 +26,8 @@ records = []
 for name, path, repeats in routes:
     for n in range(repeats):
         target = output / f'{name}-{n+1}.json'
-        cmd = ['npx', '--yes', 'lighthouse', base.rstrip('/') + path,
+        lighthouse = [os.environ['LIGHTHOUSE_BIN']] if os.environ.get('LIGHTHOUSE_BIN') else ['npx', '--yes', 'lighthouse@13.5.0']
+        cmd = [*lighthouse, base.rstrip('/') + path,
                '--chrome-flags=--headless=new --no-sandbox', '--only-categories=performance',
                '--output=json', '--output-path=' + str(target), '--quiet']
         print('MEASURING', label, name, n+1, flush=True)
