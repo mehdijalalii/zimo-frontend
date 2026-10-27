@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import type { Locale } from '@/i18n/config';
 
 type FeatureCard = {
@@ -35,26 +32,23 @@ export default function FeatureCards({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {translations.cards.map((card, i) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 1, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className={`group relative border border-white rounded p-6 lg:p-8 transition-colors hover:border-[#841474] hover:bg-[#841474] cursor-default ${
+              tabIndex={0}
+              className={`group relative border border-white rounded p-6 lg:p-8 transition-colors hover:border-[#841474] hover:bg-[#841474] focus:border-[#841474] focus:bg-[#841474] cursor-default ${
                 dir === 'rtl' ? 'text-right' : 'text-left'
               }`}
             >
               {/* Title (visible by default) */}
-              <h3 className="text-lg lg:text-xl font-bold text-white transition-opacity group-hover:opacity-0 group-hover:absolute group-hover:inset-0 group-hover:flex group-hover:items-center group-hover:p-6 lg:group-hover:p-8">
+              <h3 className="text-lg lg:text-xl font-bold text-white transition-opacity group-hover:opacity-0 group-focus:opacity-0 group-hover:absolute group-focus:absolute group-hover:inset-0 group-focus:inset-0 group-hover:flex group-focus:flex group-hover:items-center group-focus:items-center group-hover:p-6 group-focus:p-6 lg:group-hover:p-8 lg:group-focus:p-8">
                 {card.title}
               </h3>
 
               {/* Description (visible on hover) */}
-              <p className="text-sm leading-relaxed text-gray-900 opacity-0 transition-opacity group-hover:opacity-100">
+              <p className="text-sm leading-relaxed text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
                 {card.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

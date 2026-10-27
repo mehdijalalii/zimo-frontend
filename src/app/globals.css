@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@keyframes subtle-reveal {
+  from { transform: translateY(12px); }
+  to { transform: translateY(0); }
+}
+
+.subtle-reveal {
+  animation: subtle-reveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.subtle-reveal--down { animation-name: subtle-reveal-down; }
+.subtle-reveal--left { animation-name: subtle-reveal-left; }
+.subtle-reveal--right { animation-name: subtle-reveal-right; }
+.subtle-reveal--none { animation: none; }
+
+@keyframes subtle-reveal-down { from { transform: translateY(-12px); } to { transform: translateY(0); } }
+@keyframes subtle-reveal-left { from { transform: translateX(12px); } to { transform: translateX(0); } }
+@keyframes subtle-reveal-right { from { transform: translateX(-12px); } to { transform: translateX(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .subtle-reveal { animation: none; }
+}
+
 @layer base {
   :root {
     --color-zimo-bg: #f7f7f8;

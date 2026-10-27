@@ -196,6 +196,21 @@ class SEOTests(unittest.TestCase):
         for path, p in self.pages.items():
             with self.subTest(path=path): self.assertEqual(p.hidden_headings, [], 'Headings are inside opacity:0 server-rendered wrappers')
 
+    def test_dashboard_images_are_discoverable_and_have_intrinsic_dimensions(self):
+        for path, height in [('/', '1906'), ('/en', '1869'), ('/tr', '1869')]:
+            with self.subTest(path=path):
+                p = self.pages[path]
+                images = [img for img in p.images if 'zimo-dashboard' in img.get('src', '')]
+                self.assertEqual(len(images), 1)
+                self.assertEqual((images[0]['width'], images[0]['height']), ('2880', height))
+                self.assertNotEqual(images[0].get('loading'), 'lazy')
+                self.assertTrue(any(link.get('rel') == 'preload' and link.get('as') == 'image' for link in p.links))
+        for path, height in [('/feature/finance', '1906'), ('/en/feature/finance', '1869'), ('/tr/feature/finance', '1869')]:
+            with self.subTest(path=path):
+                images = [img for img in self.pages[path].images if 'zimo-dashboard' in img.get('src', '')]
+                self.assertEqual(len(images), 1)
+                self.assertEqual((images[0]['width'], images[0]['height']), ('2880', height))
+
     def test_homepage_pricing_accessibility(self):
         for path in ['/', '/en', '/tr']:
             with self.subTest(path=path):

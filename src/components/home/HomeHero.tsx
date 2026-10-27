@@ -63,22 +63,22 @@ export default function HomeHero({ locale, translations }: HomeHeroProps) {
           </FadeIn>
         </div>
 
-        <FadeIn direction="up" delay={0.4} className="relative mx-auto mt-12 max-w-5xl md:mt-14">
+        <div className="relative mx-auto mt-12 max-w-5xl md:mt-14">
           <div className="relative">
             <div className="relative z-10 overflow-hidden rounded-[2.5rem] border-8 border-white bg-white shadow-[0_32px_64px_-16px_rgba(132,20,116,0.12)]">
               <Image
                 src={getDashboardImage(locale)}
                 alt={hero.image_alt}
-                width={1200}
-                height={600}
+                width={2880}
+                height={locale === 'fa' ? 1906 : 1869}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
                 className="w-full object-cover"
-                priority
+                preload
               />
             </div>
             <div className="absolute -bottom-6 -right-6 -z-10 h-64 w-64 rounded-full bg-[#841474]/5 blur-3xl" />
           </div>
-        </FadeIn>
+        </div>
       </div>
     </section>
   );

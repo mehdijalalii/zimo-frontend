@@ -83,6 +83,28 @@ const base = process.env.SEO_BASE_URL || 'http://localhost:3100';
     }
     await plain.screenshot({path:'/tmp/zimo-seo-mobile-nojs.png', fullPage:true});
     await noJS.close();
+    const thirdParty = await browser.newContext();
+    const scriptPage = await thirdParty.newPage();
+    const requested = [];
+    await scriptPage.route(/(googletagmanager\.com|chat\.zimo\.beauty)/, route => {
+      requested.push(route.request().url());
+      return route.fulfill({status:200, contentType:'application/javascript', body:''});
+    });
+    await scriptPage.goto(base + '/', {waitUntil:'load'});
+    await scriptPage.waitForTimeout(1000);
+    assert.equal(requested.filter(url => url.includes('/packs/js/sdk.js')).length, 0, 'chat SDK should not compete with initial page load');
+    await scriptPage.waitForTimeout(5500);
+    assert(requested.some(url => url.includes('/packs/js/sdk.js')), 'chat SDK should still load after the delay');
+    assert(requested.some(url => url.includes('/gtag/js')), 'analytics should still load after page load');
+    result.push({check:'deferred analytics and chat SDK still load', passed:true});
+    await thirdParty.close();
+    const reducedMotion = await browser.newContext({reducedMotion:'reduce'});
+    const reducedPage = await reducedMotion.newPage();
+    await reducedPage.route(/(googletagmanager\.com|chat\.zimo\.beauty)/, route => route.abort());
+    await reducedPage.goto(base + '/', {waitUntil:'domcontentloaded'});
+    assert.equal(await reducedPage.locator('.subtle-reveal').first().evaluate(node => getComputedStyle(node).animationName), 'none');
+    result.push({check:'reduced-motion preference removes entry animation', passed:true});
+    await reducedMotion.close();
     assert.deepEqual(errors, [], 'browser uncaught errors');
     console.log(JSON.stringify({passed:true,checks:result,uncaughtErrors:errors},null,2));
   } finally { await context.close(); await browser.close(); }

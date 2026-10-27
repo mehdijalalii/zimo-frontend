@@ -65,19 +65,29 @@ export default function Chatwoot({ locale }: { locale: string }) {
       launcherTitle: "",
     };
 
-    const script = document.createElement("script");
-    script.src = `${BASE_URL}/packs/js/sdk.js`;
-    script.async = true;
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      w.chatwootSDK!.run({
+    let script: HTMLScriptElement | null = null;
+    const load = () => {
+      script = document.createElement("script");
+      script.src = `${BASE_URL}/packs/js/sdk.js`;
+      script.async = true;
+      script.onload = () => w.chatwootSDK?.run({
         websiteToken: config.websiteToken,
         baseUrl: BASE_URL,
       });
+      document.body.appendChild(script);
     };
 
+    // The support widget is available shortly after page load without competing
+    // with the hero image and initial hydration for the critical path.
+    let timer: number | undefined;
+    const schedule = () => { timer = window.setTimeout(load, 5000); };
+    if (document.readyState === "complete") schedule();
+    else window.addEventListener("load", schedule, { once: true });
+
     return () => {
+      window.removeEventListener("load", schedule);
+      if (timer !== undefined) window.clearTimeout(timer);
+      if (script) { script.onload = null; script.remove(); }
       destroyChatwoot();
     };
   }, [locale]);

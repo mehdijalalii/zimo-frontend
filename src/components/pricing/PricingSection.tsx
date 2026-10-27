@@ -1,10 +1,9 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { motion, useInView } from 'framer-motion';
 import type { Locale } from '@/i18n/config';
-import type { Plan, ComparisonFeature } from '@/data/pricing';
+import type { Plan } from '@/data/pricing';
 import PricingCard from './PricingCard';
 
 type PricingTranslations = {
@@ -72,45 +71,22 @@ function getYearlyPrice(monthlyPrice: number): number {
   return monthlyPrice * 10;
 }
 
-function getMonthlyFromYearly(yearlyPrice: number): number {
-  return Math.round(yearlyPrice / 10);
-}
-
 export default function PricingSection({
   locale,
   translations,
   plans,
-  comparisonFeatures,
 }: {
   locale: Locale;
   translations: PricingTranslations;
   plans: Plan[];
-  comparisonFeatures: ComparisonFeature[];
 }) {
   const dir = locale === 'fa' ? 'rtl' : 'ltr';
   const [isYearly, setIsYearly] = useState(false);
-
-  const cardsRef = useRef<HTMLDivElement>(null);
-  const cardsInView = useInView(cardsRef, { once: true, margin: '-60px' });
-  const tableRef = useRef<HTMLDivElement>(null);
-  const tableInView = useInView(tableRef, { once: true, margin: '-60px' });
-
-  const cardVariants = {
-    hidden: { opacity: 1, y: 24 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const } },
-  };
 
   function getDisplayPrice(plan: Plan): number | null {
     if (plan.price === null || plan.price === 0 || typeof plan.price === 'string') return null;
     if (isYearly) return getYearlyPrice(plan.price);
     return plan.price;
-  }
-
-  function getPriceLabel(): string {
-    if (isYearly) {
-      return locale === 'fa' ? 'هر شعبه' : locale === 'tr' ? 'Yıl / Şube' : 'yr per branch';
-    }
-    return locale === 'fa' ? 'هر شعبه' : locale === 'tr' ? 'Ay / Şube' : 'mo per branch';
   }
 
   function getTablePriceLabel(): string {
@@ -156,20 +132,15 @@ export default function PricingSection({
       </div>
 
       {/* Cards */}
-      <motion.div
-        ref={cardsRef}
-        initial="hidden"
-        animate={cardsInView ? 'visible' : 'hidden'}
-        variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
+      <div
         className="grid items-stretch gap-4 lg:grid-cols-3"
       >
         {plans.map((plan) => {
           const isCustom = plan.pricing_type === 'custom' || plan.price === null || plan.price === 0;
           return (
-            <motion.div
+            <div
               key={plan.id}
               className="relative"
-              variants={cardVariants}
             >
               <PricingCard
                 locale={locale}
@@ -181,18 +152,14 @@ export default function PricingSection({
                 viewAllLabel={locale === 'fa' ? 'مشاهده همه قابلیت‌ها' : locale === 'tr' ? 'Tüm özellikleri görüntüle' : 'View all features'}
                 translations={translations}
               />
-            </motion.div>
+            </div>
           );
         })}
-      </motion.div>
+      </div>
 
       {/* Comparison Table */}
-      <motion.section
+      <section
         id="comparison"
-        ref={tableRef}
-        initial={{ opacity: 1, y: 30 }}
-        animate={tableInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 30 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="mt-32"
       >
         <div className="mb-10 text-center md:mb-12">
@@ -303,7 +270,7 @@ export default function PricingSection({
             </tfoot>
           </table>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

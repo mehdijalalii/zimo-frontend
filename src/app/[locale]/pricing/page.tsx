@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import PricingSection from '@/components/pricing/PricingSection';
-import { getStaticPlans, getStaticComparisonFeatures } from '@/data/pricing';
+import { getStaticPlans } from '@/data/pricing';
 
 import { pageMetadata, pageUrl } from "@/lib/seo";
 
@@ -28,7 +28,6 @@ export default async function PricingPage({
   const typedLocale = locale as Locale;
   const messages = getMessages(typedLocale);
   const plans = getStaticPlans(typedLocale);
-  const comparisonFeatures = getStaticComparisonFeatures(typedLocale);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -69,7 +68,6 @@ export default async function PricingPage({
           locale={typedLocale}
           translations={messages.pricing}
           plans={plans}
-          comparisonFeatures={comparisonFeatures}
         />
       </div>
     </section>

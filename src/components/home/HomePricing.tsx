@@ -1,8 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
 import type { Locale } from '@/i18n/config';
 import type { Plan } from '@/data/pricing';
 import PricingCard from '@/components/pricing/PricingCard';
@@ -90,12 +88,8 @@ export default function HomePricing({
           {plans.map((plan) => {
             const isCustom = plan.pricing_type === 'custom' || plan.price === null || plan.price === 0;
             return (
-              <motion.div
+              <div
                 key={plan.id}
-                initial={{ opacity: 1, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.4 }}
                 className="relative"
               >
                 <PricingCard
@@ -108,7 +102,7 @@ export default function HomePricing({
                   viewAllLabel={locale === 'fa' ? 'مشاهده همه قابلیت‌ها' : locale === 'tr' ? 'Tüm özellikleri görüntüle' : 'View all features'}
                   translations={translations}
                 />
-              </motion.div>
+              </div>
             );
           })}
         </div>

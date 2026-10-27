@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { useInView } from 'framer-motion';
 
 interface AnimatedCounterProps {
   from?: number;
@@ -23,14 +22,14 @@ export default function AnimatedCounter({
   className,
 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '-40px' });
-  const [value, setValue] = useState(from);
+  const [value, setValue] = useState(to);
 
   useEffect(() => {
-    if (!isInView) return;
-
-    const startTime = performance.now();
-    let raf: number;
+    const element = ref.current;
+    if (!element || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let raf = 0;
+    let started = false;
+    let startTime = 0;
 
     const animate = (currentTime: number) => {
       const elapsed = (currentTime - startTime) / 1000;
@@ -45,9 +44,17 @@ export default function AnimatedCounter({
       }
     };
 
-    raf = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(raf);
-  }, [isInView, from, to, duration]);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting || started) return;
+      started = true;
+      observer.disconnect();
+      startTime = performance.now();
+      setValue(from);
+      raf = requestAnimationFrame(animate);
+    }, { rootMargin: '40px' });
+    observer.observe(element);
+    return () => { observer.disconnect(); cancelAnimationFrame(raf); };
+  }, [from, to, duration]);
 
   const display = decimals > 0
     ? value.toFixed(decimals)

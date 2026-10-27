@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { locales, type Locale } from "@/i18n/config";
 import { getMessages } from "@/i18n/request";
 import Header from "@/components/Header";
@@ -53,16 +54,14 @@ export default async function LocaleLayout({
       <head>
         <meta name="enamad" content="23808545" />
         <link rel="preload" href="/fonts/iransansx/IRANSansXV.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y9SHF971S"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
+        <Script id="google-analytics" strategy="lazyOnload">{`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-3Y9SHF971S');`,
-          }}
-        />
+gtag('config', 'G-3Y9SHF971S');
+var analyticsScript = document.createElement('script');
+analyticsScript.async = true;
+analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-3Y9SHF971S';
+document.head.appendChild(analyticsScript);`}</Script>
       </head>
       <body suppressHydrationWarning style={{ fontFamily: "'IRANSansX', sans-serif" }} className="min-h-screen bg-background text-foreground">
         <Header locale={typedLocale} translations={messages} />
