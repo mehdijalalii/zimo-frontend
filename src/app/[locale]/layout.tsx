@@ -12,7 +12,6 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const SITE_URL = "https://zimo.beauty";
 
 export async function generateMetadata({
   params,
@@ -25,42 +24,9 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const basePath = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${basePath || "/"}`;
-
-  const ogImage = {
-    url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-    alt: meta.home.title,
-    width: 1200,
-    height: 630,
-  };
-
   return {
-    metadataBase: new URL(SITE_URL),
     title: meta.default_title,
     description: meta.default_description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/`,
-        en: `${SITE_URL}/en`,
-        tr: `${SITE_URL}/tr`,
-      },
-    },
-    openGraph: {
-      type: "website",
-      locale: typedLocale === "fa" ? "fa_IR" : typedLocale === "en" ? "en_US" : "tr_TR",
-      siteName: "Zimo CRM",
-      title: meta.home.title,
-      description: meta.home.description,
-      images: ogImage,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.home.title,
-      description: meta.home.description,
-      images: ogImage.url,
-    },
   };
 }
 
@@ -81,36 +47,12 @@ export default async function LocaleLayout({
   const messages = getMessages(typedLocale);
   const dir = typedLocale === "fa" ? "rtl" : "ltr";
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Zimo CRM",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    description: messages.meta.default_description,
-    url: SITE_URL,
-    inLanguage: typedLocale,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "IRR",
-    },
-    provider: {
-      "@type": "Organization",
-      name: "Zimo",
-      url: SITE_URL,
-    },
-  };
 
   return (
     <html lang={typedLocale} dir={dir}>
       <head>
         <meta name="enamad" content="23808545" />
         <link rel="preload" href="/fonts/iransansx/IRANSansXV.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y9SHF971S"></script>
         <script

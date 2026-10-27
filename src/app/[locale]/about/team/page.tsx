@@ -1,6 +1,17 @@
-import { getMessages } from '@/i18n/request';
+import type { Metadata } from 'next';
+import { pageUrl } from '@/lib/seo';
 import type { Locale } from '@/i18n/config';
 import Link from 'next/link';
+
+// Placeholder content is not an independently useful translated landing page yet.
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'تیم زیمو',
+    robots: { index: false, follow: true },
+    alternates: { canonical: pageUrl(locale as Locale, '/about/team') },
+  };
+}
 
 function getPrefix(locale: string) {
   return locale === 'fa' ? '' : `/${locale}`;

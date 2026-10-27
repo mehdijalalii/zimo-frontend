@@ -1,0 +1,1728 @@
+{
+  "base": "http://localhost:3100",
+  "urls": [
+    {
+      "path": "/",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty",
+        "en": "https://zimo.beauty/en",
+        "tr": "https://zimo.beauty/tr"
+      },
+      "title": "نرم‌افزار مدیریت سالن زیبایی | زیمو CRM فارسی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/about",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/about",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/about"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/about",
+        "en": "https://zimo.beauty/en/about",
+        "tr": "https://zimo.beauty/tr/about"
+      },
+      "title": "درباره زیمو | داستان ما در مدیریت سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/about/team",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/about/team",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/about/team"
+      ],
+      "robots": "noindex, follow",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {},
+      "title": "تیم زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/contact",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/contact",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/contact"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/contact",
+        "en": "https://zimo.beauty/en/contact",
+        "tr": "https://zimo.beauty/tr/contact"
+      },
+      "title": "تماس با زیمو | مشاوره و پشتیبانی سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/demo",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/demo",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/demo"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/demo",
+        "en": "https://zimo.beauty/en/demo",
+        "tr": "https://zimo.beauty/tr/demo"
+      },
+      "title": "درخواست دمو رایگان | نرم‌افزار مدیریت سالن زیبایی زیمو | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty",
+        "en": "https://zimo.beauty/en",
+        "tr": "https://zimo.beauty/tr"
+      },
+      "title": "Beauty Salon Management Software | Zimo CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/about",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/about",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/about"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/about",
+        "en": "https://zimo.beauty/en/about",
+        "tr": "https://zimo.beauty/tr/about"
+      },
+      "title": "About Zimo | Our Story in Beauty Salon Management | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/about/team",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/about/team",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/about/team"
+      ],
+      "robots": "noindex, follow",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {},
+      "title": "تیم زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/en/contact",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/contact",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/contact"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/contact",
+        "en": "https://zimo.beauty/en/contact",
+        "tr": "https://zimo.beauty/tr/contact"
+      },
+      "title": "Contact Zimo | Beauty Salon Consultation & Support | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/demo",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/demo",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/demo"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/demo",
+        "en": "https://zimo.beauty/en/demo",
+        "tr": "https://zimo.beauty/tr/demo"
+      },
+      "title": "Free Demo Request | Zimo Beauty Salon Management Software | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/faq",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/faq",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/faq"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/faq",
+        "en": "https://zimo.beauty/en/faq",
+        "tr": "https://zimo.beauty/tr/faq"
+      },
+      "title": "FAQ | Zimo Beauty Salon Management Software | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/appointments",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/appointments",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/appointments"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/appointments",
+        "en": "https://zimo.beauty/en/feature/appointments",
+        "tr": "https://zimo.beauty/tr/feature/appointments"
+      },
+      "title": "Online Booking System | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/branches",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/branches",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/branches"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/branches",
+        "en": "https://zimo.beauty/en/feature/branches",
+        "tr": "https://zimo.beauty/tr/feature/branches"
+      },
+      "title": "Multi-Branch Management | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/finance",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/finance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/finance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/finance",
+        "en": "https://zimo.beauty/en/feature/finance",
+        "tr": "https://zimo.beauty/tr/feature/finance"
+      },
+      "title": "Financial Management & Settlements | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/loyalty",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/loyalty",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/loyalty"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/loyalty",
+        "en": "https://zimo.beauty/en/feature/loyalty",
+        "tr": "https://zimo.beauty/tr/feature/loyalty"
+      },
+      "title": "Customer Loyalty Program | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/marketing-crm",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/marketing-crm",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/marketing-crm"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/marketing-crm",
+        "en": "https://zimo.beauty/en/feature/marketing-crm",
+        "tr": "https://zimo.beauty/tr/feature/marketing-crm"
+      },
+      "title": "Marketing & Customer Relationship Management | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/payroll",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/payroll",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/payroll"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/payroll",
+        "en": "https://zimo.beauty/en/feature/payroll",
+        "tr": "https://zimo.beauty/tr/feature/payroll"
+      },
+      "title": "Staff Payroll & Salary Calculation | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/reporting",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/reporting",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/reporting"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/reporting",
+        "en": "https://zimo.beauty/en/feature/reporting",
+        "tr": "https://zimo.beauty/tr/feature/reporting"
+      },
+      "title": "Reporting & Data Analytics | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/security",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/security",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/security"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/security",
+        "en": "https://zimo.beauty/en/feature/security",
+        "tr": "https://zimo.beauty/tr/feature/security"
+      },
+      "title": "Data Security & Privacy | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/staff-dashboard",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/staff-dashboard",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/staff-dashboard"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-dashboard",
+        "en": "https://zimo.beauty/en/feature/staff-dashboard",
+        "tr": "https://zimo.beauty/tr/feature/staff-dashboard"
+      },
+      "title": "Staff Personal Dashboard | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/feature/staff-performance",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/feature/staff-performance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/feature/staff-performance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-performance",
+        "en": "https://zimo.beauty/en/feature/staff-performance",
+        "tr": "https://zimo.beauty/tr/feature/staff-performance"
+      },
+      "title": "Staff Performance Evaluation | Zimo Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/features",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/features",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/features"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/features",
+        "en": "https://zimo.beauty/en/features",
+        "tr": "https://zimo.beauty/tr/features"
+      },
+      "title": "Zimo Features | Smart Beauty Salon CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/en/pricing",
+      "locale": "en",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/en/pricing",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/en/pricing"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/pricing",
+        "en": "https://zimo.beauty/en/pricing",
+        "tr": "https://zimo.beauty/tr/pricing"
+      },
+      "title": "Pricing | Invest in Your Salon's Growth & Organization | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/fa",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa",
+          "status": 308,
+          "location": "/"
+        }
+      ],
+      "finalPath": "/",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty",
+        "en": "https://zimo.beauty/en",
+        "tr": "https://zimo.beauty/tr"
+      },
+      "title": "نرم‌افزار مدیریت سالن زیبایی | زیمو CRM فارسی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/about",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/about",
+          "status": 308,
+          "location": "/about"
+        }
+      ],
+      "finalPath": "/about",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/about"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/about",
+        "en": "https://zimo.beauty/en/about",
+        "tr": "https://zimo.beauty/tr/about"
+      },
+      "title": "درباره زیمو | داستان ما در مدیریت سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/contact",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/contact",
+          "status": 308,
+          "location": "/contact"
+        }
+      ],
+      "finalPath": "/contact",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/contact"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/contact",
+        "en": "https://zimo.beauty/en/contact",
+        "tr": "https://zimo.beauty/tr/contact"
+      },
+      "title": "تماس با زیمو | مشاوره و پشتیبانی سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/demo",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/demo",
+          "status": 308,
+          "location": "/demo"
+        }
+      ],
+      "finalPath": "/demo",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/demo"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/demo",
+        "en": "https://zimo.beauty/en/demo",
+        "tr": "https://zimo.beauty/tr/demo"
+      },
+      "title": "درخواست دمو رایگان | نرم‌افزار مدیریت سالن زیبایی زیمو | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/faq",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/faq",
+          "status": 308,
+          "location": "/faq"
+        }
+      ],
+      "finalPath": "/faq",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/faq"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/faq",
+        "en": "https://zimo.beauty/en/faq",
+        "tr": "https://zimo.beauty/tr/faq"
+      },
+      "title": "سوالات متداول | نرم‌افزار مدیریت سالن زیبایی زیمو | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/appointments",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/appointments",
+          "status": 308,
+          "location": "/feature/appointments"
+        }
+      ],
+      "finalPath": "/feature/appointments",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/appointments"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/appointments",
+        "en": "https://zimo.beauty/en/feature/appointments",
+        "tr": "https://zimo.beauty/tr/feature/appointments"
+      },
+      "title": "سیستم نوبت‌دهی آنلاین | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/branches",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/branches",
+          "status": 308,
+          "location": "/feature/branches"
+        }
+      ],
+      "finalPath": "/feature/branches",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/branches"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/branches",
+        "en": "https://zimo.beauty/en/feature/branches",
+        "tr": "https://zimo.beauty/tr/feature/branches"
+      },
+      "title": "مدیریت شعب متعدد | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/finance",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/finance",
+          "status": 308,
+          "location": "/feature/finance"
+        }
+      ],
+      "finalPath": "/feature/finance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/finance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/finance",
+        "en": "https://zimo.beauty/en/feature/finance",
+        "tr": "https://zimo.beauty/tr/feature/finance"
+      },
+      "title": "مدیریت مالی و تسویه حساب | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/loyalty",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/loyalty",
+          "status": 308,
+          "location": "/feature/loyalty"
+        }
+      ],
+      "finalPath": "/feature/loyalty",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/loyalty"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/loyalty",
+        "en": "https://zimo.beauty/en/feature/loyalty",
+        "tr": "https://zimo.beauty/tr/feature/loyalty"
+      },
+      "title": "باشگاه مشتریان وفادار | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/marketing-crm",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/marketing-crm",
+          "status": 308,
+          "location": "/feature/marketing-crm"
+        }
+      ],
+      "finalPath": "/feature/marketing-crm",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/marketing-crm"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/marketing-crm",
+        "en": "https://zimo.beauty/en/feature/marketing-crm",
+        "tr": "https://zimo.beauty/tr/feature/marketing-crm"
+      },
+      "title": "بازاریابی و مدیریت ارتباط مشتری | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/payroll",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/payroll",
+          "status": 308,
+          "location": "/feature/payroll"
+        }
+      ],
+      "finalPath": "/feature/payroll",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/payroll"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/payroll",
+        "en": "https://zimo.beauty/en/feature/payroll",
+        "tr": "https://zimo.beauty/tr/feature/payroll"
+      },
+      "title": "محاسبه حقوق و دستمزد پرسنل | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/reporting",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/reporting",
+          "status": 308,
+          "location": "/feature/reporting"
+        }
+      ],
+      "finalPath": "/feature/reporting",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/reporting"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/reporting",
+        "en": "https://zimo.beauty/en/feature/reporting",
+        "tr": "https://zimo.beauty/tr/feature/reporting"
+      },
+      "title": "گزارش‌گیری و تحلیل داده | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/security",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/security",
+          "status": 308,
+          "location": "/feature/security"
+        }
+      ],
+      "finalPath": "/feature/security",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/security"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/security",
+        "en": "https://zimo.beauty/en/feature/security",
+        "tr": "https://zimo.beauty/tr/feature/security"
+      },
+      "title": "امنیت داده‌ها و حفاظت اطلاعات | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/staff-dashboard",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/staff-dashboard",
+          "status": 308,
+          "location": "/feature/staff-dashboard"
+        }
+      ],
+      "finalPath": "/feature/staff-dashboard",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/staff-dashboard"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-dashboard",
+        "en": "https://zimo.beauty/en/feature/staff-dashboard",
+        "tr": "https://zimo.beauty/tr/feature/staff-dashboard"
+      },
+      "title": "داشبورد شخصی پرسنل | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/feature/staff-performance",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/feature/staff-performance",
+          "status": 308,
+          "location": "/feature/staff-performance"
+        }
+      ],
+      "finalPath": "/feature/staff-performance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/staff-performance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-performance",
+        "en": "https://zimo.beauty/en/feature/staff-performance",
+        "tr": "https://zimo.beauty/tr/feature/staff-performance"
+      },
+      "title": "ارزیابی عملکرد پرسنل | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/features",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/features",
+          "status": 308,
+          "location": "/features"
+        }
+      ],
+      "finalPath": "/features",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/features"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/features",
+        "en": "https://zimo.beauty/en/features",
+        "tr": "https://zimo.beauty/tr/features"
+      },
+      "title": "قابلیت‌های زیمو | CRM هوشمند سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/fa/pricing",
+      "locale": "fa",
+      "initialStatus": 308,
+      "redirects": [
+        {
+          "path": "/fa/pricing",
+          "status": 308,
+          "location": "/pricing"
+        }
+      ],
+      "finalPath": "/pricing",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/pricing"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {
+        "fa": "https://zimo.beauty/pricing",
+        "en": "https://zimo.beauty/en/pricing",
+        "tr": "https://zimo.beauty/tr/pricing"
+      },
+      "title": "قیمت‌گذاری زیمو | سرمایه‌گذاری در نظم و رشد سالن شما | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/faq",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/faq",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/faq"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/faq",
+        "en": "https://zimo.beauty/en/faq",
+        "tr": "https://zimo.beauty/tr/faq"
+      },
+      "title": "سوالات متداول | نرم‌افزار مدیریت سالن زیبایی زیمو | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/appointments",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/appointments",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/appointments"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/appointments",
+        "en": "https://zimo.beauty/en/feature/appointments",
+        "tr": "https://zimo.beauty/tr/feature/appointments"
+      },
+      "title": "سیستم نوبت‌دهی آنلاین | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/branches",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/branches",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/branches"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/branches",
+        "en": "https://zimo.beauty/en/feature/branches",
+        "tr": "https://zimo.beauty/tr/feature/branches"
+      },
+      "title": "مدیریت شعب متعدد | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/finance",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/finance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/finance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/finance",
+        "en": "https://zimo.beauty/en/feature/finance",
+        "tr": "https://zimo.beauty/tr/feature/finance"
+      },
+      "title": "مدیریت مالی و تسویه حساب | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/loyalty",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/loyalty",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/loyalty"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/loyalty",
+        "en": "https://zimo.beauty/en/feature/loyalty",
+        "tr": "https://zimo.beauty/tr/feature/loyalty"
+      },
+      "title": "باشگاه مشتریان وفادار | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/marketing-crm",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/marketing-crm",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/marketing-crm"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/marketing-crm",
+        "en": "https://zimo.beauty/en/feature/marketing-crm",
+        "tr": "https://zimo.beauty/tr/feature/marketing-crm"
+      },
+      "title": "بازاریابی و مدیریت ارتباط مشتری | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/payroll",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/payroll",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/payroll"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/payroll",
+        "en": "https://zimo.beauty/en/feature/payroll",
+        "tr": "https://zimo.beauty/tr/feature/payroll"
+      },
+      "title": "محاسبه حقوق و دستمزد پرسنل | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/reporting",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/reporting",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/reporting"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/reporting",
+        "en": "https://zimo.beauty/en/feature/reporting",
+        "tr": "https://zimo.beauty/tr/feature/reporting"
+      },
+      "title": "گزارش‌گیری و تحلیل داده | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/security",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/security",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/security"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/security",
+        "en": "https://zimo.beauty/en/feature/security",
+        "tr": "https://zimo.beauty/tr/feature/security"
+      },
+      "title": "امنیت داده‌ها و حفاظت اطلاعات | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/staff-dashboard",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/staff-dashboard",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/staff-dashboard"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-dashboard",
+        "en": "https://zimo.beauty/en/feature/staff-dashboard",
+        "tr": "https://zimo.beauty/tr/feature/staff-dashboard"
+      },
+      "title": "داشبورد شخصی پرسنل | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/feature/staff-performance",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/feature/staff-performance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/feature/staff-performance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-performance",
+        "en": "https://zimo.beauty/en/feature/staff-performance",
+        "tr": "https://zimo.beauty/tr/feature/staff-performance"
+      },
+      "title": "ارزیابی عملکرد پرسنل | زیمو CRM سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/features",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/features",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/features"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/features",
+        "en": "https://zimo.beauty/en/features",
+        "tr": "https://zimo.beauty/tr/features"
+      },
+      "title": "قابلیت‌های زیمو | CRM هوشمند سالن زیبایی | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/pricing",
+      "locale": "fa",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/pricing",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/pricing"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/pricing",
+        "en": "https://zimo.beauty/en/pricing",
+        "tr": "https://zimo.beauty/tr/pricing"
+      },
+      "title": "قیمت‌گذاری زیمو | سرمایه‌گذاری در نظم و رشد سالن شما | زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty",
+        "en": "https://zimo.beauty/en",
+        "tr": "https://zimo.beauty/tr"
+      },
+      "title": "Güzellik Salonu Yönetim Yazılımı | Zimo CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/about",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/about",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/about"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/about",
+        "en": "https://zimo.beauty/en/about",
+        "tr": "https://zimo.beauty/tr/about"
+      },
+      "title": "Zimo Hakkında | Güzellik Salonu Yönetimindeki Hikayemiz | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/about/team",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/about/team",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/about/team"
+      ],
+      "robots": "noindex, follow",
+      "headerRobots": null,
+      "sitemapIncluded": false,
+      "hreflang": {},
+      "title": "تیم زیمو",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": false
+    },
+    {
+      "path": "/tr/contact",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/contact",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/contact"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/contact",
+        "en": "https://zimo.beauty/en/contact",
+        "tr": "https://zimo.beauty/tr/contact"
+      },
+      "title": "Zimo İletişim | Güzellik Salonu Danışmanlık ve Destek | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/demo",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/demo",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/demo"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/demo",
+        "en": "https://zimo.beauty/en/demo",
+        "tr": "https://zimo.beauty/tr/demo"
+      },
+      "title": "Ücretsiz Demo Talebi | Zimo Güzellik Salonu Yönetim Yazılımı | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/faq",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/faq",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/faq"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/faq",
+        "en": "https://zimo.beauty/en/faq",
+        "tr": "https://zimo.beauty/tr/faq"
+      },
+      "title": "Sıkça Sorulan Sorular | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/appointments",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/appointments",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/appointments"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/appointments",
+        "en": "https://zimo.beauty/en/feature/appointments",
+        "tr": "https://zimo.beauty/tr/feature/appointments"
+      },
+      "title": "Çevrimiçi Randevu Sistemi | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/branches",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/branches",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/branches"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/branches",
+        "en": "https://zimo.beauty/en/feature/branches",
+        "tr": "https://zimo.beauty/tr/feature/branches"
+      },
+      "title": "Çoklu Şube Yönetimi | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/finance",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/finance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/finance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/finance",
+        "en": "https://zimo.beauty/en/feature/finance",
+        "tr": "https://zimo.beauty/tr/feature/finance"
+      },
+      "title": "Finansal Yönetim ve Hesaplaşma | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/loyalty",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/loyalty",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/loyalty"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/loyalty",
+        "en": "https://zimo.beauty/en/feature/loyalty",
+        "tr": "https://zimo.beauty/tr/feature/loyalty"
+      },
+      "title": "Müşteri Sadakat Programı | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/marketing-crm",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/marketing-crm",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/marketing-crm"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/marketing-crm",
+        "en": "https://zimo.beauty/en/feature/marketing-crm",
+        "tr": "https://zimo.beauty/tr/feature/marketing-crm"
+      },
+      "title": "Pazarlama ve Müşteri İlişkileri Yönetimi | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/payroll",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/payroll",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/payroll"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/payroll",
+        "en": "https://zimo.beauty/en/feature/payroll",
+        "tr": "https://zimo.beauty/tr/feature/payroll"
+      },
+      "title": "Personel Maaş Hesabı | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/reporting",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/reporting",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/reporting"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/reporting",
+        "en": "https://zimo.beauty/en/feature/reporting",
+        "tr": "https://zimo.beauty/tr/feature/reporting"
+      },
+      "title": "Raporlama ve Veri Analizi | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/security",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/security",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/security"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/security",
+        "en": "https://zimo.beauty/en/feature/security",
+        "tr": "https://zimo.beauty/tr/feature/security"
+      },
+      "title": "Veri Güvenliği ve Gizlilik | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/staff-dashboard",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/staff-dashboard",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/staff-dashboard"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-dashboard",
+        "en": "https://zimo.beauty/en/feature/staff-dashboard",
+        "tr": "https://zimo.beauty/tr/feature/staff-dashboard"
+      },
+      "title": "Personel Kişisel Paneli | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/feature/staff-performance",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/feature/staff-performance",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/feature/staff-performance"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/feature/staff-performance",
+        "en": "https://zimo.beauty/en/feature/staff-performance",
+        "tr": "https://zimo.beauty/tr/feature/staff-performance"
+      },
+      "title": "Personel Performans Değerlendirmesi | Zimo Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/features",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/features",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/features"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/features",
+        "en": "https://zimo.beauty/en/features",
+        "tr": "https://zimo.beauty/tr/features"
+      },
+      "title": "Zimo Özellikleri | Akıllı Güzellik Salonu CRM | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    },
+    {
+      "path": "/tr/pricing",
+      "locale": "tr",
+      "initialStatus": 200,
+      "redirects": [],
+      "finalPath": "/tr/pricing",
+      "finalStatus": 200,
+      "canonical": [
+        "https://zimo.beauty/tr/pricing"
+      ],
+      "robots": "index, follow (default)",
+      "headerRobots": null,
+      "sitemapIncluded": true,
+      "hreflang": {
+        "fa": "https://zimo.beauty/pricing",
+        "en": "https://zimo.beauty/en/pricing",
+        "tr": "https://zimo.beauty/tr/pricing"
+      },
+      "title": "Fiyatlandırma | Salonunuzun Düzenine ve Büyümesine Yatırım | Zimo",
+      "h1Count": 1,
+      "hiddenHeadingCount": 0,
+      "intendedIndexable": true
+    }
+  ]
+}

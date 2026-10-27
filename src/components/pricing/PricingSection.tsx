@@ -96,7 +96,7 @@ export default function PricingSection({
   const tableInView = useInView(tableRef, { once: true, margin: '-60px' });
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 24 },
+    hidden: { opacity: 1, y: 24 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const } },
   };
 
@@ -190,8 +190,8 @@ export default function PricingSection({
       <motion.section
         id="comparison"
         ref={tableRef}
-        initial={{ opacity: 0, y: 30 }}
-        animate={tableInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+        initial={{ opacity: 1, y: 30 }}
+        animate={tableInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 30 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="mt-32"
       >

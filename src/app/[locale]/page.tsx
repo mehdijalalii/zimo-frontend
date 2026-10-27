@@ -9,7 +9,7 @@ import HomeTrust from '@/components/home/HomeTrust';
 import HomePricing from '@/components/home/HomePricing';
 import { getStaticPlans } from '@/data/pricing';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata, pageUrl } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -21,26 +21,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const path = prefix || "/";
-  const canonical = `${SITE_URL}${path}`;
-
-  return {
-    title: `${meta.home.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.home.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/`,
-        en: `${SITE_URL}/en`,
-        tr: `${SITE_URL}/tr`,
-      },
-    },
-    openGraph: {
-      title: meta.home.title,
-      description: meta.home.description,
-    },
-  };
+  return pageMetadata(typedLocale, "/", meta.home);
 }
 
 export default async function HomePage({
@@ -55,6 +36,10 @@ export default async function HomePage({
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
+        { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Zimo', url: pageUrl(typedLocale, '/'), inLanguage: typedLocale },
+        { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Zimo CRM', applicationCategory: 'BusinessApplication', operatingSystem: 'Web', description: messages.meta.home.description, url: pageUrl(typedLocale, '/'), inLanguage: typedLocale, provider: { '@type': 'Organization', name: 'Zimo', url: 'https://zimo.beauty' } },
+      ]).replace(/</g, '\u003c') }} />
       <HomeHero locale={typedLocale} translations={messages} />
       <HomeHighlights locale={typedLocale} translations={messages} />
       <HomeHowItWorks translations={messages} />

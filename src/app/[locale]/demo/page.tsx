@@ -3,7 +3,7 @@ import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import DemoForm from '@/components/demo/DemoForm';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -15,39 +15,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/demo`;
-
-  return {
-    title: `${meta.demo.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.demo.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/demo`,
-        en: `${SITE_URL}/en/demo`,
-        tr: `${SITE_URL}/tr/demo`,
-      },
-    },
-    openGraph: {
-      title: meta.demo.title,
-      description: meta.demo.description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: meta.demo.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.demo.title,
-      description: meta.demo.description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, "/demo", meta.demo);
 }
 
 export default async function DemoPage({

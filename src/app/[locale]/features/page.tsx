@@ -5,7 +5,7 @@ import type { Locale } from '@/i18n/config';
 import FadeIn from '@/components/animations/FadeIn';
 import { StaggerChildren, StaggerItem } from '@/components/animations/StaggerChildren';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -17,39 +17,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/features`;
-
-  return {
-    title: `${meta.features.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.features.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/features`,
-        en: `${SITE_URL}/en/features`,
-        tr: `${SITE_URL}/tr/features`,
-      },
-    },
-    openGraph: {
-      title: meta.features.title,
-      description: meta.features.description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: meta.features.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.features.title,
-      description: meta.features.description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, "/features", meta.features);
 }
 
 function getFeatureHref(locale: string, featureSlug: string): string {

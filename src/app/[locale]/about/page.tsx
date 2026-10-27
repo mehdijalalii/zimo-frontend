@@ -4,7 +4,7 @@ import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import { getDashboardImage } from '@/lib/utils';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,39 +16,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/about`;
-
-  return {
-    title: `${meta.about.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.about.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/about`,
-        en: `${SITE_URL}/en/about`,
-        tr: `${SITE_URL}/tr/about`,
-      },
-    },
-    openGraph: {
-      title: meta.about.title,
-      description: meta.about.description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: meta.about.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.about.title,
-      description: meta.about.description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, "/about", meta.about);
 }
 
 export default async function AboutPage({

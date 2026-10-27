@@ -3,7 +3,7 @@ import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import ContactForm from '@/components/contact/ContactForm';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -15,39 +15,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/contact`;
-
-  return {
-    title: `${meta.contact.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.contact.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/contact`,
-        en: `${SITE_URL}/en/contact`,
-        tr: `${SITE_URL}/tr/contact`,
-      },
-    },
-    openGraph: {
-      title: meta.contact.title,
-      description: meta.contact.description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: meta.contact.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.contact.title,
-      description: meta.contact.description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, "/contact", meta.contact);
 }
 
 export default async function ContactPage({

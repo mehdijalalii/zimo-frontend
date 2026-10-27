@@ -5,12 +5,9 @@ import { notFound } from 'next/navigation';
 import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata, pageUrl, featureSlugs } from "@/lib/seo";
 
-const validSlugs = [
-  'appointments', 'finance', 'branches', 'loyalty', 'payroll',
-  'reporting', 'security', 'staff-performance', 'staff-dashboard', 'marketing-crm',
-];
+const validSlugs: readonly string[] = featureSlugs;
 
 const translationKeyMap: Record<string, string> = {
   appointments: 'feature_appointments',
@@ -43,41 +40,10 @@ export async function generateMetadata({
   const key = translationKeyMap[slug];
   const pageMeta = meta[key as keyof typeof meta] as { title: string; description: string } | undefined;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/feature/${slug}`;
-
-  const siteName = typedLocale === "fa" ? "زیمو" : "Zimo";
-  return {
-    title: `${pageMeta?.title ?? meta.default_title} | ${siteName}`,
-    description: pageMeta?.description ?? meta.default_description,
-    alternates: {
-      canonical,
-      languages: Object.fromEntries(
-        ["fa", "en", "tr"].map((loc) => [
-          loc,
-          `${SITE_URL}${loc === "fa" ? "" : `/${loc}`}/feature/${slug}`,
-        ])
-      ),
-    },
-    openGraph: {
-      title: pageMeta?.title ?? meta.default_title,
-      description: pageMeta?.description ?? meta.default_description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: pageMeta?.title ?? meta.default_title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: pageMeta?.title ?? meta.default_title,
-      description: pageMeta?.description ?? meta.default_description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, `/feature/${slug}`, pageMeta ?? {
+    title: meta.default_title,
+    description: meta.default_description,
+  });
 }
 
 function getDashboardImage(locale: string): string {
@@ -166,8 +132,6 @@ export default async function FeatureDetailPage({
   const faqTitle = (feature.faq_title ?? '') as string;
   const faq = (feature.faq ?? []) as { q: string; a: string }[];
 
-  const featurePageName = title.replace(/<[^>]*>/g, '');
-  const prefix = typedLocale === 'fa' ? '' : `/${typedLocale}`;
 
   const jsonLd = [
     {
@@ -178,19 +142,19 @@ export default async function FeatureDetailPage({
           "@type": "ListItem",
           position: 1,
           name: featureDetail.breadcrumb_home,
-          item: `${SITE_URL}${prefix || '/'}`,
+          item: pageUrl(typedLocale, '/'),
         },
         {
           "@type": "ListItem",
           position: 2,
           name: featureDetail.breadcrumb_features,
-          item: `${SITE_URL}${prefix}/features`,
+          item: pageUrl(typedLocale, '/features'),
         },
         {
           "@type": "ListItem",
           position: 3,
           name: breadcrumbCurrent,
-          item: `${SITE_URL}${prefix}/feature/${slug}`,
+          item: pageUrl(typedLocale, `/feature/${slug}`),
         },
       ],
     },

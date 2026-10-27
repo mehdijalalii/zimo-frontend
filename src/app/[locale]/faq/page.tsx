@@ -3,7 +3,7 @@ import { getMessages } from '@/i18n/request';
 import type { Locale } from '@/i18n/config';
 import FaqAccordion from '@/components/faq/FaqAccordion';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -15,39 +15,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/faq`;
-
-  return {
-    title: `${meta.faq.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.faq.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/faq`,
-        en: `${SITE_URL}/en/faq`,
-        tr: `${SITE_URL}/tr/faq`,
-      },
-    },
-    openGraph: {
-      title: meta.faq.title,
-      description: meta.faq.description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: meta.faq.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.faq.title,
-      description: meta.faq.description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, "/faq", meta.faq);
 }
 
 export default async function FaqPage({

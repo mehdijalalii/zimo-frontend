@@ -4,7 +4,7 @@ import type { Locale } from '@/i18n/config';
 import PricingSection from '@/components/pricing/PricingSection';
 import { getStaticPlans, getStaticComparisonFeatures } from '@/data/pricing';
 
-const SITE_URL = "https://zimo.beauty";
+import { pageMetadata, pageUrl } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,39 +16,7 @@ export async function generateMetadata({
   const messages = getMessages(typedLocale);
   const meta = messages.meta;
 
-  const prefix = typedLocale === "fa" ? "" : `/${typedLocale}`;
-  const canonical = `${SITE_URL}${prefix}/pricing`;
-
-  return {
-    title: `${meta.pricing.title} | ${typedLocale === "fa" ? "زیمو" : "Zimo"}`,
-    description: meta.pricing.description,
-    alternates: {
-      canonical,
-      languages: {
-        fa: `${SITE_URL}/pricing`,
-        en: `${SITE_URL}/en/pricing`,
-        tr: `${SITE_URL}/tr/pricing`,
-      },
-    },
-    openGraph: {
-      title: meta.pricing.title,
-      description: meta.pricing.description,
-      images: [
-        {
-          url: `${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`,
-          alt: meta.pricing.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.pricing.title,
-      description: meta.pricing.description,
-      images: [`${SITE_URL}/images/landing/zimo-dashboard-${typedLocale}.webp`],
-    },
-  };
+  return pageMetadata(typedLocale, "/pricing", meta.pricing);
 }
 
 export default async function PricingPage({
@@ -68,11 +36,11 @@ export default async function PricingPage({
     name: "Zimo CRM",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    url: SITE_URL,
-    offers: plans.map((plan) => ({
+    url: pageUrl(typedLocale, '/pricing'),
+    offers: plans.filter(plan => plan.pricing_type === 'fixed' && Number(plan.price) > 0).map((plan) => ({
       "@type": "Offer",
       name: plan.name,
-      price: plan.price,
+      price: Number(plan.price) * (typedLocale === 'fa' ? 10 : 1),
       priceCurrency: typedLocale === 'fa' ? 'IRR' : typedLocale === 'tr' ? 'TRY' : 'USD',
       description: plan.landing_subtitle,
     })),

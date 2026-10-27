@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "homepage and hydration",
+      "path": "/",
+      "passed": true
+    },
+    {
+      "check": "homepage and hydration",
+      "path": "/en",
+      "passed": true
+    },
+    {
+      "check": "homepage and hydration",
+      "path": "/tr",
+      "passed": true
+    },
+    {
+      "check": "client navigation and reciprocal language switch",
+      "passed": true
+    },
+    {
+      "check": "pricing monthly/yearly interaction",
+      "passed": true
+    },
+    {
+      "check": "FAQ interaction",
+      "passed": true
+    },
+    {
+      "check": "form renders without submitting",
+      "path": "/demo",
+      "passed": true
+    },
+    {
+      "check": "form renders without submitting",
+      "path": "/contact",
+      "passed": true
+    },
+    {
+      "check": "mobile headings and pricing visible without JavaScript",
+      "path": "/",
+      "passed": true
+    },
+    {
+      "check": "mobile headings and pricing visible without JavaScript",
+      "path": "/pricing",
+      "passed": true
+    },
+    {
+      "check": "mobile headings and pricing visible without JavaScript",
+      "path": "/feature/finance",
+      "passed": true
+    },
+    {
+      "check": "mobile headings and pricing visible without JavaScript",
+      "path": "/en",
+      "passed": true
+    },
+    {
+      "check": "mobile headings and pricing visible without JavaScript",
+      "path": "/tr",
+      "passed": true
+    }
+  ],
+  "uncaughtErrors": []
+}

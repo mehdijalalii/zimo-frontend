@@ -1,12 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 interface ChatwootConfig {
   locale: string;
   position: string;
   websiteToken: string;
 }
+
+type ChatwootWindow = Window & {
+  $chatwoot?: { toggle: (state: string) => void };
+  chatwootSDK?: { run: (config: { websiteToken: string; baseUrl: string }) => void };
+  chatwootSettings?: { position: string; locale: string; type: string; launcherTitle: string };
+};
 
 const BASE_URL = process.env.NEXT_PUBLIC_CHATWOOT_BASE_URL || "https://chat.zimo.beauty";
 
@@ -29,7 +35,7 @@ const locales: Record<string, ChatwootConfig> = {
 };
 
 function destroyChatwoot() {
-  const w = window as any;
+  const w = window as ChatwootWindow;
   if (w.$chatwoot) {
     w.$chatwoot.toggle("close");
     const holder = document.querySelector(".woot-widget-holder");
@@ -44,7 +50,6 @@ function destroyChatwoot() {
 }
 
 export default function Chatwoot({ locale }: { locale: string }) {
-  const currentLocale = useRef(locale);
 
   useEffect(() => {
     const config = locales[locale] || locales.fa;
@@ -52,7 +57,7 @@ export default function Chatwoot({ locale }: { locale: string }) {
 
     destroyChatwoot();
 
-    const w = window as any;
+    const w = window as ChatwootWindow;
     w.chatwootSettings = {
       position: config.position,
       locale: config.locale,
@@ -66,7 +71,7 @@ export default function Chatwoot({ locale }: { locale: string }) {
     document.body.appendChild(script);
 
     script.onload = () => {
-      w.chatwootSDK.run({
+      w.chatwootSDK!.run({
         websiteToken: config.websiteToken,
         baseUrl: BASE_URL,
       });

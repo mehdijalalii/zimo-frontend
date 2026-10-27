@@ -1,0 +1,536 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "final": "https://zimo.beauty/fa",
+    "canonical": [
+      "https://zimo.beauty"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa",
+    "status": 200,
+    "final": "https://zimo.beauty/fa",
+    "canonical": [
+      "https://zimo.beauty"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/en/",
+    "status": 200,
+    "final": "https://zimo.beauty/en",
+    "canonical": [
+      "https://zimo.beauty/en"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "en",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/tr/",
+    "status": 200,
+    "final": "https://zimo.beauty/tr",
+    "canonical": [
+      "https://zimo.beauty/tr"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "tr",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "final": "https://zimo.beauty/sitemap.xml",
+    "canonical": [],
+    "alternates": [],
+    "robots": [],
+    "html": {},
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+      "cache-control": "public, max-age=0, must-revalidate"
+    },
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n<url>\n<loc>https://zimo.beauty/</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/features</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/features\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/features\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/features\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/features</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/features\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/features\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/features\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/features</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/features\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/features\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/features\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/pricing</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/pricing\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/pricing\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/pricing\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/pricing</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/pricing\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/pricing\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/pricing\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/pricing</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/pricing\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/pricing\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/pricing\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/faq</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/faq\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/faq\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/faq\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/faq</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/faq\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/faq\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/faq\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/faq</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/faq\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/faq\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/faq\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/about</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/about\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/about\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/about\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/about</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/about\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/about\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/about\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/about</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/about\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/about\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/about\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/contact</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/contact\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/contact\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/contact\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/contact</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/contact\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/contact\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/contact\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/contact</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/contact\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/contact\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/contact\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/demo</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/demo\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/demo\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/demo\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/demo</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/demo\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/demo\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/demo\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/demo</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/demo\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/demo\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/demo\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/appointments</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/appointments\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/appointments\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/appointments\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/appointments</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/appointments\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/appointments\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/appointments\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/appointments</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/appointments\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/appointments\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/appointments\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/finance</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/finance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/finance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/finance\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/finance</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/finance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/finance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/finance\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/finance</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/finance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/finance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/finance\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/branches</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/branches\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/branches\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/branches\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/branches</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/branches\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/branches\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/branches\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/branches</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/branches\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/branches\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/branches\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/loyalty</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/loyalty\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/loyalty\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/loyalty\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/loyalty</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/loyalty\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/loyalty\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/loyalty\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/loyalty</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/loyalty\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/loyalty\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/loyalty\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/payroll</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/payroll\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/payroll\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/payroll\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/payroll</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/payroll\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/payroll\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/payroll\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/payroll</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/payroll\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/payroll\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/payroll\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/reporting</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/reporting\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/reporting\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/reporting\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/reporting</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/reporting\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/reporting\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/reporting\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/reporting</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/reporting\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/reporting\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/reporting\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/security</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/security\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/security\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/security\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/security</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/security\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/security\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/security\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/security</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/security\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/security\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/security\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/staff-performance</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/staff-performance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/staff-performance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/staff-performance\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/staff-performance</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/staff-performance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/staff-performance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/staff-performance\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/staff-performance</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/staff-performance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/staff-performance\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/staff-performance\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/staff-dashboard</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/staff-dashboard\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/staff-dashboard\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/staff-dashboard\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/staff-dashboard</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/staff-dashboard\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/staff-dashboard\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/staff-dashboard\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/staff-dashboard</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/staff-dashboard\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/staff-dashboard\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/staff-dashboard\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/feature/marketing-crm</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/marketing-crm\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/marketing-crm\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/marketing-crm\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/en/feature/marketing-crm</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/marketing-crm\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/marketing-crm\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/marketing-crm\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://zimo.beauty/tr/feature/marketing-crm</loc>\n<xhtml:link rel=\"alternate\" hreflang=\"fa\" href=\"https://zimo.beauty/feature/marketing-crm\" />\n<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zimo.beauty/en/feature/marketing-crm\" />\n<xhtml:link rel=\"alternate\" hreflang=\"tr\" href=\"https://zimo.beauty/tr/feature/marketing-crm\" />\n<lastmod>2025-01-01T00:00:00.000Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n</urlset>\n"
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "final": "https://zimo.beauty/robots.txt",
+    "canonical": [],
+    "alternates": [],
+    "robots": [],
+    "html": {},
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+      "cache-control": "public, max-age=0, must-revalidate"
+    },
+    "body": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /_next/\n\nSitemap: https://zimo.beauty/sitemap.xml\n"
+  },
+  {
+    "path": "/fa/feature/finance",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/finance",
+    "canonical": [
+      "https://zimo.beauty/feature/finance"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/finance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/finance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/finance"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/feature/security",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/security",
+    "canonical": [
+      "https://zimo.beauty/feature/security"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/security"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/security"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/security"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/feature/staff-performance",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/staff-performance",
+    "canonical": [
+      "https://zimo.beauty/feature/staff-performance"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/staff-performance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/staff-performance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/staff-performance"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/feature/reporting",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/reporting",
+    "canonical": [
+      "https://zimo.beauty/feature/reporting"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/reporting"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/reporting"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/reporting"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/features",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/features",
+    "canonical": [
+      "https://zimo.beauty/features"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/features"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/features"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/features"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/feature/loyalty",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/loyalty",
+    "canonical": [
+      "https://zimo.beauty/feature/loyalty"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/loyalty"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/loyalty"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/loyalty"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/feature/branches",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/branches",
+    "canonical": [
+      "https://zimo.beauty/feature/branches"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/branches"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/branches"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/branches"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/contact",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/contact",
+    "canonical": [
+      "https://zimo.beauty/contact"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/contact"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/contact"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/contact"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/demo",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/demo",
+    "canonical": [
+      "https://zimo.beauty/demo"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/demo"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/demo"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/demo"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/fa/feature/staff-dashboard",
+    "status": 200,
+    "final": "https://zimo.beauty/fa/feature/staff-dashboard",
+    "canonical": [
+      "https://zimo.beauty/feature/staff-dashboard"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/staff-dashboard"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/staff-dashboard"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/staff-dashboard"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "fa",
+      "dir": "rtl"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "path": "/en/feature/finance",
+    "status": 200,
+    "final": "https://zimo.beauty/en/feature/finance",
+    "canonical": [
+      "https://zimo.beauty/en/feature/finance"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/finance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/finance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/finance"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "en",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/en/pricing",
+    "status": 200,
+    "final": "https://zimo.beauty/en/pricing",
+    "canonical": [
+      "https://zimo.beauty/en/pricing"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/pricing"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/pricing"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/pricing"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "en",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/tr/pricing",
+    "status": 200,
+    "final": "https://zimo.beauty/tr/pricing",
+    "canonical": [
+      "https://zimo.beauty/tr/pricing"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/pricing"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/pricing"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/pricing"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "tr",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/tr/feature/marketing-crm",
+    "status": 200,
+    "final": "https://zimo.beauty/tr/feature/marketing-crm",
+    "canonical": [
+      "https://zimo.beauty/tr/feature/marketing-crm"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/marketing-crm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/marketing-crm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/marketing-crm"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "tr",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/tr/feature/staff-performance",
+    "status": 200,
+    "final": "https://zimo.beauty/tr/feature/staff-performance",
+    "canonical": [
+      "https://zimo.beauty/tr/feature/staff-performance"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/staff-performance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/staff-performance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/staff-performance"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "tr",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/en/feature/appointments",
+    "status": 200,
+    "final": "https://zimo.beauty/en/feature/appointments",
+    "canonical": [
+      "https://zimo.beauty/en/feature/appointments"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/appointments"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/appointments"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/appointments"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "en",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/tr/features",
+    "status": 200,
+    "final": "https://zimo.beauty/tr/features",
+    "canonical": [
+      "https://zimo.beauty/tr/features"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/features"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/features"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/features"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "tr",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/en/feature/staff-performance",
+    "status": 200,
+    "final": "https://zimo.beauty/en/feature/staff-performance",
+    "canonical": [
+      "https://zimo.beauty/en/feature/staff-performance"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/staff-performance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/staff-performance"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/staff-performance"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "en",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/en/feature/reporting",
+    "status": 200,
+    "final": "https://zimo.beauty/en/feature/reporting",
+    "canonical": [
+      "https://zimo.beauty/en/feature/reporting"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/reporting"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/reporting"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/reporting"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "en",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  },
+  {
+    "path": "/tr/feature/appointments",
+    "status": 200,
+    "final": "https://zimo.beauty/tr/feature/appointments",
+    "canonical": [
+      "https://zimo.beauty/tr/feature/appointments"
+    ],
+    "alternates": [
+      {
+        "rel": "alternate",
+        "hreflang": "fa",
+        "href": "https://zimo.beauty/feature/appointments"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://zimo.beauty/en/feature/appointments"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "tr",
+        "href": "https://zimo.beauty/tr/feature/appointments"
+      }
+    ],
+    "robots": [],
+    "html": {
+      "lang": "tr",
+      "dir": "ltr"
+    },
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Cache-Control": "s-maxage=31536000"
+    },
+    "body": null
+  }
+]

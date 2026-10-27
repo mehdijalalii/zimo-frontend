@@ -4,6 +4,8 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { getLocalizedPathname } from '@/i18n/paths';
+import type { Locale } from '@/i18n/config';
 
 interface MegaMenuItem {
   slug: string;
@@ -145,17 +147,7 @@ function LanguageSwitcher({ locale }: { locale: string }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  const getLangHref = (targetLocale: string) => {
-    const segments = pathname.split('/');
-    const currentLocale = segments[1];
-    if (['fa', 'en', 'tr'].includes(currentLocale)) {
-      segments[1] = targetLocale;
-    } else {
-      segments.splice(1, 0, targetLocale);
-    }
-    const path = segments.join('/');
-    return targetLocale === 'fa' ? (path.replace(/^\/fa/, '') || '/') : path;
-  };
+  const getLangHref = (targetLocale: string) => getLocalizedPathname(pathname, targetLocale as Locale);
 
   const langOptions = [
     { code: 'fa', label: 'فارسی 🇮🇷' },
@@ -193,15 +185,7 @@ function LanguageSwitcher({ locale }: { locale: string }) {
 }
 
 function MobileLangLink({ locale, target, pathname, children }: { locale: string; target: string; pathname: string; children: React.ReactNode }) {
-  const segments = pathname.split('/');
-  const currentLocale = segments[1];
-  if (['fa', 'en', 'tr'].includes(currentLocale)) {
-    segments[1] = target;
-  } else {
-    segments.splice(1, 0, target);
-  }
-  const path = segments.join('/');
-  const href = target === 'fa' ? (path.replace(/^\/fa/, '') || '/') : path;
+  const href = getLocalizedPathname(pathname, target as Locale);
   return (
     <Link href={href} className={`flex h-9 items-center justify-center rounded-lg border px-3 text-xs font-bold ${locale === target ? 'border-[#841474] bg-[#841474]/10 text-[#841474]' : 'border-gray-200 text-gray-600'}`}>
       {children}
