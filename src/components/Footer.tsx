@@ -64,7 +64,7 @@ export default function Footer({ locale, translations }: FooterProps) {
               <p className="mt-4 mb-7 text-lg leading-[1.7] text-gray-300">
                 {footer.tagline}
               </p>
-              <p className="text-sm leading-[1.7] text-gray-500">
+              <p className="text-sm leading-[1.7] text-gray-400">
                 {footer.description}
               </p>
 
@@ -204,7 +204,7 @@ export default function Footer({ locale, translations }: FooterProps) {
 
         <div className="relative pt-[26px] pb-8 text-center">
           <div className="border-t border-gray-800 pt-8">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-400">
               {footer.copyright}
             </p>
           </div>

@@ -318,6 +318,10 @@ export default function Header({ locale, translations }: HeaderProps) {
           {!mobileMenuOpen && <LanguageSwitcher locale={locale} />}
 
           <button
+            type="button"
+            aria-label={locale === 'fa' ? (mobileMenuOpen ? 'بستن منو' : 'باز کردن منو') : locale === 'tr' ? (mobileMenuOpen ? 'Menüyü kapat' : 'Menüyü aç') : (mobileMenuOpen ? 'Close menu' : 'Open menu')}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
             className="flex size-10 items-center justify-center rounded-full bg-[#841474] text-white lg:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -330,7 +334,7 @@ export default function Header({ locale, translations }: HeaderProps) {
 
     </header>
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-16 z-[60] bg-white overflow-y-auto lg:hidden">
+        <div id="mobile-navigation" className="fixed inset-0 top-16 z-[60] bg-white overflow-y-auto lg:hidden">
           <div className="p-4 flex flex-col gap-1">
             <Link href={getHref(locale, 'home')} onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">

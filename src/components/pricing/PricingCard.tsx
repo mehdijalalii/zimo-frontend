@@ -74,7 +74,7 @@ export default function PricingCard({
         ) : (
           <div className="flex flex-col gap-1">
             {plan.original_price && (
-              <span className="text-lg text-gray-400 line-through">{formatPrice(locale, plan.original_price)}</span>
+              <span className="text-lg text-gray-600 line-through">{formatPrice(locale, plan.original_price)}</span>
             )}
             <div className="flex items-baseline gap-2">
               <span className="text-3xl font-bold text-gray-900">{formatPrice(locale, plan.price as number)}</span>
@@ -107,14 +107,14 @@ export default function PricingCard({
       {/* Features */}
       {showFeatures && (
         <div className="mt-8 grid gap-y-4">
-          <h5 className={`text-sm font-semibold mt-4 uppercase tracking-wider text-gray-400 ${locale === 'fa' ? 'text-right' : 'text-left'}`}>
+          <h4 className={`text-sm font-semibold mt-4 uppercase tracking-wider text-gray-600 ${locale === 'fa' ? 'text-right' : 'text-left'}`}>
             {plan.code === 'starter'
               ? (locale === 'fa' ? 'شامل امکانات:' : locale === 'tr' ? 'Dahil Olanlar:' : 'What\'s included:')
               : plan.code === 'professional'
               ? (locale === 'fa' ? 'شامل امکانات پایه و همچنین:' : locale === 'tr' ? 'Başlangıç artı:' : 'Essentials plus:')
               : (locale === 'fa' ? 'شامل امکانات حرفه‌ای و همچنین:' : locale === 'tr' ? 'Profesyonel artı:' : 'Professional plus:')
             }
-          </h5>
+          </h4>
           <ul className="grid gap-y-3">
             {plan.features.map((feature, i) => (
               <li key={i} className="flex items-center gap-2.5 text-sm text-gray-600">

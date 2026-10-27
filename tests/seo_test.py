@@ -35,6 +35,7 @@ class HTML(HTMLParser):
     def __init__(self, body):
         super().__init__(convert_charrefs=True)
         self.links, self.meta, self.anchors, self.images, self.schema = [], [], [], [], []
+        self.elements = []
         self.html, self.h1, self.title, self.text, self.hidden_h1 = {}, 0, '', '', False
         self.hidden_headings = []
         self.stack = []
@@ -42,6 +43,7 @@ class HTML(HTMLParser):
         self.feed(body)
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        self.elements.append((tag, a))
         if tag == 'html': self.html = a
         if tag == 'link': self.links.append(a)
         if tag == 'meta': self.meta.append(a)
@@ -193,6 +195,29 @@ class SEOTests(unittest.TestCase):
     def test_initial_content_does_not_require_js_for_visibility(self):
         for path, p in self.pages.items():
             with self.subTest(path=path): self.assertEqual(p.hidden_headings, [], 'Headings are inside opacity:0 server-rendered wrappers')
+
+    def test_homepage_pricing_accessibility(self):
+        for path in ['/', '/en', '/tr']:
+            with self.subTest(path=path):
+                p = self.pages[path]
+                menu = [a for tag, a in p.elements if tag == 'button' and 'lg:hidden' in a.get('class', '')]
+                self.assertEqual(len(menu), 1)
+                self.assertTrue(menu[0].get('aria-label'))
+                self.assertEqual(menu[0].get('aria-expanded'), 'false')
+                headings = [(tag, a) for tag, a in p.elements if tag in ('h3', 'h4', 'h5') and 'mt-4' in a.get('class', '') and 'tracking-wider' in a.get('class', '')]
+                self.assertEqual(len(headings), 3)
+                self.assertTrue(all(tag == 'h4' for tag, _ in headings))
+                self.assertTrue(all('text-gray-600' in a.get('class', '') for _, a in headings))
+                old_prices = [a for tag, a in p.elements if tag == 'span' and 'line-through' in a.get('class', '')]
+                if path == '/': self.assertTrue(old_prices)
+                self.assertTrue(all('text-gray-600' in a.get('class', '') for a in old_prices))
+                labels = [a for tag, a in p.elements if tag == 'span' and 'text-[10px]' in a.get('class', '')]
+                self.assertTrue(labels)
+                self.assertTrue(all('text-gray-600' in a.get('class', '') for a in labels))
+                copyright = [a for tag, a in p.elements if tag == 'p' and 'text-sm' in a.get('class', '') and 'text-gray-400' in a.get('class', '')]
+                self.assertTrue(copyright)
+                footer_description = [a for tag, a in p.elements if tag == 'p' and 'leading-[1.7]' in a.get('class', '')]
+                self.assertTrue(any('text-gray-400' in a.get('class', '') for a in footer_description))
 
     def test_structured_data_has_no_invented_free_or_null_offers(self):
         for path, p in self.pages.items():

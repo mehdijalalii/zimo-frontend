@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- Portable CommonJS smoke test uses Node's optional NODE_PATH Playwright runtime. */
 /* Optional browser smoke test: requires playwright on NODE_PATH and local Chrome.
    SEO_BASE_URL defaults to the already running production server on port 3100. */
 const { chromium } = require('playwright');
@@ -8,11 +9,13 @@ const base = process.env.SEO_BASE_URL || 'http://localhost:3100';
   const errors = [];
   const context = await browser.newContext();
   const page = await context.newPage();
+  // Keep this smoke test focused on first-party UI when analytics/chat are slow.
+  await page.route(/(googletagmanager\.com|chat\.zimo\.beauty)/, route => route.abort());
   page.on('pageerror', e => errors.push(e.message));
   const result = [];
   try {
     for (const [path, locale, dir] of [['/', 'fa', 'rtl'], ['/en', 'en', 'ltr'], ['/tr', 'tr', 'ltr']]) {
-      await page.goto(base + path);
+      await page.goto(base + path, { waitUntil: 'domcontentloaded' });
       await page.waitForLoadState('networkidle');
       assert.equal(await page.locator('html').getAttribute('lang'), locale);
       assert.equal(await page.locator('html').getAttribute('dir'), dir);

@@ -56,7 +56,7 @@ export default function HomePricing({
         {/* Billing Toggle */}
         <div className="mb-10 flex justify-center">
           <div className="relative inline-flex flex-col items-center">
-            <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 whitespace-nowrap mb-1 self-end">
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-600 whitespace-nowrap mb-1 self-end">
               {translations.two_months_free}
             </span>
             <div className="flex items-center rounded border border-gray-900">
