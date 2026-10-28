@@ -70,6 +70,7 @@ export default function BlogArticlePresentation({
   labels,
 }: BlogArticlePresentationProps) {
   const direction = locale === 'fa' ? 'rtl' : 'ltr';
+  const tableOfContentsHeadings = headings.filter(heading => heading.level === 2);
 
   return (
     <>
@@ -124,10 +125,10 @@ export default function BlogArticlePresentation({
             <article className="mx-auto w-full max-w-[64rem] min-w-0 xl:max-w-none" dir={direction}>
               <BlogArticleTools labels={labels} showShare={!preview} />
 
-              {headings.length >= 2 && (
-                <details className="blog-toc-mobile mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm xl:hidden">
+              {tableOfContentsHeadings.length >= 2 && (
+                <details open className="blog-toc-mobile mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm xl:hidden">
                   <summary className="cursor-pointer font-black text-gray-900">{labels.contents}</summary>
-                  <div className="mt-3"><BlogArticleTableOfContents headings={headings} label={labels.contents} /></div>
+                  <div className="mt-3"><BlogArticleTableOfContents headings={tableOfContentsHeadings} label={labels.contents} /></div>
                 </details>
               )}
 
@@ -137,9 +138,9 @@ export default function BlogArticlePresentation({
               </div>
             </article>
 
-            {headings.length >= 2 ? (
+            {tableOfContentsHeadings.length >= 2 ? (
               <aside className="blog-toc-desktop sticky top-24 hidden self-start rounded-xl border border-gray-200 bg-white p-4 shadow-sm xl:block" dir={direction}>
-                <BlogArticleTableOfContents headings={headings} label={labels.contents} />
+                <BlogArticleTableOfContents headings={tableOfContentsHeadings} label={labels.contents} />
               </aside>
             ) : (
               <div aria-hidden="true" className="hidden xl:block" />
