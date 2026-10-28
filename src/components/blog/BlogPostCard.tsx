@@ -11,7 +11,7 @@ export default function BlogPostCard({ post, locale }: { post: BlogPost; locale:
           {post.image ? (
             // Blog images are uploaded through the CRM and can live on a separate media host.
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={post.image} alt={post.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <img src={post.image} alt={post.image_alt || post.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
           ) : (
             <div className="flex h-full items-center justify-center text-5xl font-black text-[#841474]/20">Z</div>
           )}

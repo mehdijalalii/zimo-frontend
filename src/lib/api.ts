@@ -51,7 +51,10 @@ export interface BlogPost {
   summary: string;
   content: string;
   image: string | null;
-  status: 'published';
+  image_alt: string | null;
+  author_name: string | null;
+  author_url: string | null;
+  status: 'draft' | 'in_review' | 'scheduled' | 'published' | 'archived';
   category: Omit<BlogCategory, 'posts_count'> | null;
   tags: BlogTag[];
   seo_title: string | null;
@@ -155,6 +158,19 @@ export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPos
 
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Blog API error: ${res.status}`);
+
+  const response = await res.json() as { data: BlogPost };
+  return response.data;
+}
+
+export async function getBlogPreview(token: string): Promise<BlogPost | null> {
+  const res = await fetch(`${API_BASE}/blog/posts/preview/${encodeURIComponent(token)}`, {
+    cache: 'no-store',
+    headers: { Accept: 'application/json' },
+  });
+
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Blog preview API error: ${res.status}`);
 
   const response = await res.json() as { data: BlogPost };
   return response.data;

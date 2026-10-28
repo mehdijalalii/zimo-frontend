@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     url: pageUrl(typedLocale, `/blog/${post.slug}`),
     title: post.seo_title || post.title,
     description: post.seo_description || post.summary,
-    images: post.image ? [{ url: post.image, alt: post.title }] : [],
+    images: post.image ? [{ url: post.image, alt: post.image_alt || post.title }] : [],
   };
   metadata.twitter = {
     card: 'summary_large_image',
@@ -67,6 +67,12 @@ export default async function BlogArticlePage({ params }: PageProps) {
     image: post.image ? [post.image] : undefined,
     datePublished: post.published_at,
     dateModified: post.updated_at,
+    inLanguage: typedLocale,
+    author: post.author_name ? {
+      '@type': 'Person',
+      name: post.author_name,
+      ...(post.author_url ? { url: post.author_url } : {}),
+    } : undefined,
     mainEntityOfPage: pageUrl(typedLocale, `/blog/${post.slug}`),
     publisher: { '@type': 'Organization', name: 'Zimo', url: 'https://zimo.beauty' },
   };
@@ -81,14 +87,18 @@ export default async function BlogArticlePage({ params }: PageProps) {
             {post.category && <span className="rounded-full bg-[#841474]/10 px-4 py-2 text-sm font-bold text-[#841474]">{post.category.name}</span>}
             <h1 className="mt-5 text-3xl font-black leading-relaxed text-gray-950 sm:text-5xl">{post.title}</h1>
             <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-600">{post.summary}</p>
+            {post.author_name && <p className="mt-4 text-sm font-bold text-gray-600">{post.author_url ? <Link href={post.author_url} className="hover:text-[#841474]">{post.author_name}</Link> : post.author_name}</p>}
             <time dateTime={post.published_at} className="mt-5 block text-sm text-gray-500">
               {new Intl.DateTimeFormat(dateLocale, { dateStyle: 'long' }).format(new Date(post.published_at))}
             </time>
+            {new Date(post.updated_at).getTime() > new Date(post.published_at).getTime() && (
+              <p className="mt-2 text-xs text-gray-500">{typedLocale === 'fa' ? 'آخرین بروزرسانی' : typedLocale === 'tr' ? 'Son güncelleme' : 'Last updated'}: {new Intl.DateTimeFormat(dateLocale, { dateStyle: 'long' }).format(new Date(post.updated_at))}</p>
+            )}
           </header>
           {post.image && (
             <div className="mb-10 overflow-hidden rounded-3xl bg-gray-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={post.image} alt={post.title} className="max-h-[560px] w-full object-cover" />
+              <img src={post.image} alt={post.image_alt || post.title} className="max-h-[560px] w-full object-cover" />
             </div>
           )}
           <div className="blog-content mx-auto max-w-3xl text-base leading-9 text-gray-700" dangerouslySetInnerHTML={{ __html: post.content }} />
