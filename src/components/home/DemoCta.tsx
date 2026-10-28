@@ -25,29 +25,7 @@ function getHref(locale: string, slug: string): string {
 export default function DemoCta({ locale, translations }: DemoCtaProps) {
   const { demo_cta } = translations;
   const pathname = usePathname();
-  if (/\/blog-preview\/?$/.test(pathname ?? '')) return null;
-  const isBlogArticle = /\/blog\/[^/]+\/?$/.test(pathname ?? '');
-  const articleCta = {
-    fa: {
-      heading: 'مدیریت سالن‌تان را ساده‌تر کنید',
-      lead: 'اگر این مقاله برای رشد سالن شما مفید بود، زیمو ابزارهای لازم برای مدیریت مشتریان، نوبت‌ها و فروش را یک‌جا در اختیارتان می‌گذارد.',
-      demo: 'درخواست دموی زیمو',
-      features: 'دیدن امکانات',
-    },
-    en: {
-      heading: 'Make salon management simpler',
-      lead: 'Put the ideas from this article into practice with one place to manage clients, appointments, and sales.',
-      demo: 'Request a Zimo demo',
-      features: 'Explore features',
-    },
-    tr: {
-      heading: 'Salon yönetimini kolaylaştırın',
-      lead: 'Bu yazıdaki fikirleri; müşterileri, randevuları ve satışları tek yerden yöneterek hayata geçirin.',
-      demo: 'Zimo demosu isteyin',
-      features: 'Özellikleri keşfedin',
-    },
-  } as const;
-  const cta = isBlogArticle ? articleCta[locale as keyof typeof articleCta] : null;
+  if (/\/blog\/[^/]+\/?$|\/blog-preview\/?$/.test(pathname ?? '')) return null;
 
   return (
     <section className="section-block">
@@ -63,7 +41,7 @@ export default function DemoCta({ locale, translations }: DemoCtaProps) {
                 textWrap: 'balance',
               }}
             >
-              {cta?.heading ?? demo_cta.heading}
+              {demo_cta.heading}
             </h2>
             <p
               className="mx-auto max-w-[32rem] text-white/88"
@@ -72,7 +50,7 @@ export default function DemoCta({ locale, translations }: DemoCtaProps) {
                 lineHeight: 1.75,
               }}
             >
-              {cta?.lead ?? demo_cta.lead}
+              {demo_cta.lead}
             </p>
           </div>
 
@@ -81,13 +59,13 @@ export default function DemoCta({ locale, translations }: DemoCtaProps) {
               href={getHref(locale, 'demo')}
               className="inline-flex min-h-[3rem] w-[min(100%,280px)] items-center justify-center rounded-full bg-white px-7 text-[0.9375rem] font-extrabold text-[#841474] shadow-[0_4px_16px_rgba(0,0,0,0.12)] transition hover:bg-white/95 hover:-translate-y-0.5 md:w-auto"
             >
-              {cta?.demo ?? demo_cta.demo_cta}
+              {demo_cta.demo_cta}
             </Link>
             <Link
               href={getHref(locale, 'features')}
               className="inline-flex min-h-[3rem] w-[min(100%,280px)] items-center justify-center rounded-full border border-white/45 px-7 text-[0.9375rem] font-extrabold text-white transition hover:bg-white/10 hover:border-white/70 hover:-translate-y-0.5 md:w-auto"
             >
-              {cta?.features ?? demo_cta.features_cta}
+              {demo_cta.features_cta}
             </Link>
           </div>
         </div>

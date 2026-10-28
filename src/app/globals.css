@@ -433,6 +433,11 @@
 }
 
 @layer components {
+  .blog-article-hero {
+    background: linear-gradient(180deg, #faf8f3 0%, #fff 92%);
+  }
+  .blog-article-layout { direction: ltr; }
+  .blog-article-card { direction: inherit; }
   .blog-reading-progress {
     position: fixed;
     z-index: 45;
