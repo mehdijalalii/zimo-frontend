@@ -27,6 +27,41 @@ export interface ComparisonFeature {
   sort_order: number;
 }
 
+export interface BlogCategory {
+  id: number;
+  name: string;
+  slug: string;
+  posts_count: number;
+}
+
+export interface BlogTag {
+  id: number;
+  name: string;
+  slug: string;
+}
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  slug: string;
+  summary: string;
+  content: string;
+  image: string | null;
+  status: 'published';
+  category: Omit<BlogCategory, 'posts_count'> | null;
+  tags: BlogTag[];
+  seo_title: string | null;
+  seo_description: string | null;
+  published_at: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface PaginatedBlogPosts {
+  data: BlogPost[];
+  meta: { current_page: number; last_page: number; per_page: number; total: number };
+}
+
 async function apiFetch<T>(path: string, options?: RequestInit): Promise<T> {
   const url = `${API_BASE}${path}`;
   const res = await fetch(url, {
@@ -80,4 +115,45 @@ export async function submitDemo(data: {
     method: 'POST',
     body: JSON.stringify(data),
   });
+}
+
+async function blogFetch<T>(path: string): Promise<T> {
+  const res = await fetch(`${API_BASE}${path}`, {
+    headers: { Accept: 'application/json' },
+    next: { revalidate: 300 },
+  });
+
+  if (!res.ok) {
+    throw new Error(`Blog API error: ${res.status}`);
+  }
+
+  return res.json();
+}
+
+export async function getBlogPosts(options: { category?: string; tag?: string; page?: number } = {}): Promise<PaginatedBlogPosts> {
+  const query = new URLSearchParams();
+  if (options.category) query.set('category', options.category);
+  if (options.tag) query.set('tag', options.tag);
+  if (options.page && options.page > 1) query.set('page', String(options.page));
+  const suffix = query.size ? `?${query.toString()}` : '';
+
+  return blogFetch<PaginatedBlogPosts>(`/blog/posts${suffix}`);
+}
+
+export async function getBlogPost(slug: string): Promise<BlogPost | null> {
+  const res = await fetch(`${API_BASE}/blog/posts/${encodeURIComponent(slug)}`, {
+    headers: { Accept: 'application/json' },
+    next: { revalidate: 300 },
+  });
+
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Blog API error: ${res.status}`);
+
+  const response = await res.json() as { data: BlogPost };
+  return response.data;
+}
+
+export async function getBlogCategories(): Promise<BlogCategory[]> {
+  const response = await blogFetch<{ data: BlogCategory[] }>('/blog/categories');
+  return response.data;
 }

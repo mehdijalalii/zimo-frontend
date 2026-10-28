@@ -431,3 +431,19 @@
     font-family: "IRANSansX" !important;
   }
 }
+
+@layer components {
+  .blog-content > * + * { margin-top: 1.25rem; }
+  .blog-content h2 { margin-top: 2.5rem; color: #111827; font-size: 1.75rem; font-weight: 850; line-height: 1.5; }
+  .blog-content h3 { margin-top: 2rem; color: #111827; font-size: 1.35rem; font-weight: 800; line-height: 1.6; }
+  .blog-content p { line-height: 2; }
+  .blog-content a { color: #841474; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .blog-content ul, .blog-content ol { padding-inline-start: 1.5rem; }
+  .blog-content ul { list-style: disc; }
+  .blog-content ol { list-style: decimal; }
+  .blog-content li { padding-block: 0.25rem; }
+  .blog-content blockquote { border-inline-start: 3px solid #841474; background: rgba(132, 20, 116, 0.06); border-radius: 0.75rem; padding: 1rem 1.25rem; }
+  .blog-content img { max-width: 100%; height: auto; border-radius: 1rem; }
+  .blog-content table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+  .blog-content th, .blog-content td { border: 1px solid #e5e7eb; padding: 0.65rem 0.85rem; }
+}

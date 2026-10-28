@@ -77,6 +77,7 @@
         "logo_alt": "Zimo - Beauty Salon CRM",
         "home": "Home",
         "features": "Features",
+        "blog": "Blog",
         "pricing": "Pricing",
         "faq": "FAQ",
         "about": "About Us",
@@ -133,6 +134,7 @@
         "mobile": {
             "home": "Home",
             "features": "Features",
+            "blog": "Blog",
             "pricing": "Pricing",
             "faq": "FAQ",
             "about": "About Us",
@@ -1678,6 +1680,7 @@
                 "links": {
                     "features": "Features",
                     "pricing": "Pricing",
+          "blog": "Zimo Blog",
                     "demo": "Request a Demo"
                 }
             },

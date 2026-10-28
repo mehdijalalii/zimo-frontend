@@ -77,6 +77,7 @@
         "logo_alt": "Zimo - Güzellik Salonu CRM",
         "home": "Ana Sayfa",
         "features": "Özellikler",
+        "blog": "Blog",
         "pricing": "Fiyatlandırma",
         "faq": "Sıkça Sorulan Sorular",
         "about": "Hakkımızda",
@@ -133,6 +134,7 @@
         "mobile": {
             "home": "Ana Sayfa",
             "features": "Özellikler",
+            "blog": "Blog",
             "pricing": "Fiyatlandırma",
             "faq": "Sıkça Sorulan Sorular",
             "about": "Hakkımızda",
@@ -1678,6 +1680,7 @@
                 "links": {
                     "features": "Özellikler",
                     "pricing": "Fiyatlandırma",
+          "blog": "Zimo Blog",
                     "demo": "Demo Talebi"
                 }
             },

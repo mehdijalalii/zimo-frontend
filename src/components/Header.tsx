@@ -18,6 +18,7 @@ interface HeaderProps {
     nav: {
       home: string;
       features: string;
+      blog: string;
       pricing: string;
       faq: string;
       about: string;
@@ -119,6 +120,7 @@ function getHref(locale: string, slug: string): string {
   const prefix = locale === 'fa' ? '' : `/${locale}`;
   if (slug === 'home') return prefix || '/';
   if (slug === 'features') return `${prefix}/features`;
+  if (slug === 'blog') return `${prefix}/blog`;
   if (slug === 'pricing') return `${prefix}/pricing`;
   if (slug === 'faq') return `${prefix}/faq`;
   if (slug === 'about') return `${prefix}/about`;
@@ -197,8 +199,8 @@ function isActive(pathname: string, locale: string, slug: string): boolean {
   if (slug === 'home') {
     return pathname === `/${locale}` || pathname === '/';
   }
-  const href = `/${locale}/${slug}`;
-  return pathname.startsWith(href);
+  const href = `${locale === 'fa' ? '' : `/${locale}`}/${slug}`;
+  return pathname.startsWith(href) || (locale === 'fa' && pathname.startsWith(`/fa/${slug}`));
 }
 
 export default function Header({ locale, translations }: HeaderProps) {
@@ -285,6 +287,9 @@ export default function Header({ locale, translations }: HeaderProps) {
             </div>
           </div>
 
+          <Link href={getHref(locale, 'blog')} className={`nav-link px-3 py-2 ${isActive(pathname, locale, 'blog') ? 'nav-link-active' : ''}`}>
+            {nav.blog}
+          </Link>
           <Link href={getHref(locale, 'pricing')} className={`nav-link px-3 py-2 ${isActive(pathname, locale, 'pricing') ? 'nav-link-active' : ''}`}>
             {nav.pricing}
           </Link>
@@ -367,6 +372,14 @@ export default function Header({ locale, translations }: HeaderProps) {
                 );
               })}
             </div>
+
+            <Link href={getHref(locale, 'blog')} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">
+              <svg className="size-5 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v8a2 2 0 01-2 2zM13 4v6h6M7 14h10M7 17h10" />
+              </svg>
+              {nav.blog}
+            </Link>
 
             <Link href={getHref(locale, 'pricing')} onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 py-3 px-4 rounded-xl text-sm font-medium text-gray-700 hover:text-[#841474] hover:bg-gray-50 transition-colors">

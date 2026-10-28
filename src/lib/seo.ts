@@ -10,7 +10,7 @@ export const featureSlugs = [
 
 /** Only complete, public landing pages belong here. Team is a coming-soon placeholder. */
 export const publicRoutes = [
-  '/', '/features', '/pricing', '/faq', '/about', '/contact', '/demo',
+  '/', '/features', '/pricing', '/faq', '/about', '/contact', '/demo', '/blog',
   ...featureSlugs.map(slug => `/feature/${slug}`),
 ];
 

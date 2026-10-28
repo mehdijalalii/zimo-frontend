@@ -12,7 +12,7 @@ interface FooterProps {
       tagline: string;
       description: string;
       columns: {
-        zimo: { title: string; links: { features: string; pricing: string; demo: string } };
+        zimo: { title: string; links: { features: string; pricing: string; demo: string; blog: string } };
         support: { title: string; links: { faq: string; about: string; contact: string } };
         features: { title: string };
         more_features: { title: string };
@@ -26,6 +26,7 @@ function getHref(locale: string, slug: string): string {
   const prefix = locale === 'fa' ? '' : `/${locale}`;
   if (slug === 'home') return prefix || '/';
   if (slug === 'features') return `${prefix}/features`;
+  if (slug === 'blog') return `${prefix}/blog`;
   if (slug === 'pricing') return `${prefix}/pricing`;
   if (slug === 'faq') return `${prefix}/faq`;
   if (slug === 'about') return `${prefix}/about`;
@@ -108,6 +109,11 @@ export default function Footer({ locale, translations }: FooterProps) {
                   <li>
                     <Link href={getHref(locale, 'demo')} className="text-sm text-gray-400 transition hover:text-white">
                       {footer.columns.zimo.links.demo}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={getHref(locale, 'blog')} className="text-sm text-gray-400 transition hover:text-white">
+                      {footer.columns.zimo.links.blog}
                     </Link>
                   </li>
                 </ul>

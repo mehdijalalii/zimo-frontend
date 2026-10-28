@@ -7,6 +7,7 @@ import HomeHowItWorks from '@/components/home/HomeHowItWorks';
 import HomeStats from '@/components/home/HomeStats';
 import HomeTrust from '@/components/home/HomeTrust';
 import HomePricing from '@/components/home/HomePricing';
+import HomeBlog from '@/components/home/HomeBlog';
 import { getStaticPlans } from '@/data/pricing';
 
 import { pageMetadata, pageUrl } from "@/lib/seo";
@@ -46,6 +47,7 @@ export default async function HomePage({
       <HomeStats translations={messages} />
       <HomeTrust translations={messages} />
       <HomePricing locale={typedLocale} plans={plans} translations={messages.pricing} />
+      <HomeBlog locale={typedLocale} />
     </>
   );
 }
