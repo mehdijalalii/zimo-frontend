@@ -25,6 +25,7 @@ function getHref(locale: string, slug: string): string {
 export default function DemoCta({ locale, translations }: DemoCtaProps) {
   const { demo_cta } = translations;
   const pathname = usePathname();
+  if (/\/blog-preview\/?$/.test(pathname ?? '')) return null;
   const isBlogArticle = /\/blog\/[^/]+\/?$/.test(pathname ?? '');
   const articleCta = {
     fa: {

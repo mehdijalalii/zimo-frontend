@@ -9,6 +9,7 @@ interface Heading {
 }
 
 interface BlogArticleToolsProps {
+  showShare?: boolean;
   labels: {
     share: string;
     copied: string;
@@ -60,7 +61,7 @@ export function BlogArticleTableOfContents({ headings, label }: { headings: Head
   );
 }
 
-export default function BlogArticleTools({ labels }: BlogArticleToolsProps) {
+export default function BlogArticleTools({ labels, showShare = true }: BlogArticleToolsProps) {
   const [shareMessage, setShareMessage] = useState('');
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -114,13 +115,15 @@ export default function BlogArticleTools({ labels }: BlogArticleToolsProps) {
         <span style={{ transform: `scaleX(${scrollProgress / 100})` }} />
       </div>
 
-      <div className="mb-5 flex flex-wrap items-center gap-3">
-        <button type="button" onClick={shareArticle} className="inline-flex min-h-10 items-center gap-2 rounded-full border border-gray-200 bg-white px-4 text-sm font-bold text-gray-700 shadow-sm transition hover:border-[#841474]/40 hover:text-[#841474]">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"/></svg>
-          {labels.share}
-        </button>
-        {shareMessage && <span role="status" className="text-sm text-gray-500">{shareMessage}</span>}
-      </div>
+      {showShare && (
+        <div className="mb-5 flex flex-wrap items-center gap-3">
+          <button type="button" onClick={shareArticle} className="inline-flex min-h-10 items-center gap-2 rounded-full border border-gray-200 bg-white px-4 text-sm font-bold text-gray-700 shadow-sm transition hover:border-[#841474]/40 hover:text-[#841474]">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"/></svg>
+            {labels.share}
+          </button>
+          {shareMessage && <span role="status" className="text-sm text-gray-500">{shareMessage}</span>}
+        </div>
+      )}
 
       {showBackToTop && (
         <button
