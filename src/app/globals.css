@@ -457,7 +457,7 @@
     transition: transform 120ms linear;
   }
   :dir(rtl) .blog-reading-progress span { transform-origin: right center; }
-  .blog-content { max-width: 54rem; }
+  .blog-content { max-width: 60rem; }
   .blog-content > * + * { margin-top: 1.25rem; }
   .blog-content h2 { scroll-margin-top: 7rem; margin-top: 3rem; color: #111827; font-size: clamp(1.45rem, 2.5vw, 1.8rem); font-weight: 850; line-height: 1.55; }
   .blog-content h3 { scroll-margin-top: 7rem; margin-top: 2.25rem; color: #111827; font-size: clamp(1.2rem, 2vw, 1.4rem); font-weight: 800; line-height: 1.65; }

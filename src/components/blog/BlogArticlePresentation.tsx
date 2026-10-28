@@ -75,9 +75,10 @@ export default function BlogArticlePresentation({
       <section className="blog-article-hero px-4 pb-10 pt-8 sm:px-6 sm:pb-14 sm:pt-10">
         <div className="mx-auto max-w-5xl">
           {backLabel && (
-            <div className="mb-5 flex justify-end">
-              <Link href={blogPath(locale)} className="inline-flex min-h-9 items-center rounded-full border border-gray-200 bg-white/80 px-4 text-xs font-bold text-gray-600 transition hover:border-[#841474]/30 hover:text-[#841474]">
-                {backLabel} <span aria-hidden="true" className="ms-2">←</span>
+            <div className="mb-5 flex justify-end" dir="ltr">
+              <Link href={blogPath(locale)} dir={direction} className="inline-flex min-h-9 items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 text-xs font-bold text-gray-600 transition hover:border-[#841474]/30 hover:text-[#841474]">
+                <span aria-hidden="true">{direction === 'rtl' ? '→' : '←'}</span>
+                {backLabel}
               </Link>
             </div>
           )}
@@ -105,12 +106,14 @@ export default function BlogArticlePresentation({
       </section>
 
       <section className="border-t border-gray-100 bg-white px-4 py-8 sm:px-6 sm:py-12">
-        <div className="blog-article-layout mx-auto grid max-w-6xl grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-8">
-          <article className="min-w-0" dir={direction}>
+        <div className="blog-article-layout mx-auto grid w-full max-w-[92rem] grid-cols-1 items-start justify-center gap-6 2xl:grid-cols-[14rem_minmax(0,60rem)_14rem] 2xl:gap-6">
+          <div aria-hidden="true" className="hidden 2xl:block" />
+
+          <article className="mx-auto w-full max-w-[64rem] min-w-0 2xl:max-w-none" dir={direction}>
             <BlogArticleTools labels={labels} showShare={!preview} />
 
             {headings.length >= 2 && (
-              <details className="blog-toc-mobile mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm lg:hidden">
+              <details className="blog-toc-mobile mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm 2xl:hidden">
                 <summary className="cursor-pointer font-black text-gray-900">{labels.contents}</summary>
                 <div className="mt-3"><BlogArticleTableOfContents headings={headings} label={labels.contents} /></div>
               </details>
@@ -122,10 +125,12 @@ export default function BlogArticlePresentation({
             </div>
           </article>
 
-          {headings.length >= 2 && (
-            <aside className="blog-toc-desktop sticky top-24 hidden self-start rounded-xl border border-gray-200 bg-white p-4 shadow-sm lg:block" dir={direction}>
+          {headings.length >= 2 ? (
+            <aside className="blog-toc-desktop sticky top-24 hidden self-start rounded-xl border border-gray-200 bg-white p-4 shadow-sm 2xl:block" dir={direction}>
               <BlogArticleTableOfContents headings={headings} label={labels.contents} />
             </aside>
+          ) : (
+            <div aria-hidden="true" className="hidden 2xl:block" />
           )}
         </div>
       </section>
