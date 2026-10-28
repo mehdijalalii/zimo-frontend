@@ -433,17 +433,41 @@
 }
 
 @layer components {
+  .blog-reading-progress {
+    position: fixed;
+    z-index: 45;
+    inset-inline: 0;
+    top: 4rem;
+    height: 3px;
+    overflow: hidden;
+    background: rgb(132 20 116 / 10%);
+    pointer-events: none;
+  }
+  .blog-reading-progress span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    background: #841474;
+    transition: transform 120ms linear;
+  }
+  :dir(rtl) .blog-reading-progress span { transform-origin: right center; }
+  .blog-content { max-width: 54rem; }
   .blog-content > * + * { margin-top: 1.25rem; }
-  .blog-content h2 { margin-top: 2.5rem; color: #111827; font-size: 1.75rem; font-weight: 850; line-height: 1.5; }
-  .blog-content h3 { margin-top: 2rem; color: #111827; font-size: 1.35rem; font-weight: 800; line-height: 1.6; }
-  .blog-content p { line-height: 2; }
+  .blog-content h2 { scroll-margin-top: 7rem; margin-top: 3rem; color: #111827; font-size: clamp(1.45rem, 2.5vw, 1.8rem); font-weight: 850; line-height: 1.55; }
+  .blog-content h3 { scroll-margin-top: 7rem; margin-top: 2.25rem; color: #111827; font-size: clamp(1.2rem, 2vw, 1.4rem); font-weight: 800; line-height: 1.65; }
+  .blog-content p { line-height: 2.15; }
   .blog-content a { color: #841474; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
   .blog-content ul, .blog-content ol { padding-inline-start: 1.5rem; }
   .blog-content ul { list-style: disc; }
   .blog-content ol { list-style: decimal; }
   .blog-content li { padding-block: 0.25rem; }
-  .blog-content blockquote { border-inline-start: 3px solid #841474; background: rgba(132, 20, 116, 0.06); border-radius: 0.75rem; padding: 1rem 1.25rem; }
+  .blog-content blockquote { border-inline-start: 3px solid #841474; background: rgba(132, 20, 116, 0.06); border-radius: 0.75rem; padding: 1.25rem 1.5rem; color: #374151; }
   .blog-content img { max-width: 100%; height: auto; border-radius: 1rem; }
   .blog-content table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
-  .blog-content th, .blog-content td { border: 1px solid #e5e7eb; padding: 0.65rem 0.85rem; }
+  .blog-content th, .blog-content td { border: 1px solid #e5e7eb; padding: 0.75rem 1rem; }
+  .blog-content th { background: #f9fafb; color: #111827; font-weight: 800; }
+  .blog-content pre { max-width: 100%; overflow-x: auto; border-radius: 1rem; background: #111827; padding: 1rem 1.25rem; color: #f9fafb; }
+  .blog-toc-nav ol { margin: 0; padding: 0; list-style: none; }
+  .blog-toc-mobile summary::marker { color: #841474; }
 }
