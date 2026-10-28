@@ -162,6 +162,7 @@
 
   @media (min-width: 1024px) {
     .feature-card--bento {
+      height: 100%;
       min-height: 0;
       padding: 2rem 2.125rem 2.25rem;
     }
@@ -307,6 +308,22 @@
   .zimo-textarea:focus {
     border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(132, 20, 116, 0.08);
+  }
+
+  select.zimo-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+
+  html[dir="rtl"] select.zimo-input {
+    background-position: left 1rem center;
+    padding-left: 2.75rem;
+  }
+
+  html[dir="ltr"] select.zimo-input {
+    background-position: right 1rem center;
+    padding-right: 2.75rem;
   }
 
   .zimo-textarea {
