@@ -16,9 +16,9 @@ export async function generateStaticParams({ params }: { params: { locale: strin
 }
 
 const labels = {
-  fa: { back: 'بازگشت به مجله', related: 'مقاله‌های مرتبط', contents: 'در این مقاله', share: 'اشتراک‌گذاری', copied: 'لینک مقاله کپی شد', copyFailed: 'کپی لینک انجام نشد', backToTop: 'بازگشت به بالای صفحه', author: 'نویسنده', updated: 'آخرین به‌روزرسانی', reading: 'دقیقه مطالعه' },
-  en: { back: 'Back to the blog', related: 'Related articles', contents: 'In this article', share: 'Share article', copied: 'Article link copied', copyFailed: 'Could not copy the link', backToTop: 'Back to top', author: 'By', updated: 'Updated', reading: 'min read' },
-  tr: { back: 'Bloga dön', related: 'İlgili yazılar', contents: 'Bu yazıda', share: 'Yazıyı paylaş', copied: 'Yazı bağlantısı kopyalandı', copyFailed: 'Bağlantı kopyalanamadı', backToTop: 'Başa dön', author: 'Yazar', updated: 'Son güncelleme', reading: 'dk okuma' },
+  fa: { back: 'بازگشت به مجله', related: 'مقاله‌های مرتبط', contents: 'در این مقاله', breadcrumbLabel: 'مسیر راهنما', home: 'خانه', blog: 'مجله', share: 'اشتراک‌گذاری', copied: 'لینک مقاله کپی شد', copyFailed: 'کپی لینک انجام نشد', backToTop: 'بازگشت به بالای صفحه', author: 'نویسنده', updated: 'آخرین به‌روزرسانی', reading: 'دقیقه مطالعه' },
+  en: { back: 'Back to the blog', related: 'Related articles', contents: 'In this article', breadcrumbLabel: 'Breadcrumb', home: 'Home', blog: 'Blog', share: 'Share article', copied: 'Article link copied', copyFailed: 'Could not copy the link', backToTop: 'Back to top', author: 'By', updated: 'Updated', reading: 'min read' },
+  tr: { back: 'Bloga dön', related: 'İlgili yazılar', contents: 'Bu yazıda', breadcrumbLabel: 'İçerik haritası', home: 'Ana sayfa', blog: 'Blog', share: 'Yazıyı paylaş', copied: 'Yazı bağlantısı kopyalandı', copyFailed: 'Bağlantı kopyalanamadı', backToTop: 'Başa dön', author: 'Yazar', updated: 'Son güncelleme', reading: 'dk okuma' },
 } as const;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -77,11 +77,21 @@ export default async function BlogArticlePage({ params }: PageProps) {
     mainEntityOfPage: pageUrl(typedLocale, `/blog/${post.slug}`),
     publisher: { '@type': 'Organization', name: 'Zimo', url: 'https://zimo.beauty' },
   };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: text.home, item: pageUrl(typedLocale, '/') },
+      { '@type': 'ListItem', position: 2, name: text.blog, item: pageUrl(typedLocale, '/blog') },
+      { '@type': 'ListItem', position: 3, name: post.title, item: pageUrl(typedLocale, `/blog/${post.slug}`) },
+    ],
+  };
   const formatDate = (date: string) => new Intl.DateTimeFormat(typedLocale === 'fa' ? 'fa-IR' : typedLocale === 'tr' ? 'tr-TR' : 'en-US', { dateStyle: 'long' }).format(new Date(date));
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
       <BlogArticlePresentation
         locale={typedLocale}
         title={post.title}

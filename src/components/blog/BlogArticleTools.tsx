@@ -43,8 +43,14 @@ export function BlogArticleTableOfContents({ headings, label }: { headings: Head
 
   return (
     <nav aria-label={label} className="blog-toc-nav">
-      <h2 className="mb-4 text-sm font-black text-gray-900">{label}</h2>
-      <ol className="space-y-1.5">
+      <h2 className="mb-4 flex items-center gap-2 text-sm font-black text-gray-900">
+        <span>{label}</span>
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 7v14" />
+          <path d="M3 18V5a2 2 0 0 1 2-2h4a3 3 0 0 1 3 3 3 3 0 0 1 3-3h4a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1h-5a3 3 0 0 0-3 2 3 3 0 0 0-3-2H4a1 1 0 0 1-1-1Z" />
+        </svg>
+      </h2>
+      <ol className="space-y-1.5 border-s border-gray-200 ps-3">
         {headings.map((heading) => (
           <li key={heading.id} className={heading.level === 3 ? 'ps-3' : ''}>
             <a

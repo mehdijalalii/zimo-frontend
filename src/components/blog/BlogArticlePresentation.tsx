@@ -29,6 +29,9 @@ interface BlogArticlePresentationProps {
   relatedPosts?: BlogPost[];
   labels: {
     contents: string;
+    breadcrumbLabel: string;
+    home: string;
+    blog: string;
     share: string;
     copied: string;
     copyFailed: string;
@@ -106,32 +109,42 @@ export default function BlogArticlePresentation({
       </section>
 
       <section className="border-t border-gray-100 bg-white px-4 py-8 sm:px-6 sm:py-12">
-        <div className="blog-article-layout mx-auto grid w-full max-w-[92rem] grid-cols-1 items-start justify-center gap-6 2xl:grid-cols-[14rem_minmax(0,60rem)_14rem] 2xl:gap-6">
-          <div aria-hidden="true" className="hidden 2xl:block" />
+        <div className="blog-article-layout mx-auto w-full max-w-[80rem]">
+          <nav aria-label={labels.breadcrumbLabel} className="mx-auto mb-6 w-full max-w-[64rem]" dir={direction}>
+            <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg bg-[#f5f5f5] px-3 py-2 text-xs leading-6 text-gray-500">
+              <li><Link href={locale === 'fa' ? '/' : `/${locale}`} className="transition-colors hover:text-[#841474]">{labels.home}</Link></li>
+              <li aria-hidden="true" className="text-gray-400">{direction === 'rtl' ? '‹' : '›'}</li>
+              <li><Link href={blogPath(locale)} className="transition-colors hover:text-[#841474]">{labels.blog}</Link></li>
+              <li aria-hidden="true" className="text-gray-400">{direction === 'rtl' ? '‹' : '›'}</li>
+              <li aria-current="page" className="font-semibold text-gray-700">{title}</li>
+            </ol>
+          </nav>
 
-          <article className="mx-auto w-full max-w-[64rem] min-w-0 2xl:max-w-none" dir={direction}>
-            <BlogArticleTools labels={labels} showShare={!preview} />
+          <div className="grid grid-cols-1 items-start justify-center gap-6 xl:grid-cols-[minmax(0,64rem)_14rem]">
+            <article className="mx-auto w-full max-w-[64rem] min-w-0 xl:max-w-none" dir={direction}>
+              <BlogArticleTools labels={labels} showShare={!preview} />
 
-            {headings.length >= 2 && (
-              <details className="blog-toc-mobile mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm 2xl:hidden">
-                <summary className="cursor-pointer font-black text-gray-900">{labels.contents}</summary>
-                <div className="mt-3"><BlogArticleTableOfContents headings={headings} label={labels.contents} /></div>
-              </details>
+              {headings.length >= 2 && (
+                <details className="blog-toc-mobile mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm xl:hidden">
+                  <summary className="cursor-pointer font-black text-gray-900">{labels.contents}</summary>
+                  <div className="mt-3"><BlogArticleTableOfContents headings={headings} label={labels.contents} /></div>
+                </details>
+              )}
+
+              <div className="blog-article-card rounded-2xl border border-gray-200 bg-white p-5 shadow-[0_4px_24px_rgba(17,24,39,0.035)] sm:rounded-3xl sm:p-8 lg:p-10">
+                <div id="blog-article-content" className="blog-content text-base leading-9 text-gray-700 sm:text-lg" dangerouslySetInnerHTML={{ __html: content }} />
+                {!!tags.length && <div className="mt-10 flex flex-wrap gap-2 border-t border-gray-100 pt-6">{tags.map((tag) => <span key={tag.id} className="rounded-full bg-gray-50 px-3 py-1.5 text-sm text-gray-600">#{tag.name}</span>)}</div>}
+              </div>
+            </article>
+
+            {headings.length >= 2 ? (
+              <aside className="blog-toc-desktop sticky top-24 hidden self-start rounded-xl border border-gray-200 bg-white p-4 shadow-sm xl:block" dir={direction}>
+                <BlogArticleTableOfContents headings={headings} label={labels.contents} />
+              </aside>
+            ) : (
+              <div aria-hidden="true" className="hidden xl:block" />
             )}
-
-            <div className="blog-article-card rounded-2xl border border-gray-200 bg-white p-5 shadow-[0_4px_24px_rgba(17,24,39,0.035)] sm:rounded-3xl sm:p-8 lg:p-10">
-              <div id="blog-article-content" className="blog-content text-base leading-9 text-gray-700 sm:text-lg" dangerouslySetInnerHTML={{ __html: content }} />
-              {!!tags.length && <div className="mt-10 flex flex-wrap gap-2 border-t border-gray-100 pt-6">{tags.map((tag) => <span key={tag.id} className="rounded-full bg-gray-50 px-3 py-1.5 text-sm text-gray-600">#{tag.name}</span>)}</div>}
-            </div>
-          </article>
-
-          {headings.length >= 2 ? (
-            <aside className="blog-toc-desktop sticky top-24 hidden self-start rounded-xl border border-gray-200 bg-white p-4 shadow-sm 2xl:block" dir={direction}>
-              <BlogArticleTableOfContents headings={headings} label={labels.contents} />
-            </aside>
-          ) : (
-            <div aria-hidden="true" className="hidden 2xl:block" />
-          )}
+          </div>
         </div>
       </section>
 

@@ -27,9 +27,9 @@ export default async function BlogPreviewPage({ params, searchParams }: PageProp
   const typedLocale = locale as Locale;
   const dateLocale = typedLocale === 'fa' ? 'fa-IR' : typedLocale === 'tr' ? 'tr-TR' : 'en-US';
   const labels = {
-    fa: { contents: 'در این مقاله', share: 'اشتراک‌گذاری', copied: 'لینک مقاله کپی شد', copyFailed: 'کپی لینک انجام نشد', backToTop: 'بازگشت به بالای صفحه', author: 'نویسنده', reading: 'دقیقه مطالعه' },
-    en: { contents: 'In this article', share: 'Share article', copied: 'Article link copied', copyFailed: 'Could not copy the link', backToTop: 'Back to top', author: 'By', reading: 'min read' },
-    tr: { contents: 'Bu yazıda', share: 'Yazıyı paylaş', copied: 'Yazı bağlantısı kopyalandı', copyFailed: 'Bağlantı kopyalanamadı', backToTop: 'Başa dön', author: 'Yazar', reading: 'dk okuma' },
+    fa: { contents: 'در این مقاله', breadcrumbLabel: 'مسیر راهنما', home: 'خانه', blog: 'مجله', share: 'اشتراک‌گذاری', copied: 'لینک مقاله کپی شد', copyFailed: 'کپی لینک انجام نشد', backToTop: 'بازگشت به بالای صفحه', author: 'نویسنده', reading: 'دقیقه مطالعه' },
+    en: { contents: 'In this article', breadcrumbLabel: 'Breadcrumb', home: 'Home', blog: 'Blog', share: 'Share article', copied: 'Article link copied', copyFailed: 'Could not copy the link', backToTop: 'Back to top', author: 'By', reading: 'min read' },
+    tr: { contents: 'Bu yazıda', breadcrumbLabel: 'İçerik haritası', home: 'Ana sayfa', blog: 'Blog', share: 'Yazıyı paylaş', copied: 'Yazı bağlantısı kopyalandı', copyFailed: 'Bağlantı kopyalanamadı', backToTop: 'Başa dön', author: 'Yazar', reading: 'dk okuma' },
   } as const;
   const text = labels[typedLocale] ?? labels.fa;
   const dateLabel = typedLocale === 'fa' ? 'تاریخ انتشار برنامه‌ریزی‌شده' : typedLocale === 'tr' ? 'Planlanan yayın tarihi' : 'Scheduled publication';
