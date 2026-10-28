@@ -1,4 +1,7 @@
+import type { Locale } from '@/i18n/config';
+
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8081/api/v1';
+export const BLOG_CACHE_TAG = 'blog-content';
 
 interface ApiResponse<T> {
   data: T;
@@ -42,6 +45,7 @@ export interface BlogTag {
 
 export interface BlogPost {
   id: number;
+  locale: Locale;
   title: string;
   slug: string;
   summary: string;
@@ -119,8 +123,9 @@ export async function submitDemo(data: {
 
 async function blogFetch<T>(path: string): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {
+    cache: 'force-cache',
     headers: { Accept: 'application/json' },
-    next: { revalidate: 300 },
+    next: { tags: [BLOG_CACHE_TAG] },
   });
 
   if (!res.ok) {
@@ -130,20 +135,22 @@ async function blogFetch<T>(path: string): Promise<T> {
   return res.json();
 }
 
-export async function getBlogPosts(options: { category?: string; tag?: string; page?: number } = {}): Promise<PaginatedBlogPosts> {
+export async function getBlogPosts(options: { locale: Locale; category?: string; tag?: string; page?: number }): Promise<PaginatedBlogPosts> {
   const query = new URLSearchParams();
+  query.set('locale', options.locale);
   if (options.category) query.set('category', options.category);
   if (options.tag) query.set('tag', options.tag);
   if (options.page && options.page > 1) query.set('page', String(options.page));
-  const suffix = query.size ? `?${query.toString()}` : '';
+  const suffix = `?${query.toString()}`;
 
   return blogFetch<PaginatedBlogPosts>(`/blog/posts${suffix}`);
 }
 
-export async function getBlogPost(slug: string): Promise<BlogPost | null> {
-  const res = await fetch(`${API_BASE}/blog/posts/${encodeURIComponent(slug)}`, {
+export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPost | null> {
+  const res = await fetch(`${API_BASE}/blog/posts/${encodeURIComponent(slug)}?locale=${locale}`, {
+    cache: 'force-cache',
     headers: { Accept: 'application/json' },
-    next: { revalidate: 300 },
+    next: { tags: [BLOG_CACHE_TAG] },
   });
 
   if (res.status === 404) return null;
@@ -153,7 +160,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   return response.data;
 }
 
-export async function getBlogCategories(): Promise<BlogCategory[]> {
-  const response = await blogFetch<{ data: BlogCategory[] }>('/blog/categories');
+export async function getBlogCategories(locale: Locale): Promise<BlogCategory[]> {
+  const response = await blogFetch<{ data: BlogCategory[] }>(`/blog/categories?locale=${locale}`);
   return response.data;
 }

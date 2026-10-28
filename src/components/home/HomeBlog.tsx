@@ -10,7 +10,7 @@ const copy = {
 } as const;
 
 export default async function HomeBlog({ locale }: { locale: Locale }) {
-  const response = await getBlogPosts().catch(() => null);
+  const response = await getBlogPosts({ locale }).catch(() => null);
   const posts = response?.data.slice(0, 3) ?? [];
   if (!posts.length) return null;
 

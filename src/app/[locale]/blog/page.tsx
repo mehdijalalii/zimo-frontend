@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getBlogCategories, getBlogPosts } from '@/lib/api';
-import { pageMetadata } from '@/lib/seo';
+import { pageMetadata, pageUrl } from '@/lib/seo';
 import { getLocalizedPathname } from '@/i18n/paths';
 import type { Locale } from '@/i18n/config';
 import BlogPostCard from '@/components/blog/BlogPostCard';
@@ -21,7 +21,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params;
   const typedLocale = locale as Locale;
   const text = copy[typedLocale] ?? copy.fa;
-  return pageMetadata(typedLocale, '/blog', { title: text.title, description: text.description });
+  const metadata = pageMetadata(typedLocale, '/blog', { title: text.title, description: text.description });
+  metadata.alternates = { canonical: pageUrl(typedLocale, '/blog') };
+  return metadata;
 }
 
 export default async function BlogIndexPage({ params, searchParams }: PageProps) {
@@ -32,8 +34,8 @@ export default async function BlogIndexPage({ params, searchParams }: PageProps)
   const currentPage = Math.max(1, Number(query.page) || 1);
 
   const [categories, result] = await Promise.all([
-    getBlogCategories().catch(() => []),
-    getBlogPosts({ category, page: currentPage }).catch(() => null),
+    getBlogCategories(typedLocale).catch(() => []),
+    getBlogPosts({ locale: typedLocale, category, page: currentPage }).catch(() => null),
   ]);
   const posts = result?.data ?? [];
   const meta = result?.meta;

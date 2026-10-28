@@ -8,6 +8,13 @@ import BlogPostCard from '@/components/blog/BlogPostCard';
 
 type PageProps = { params: Promise<{ locale: string; slug: string }> };
 
+export const revalidate = false;
+
+export async function generateStaticParams({ params }: { params: { locale: string } }) {
+  const posts = await getBlogPosts({ locale: params.locale as Locale }).catch(() => null);
+  return (posts?.data ?? []).map((post) => ({ slug: post.slug }));
+}
+
 const labels = {
   fa: { back: 'بازگشت به مجله', related: 'مقاله‌های مرتبط', article: 'مقاله' },
   en: { back: 'Back to the blog', related: 'Related articles', article: 'Article' },
@@ -17,7 +24,7 @@ const labels = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug } = await params;
   const typedLocale = locale as Locale;
-  const post = await getBlogPost(slug);
+  const post = await getBlogPost(slug, typedLocale);
   if (!post) return { title: 'مقاله پیدا نشد | زیمو', robots: { index: false, follow: true } };
 
   const metadata = pageMetadata(typedLocale, `/blog/${post.slug}`, {
@@ -38,6 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.seo_description || post.summary,
     images: post.image ? [post.image] : [],
   };
+  metadata.alternates = { canonical: pageUrl(typedLocale, `/blog/${post.slug}`) };
   return metadata;
 }
 
@@ -45,10 +53,10 @@ export default async function BlogArticlePage({ params }: PageProps) {
   const { locale, slug } = await params;
   const typedLocale = locale as Locale;
   const text = labels[typedLocale] ?? labels.fa;
-  const post = await getBlogPost(slug);
+  const post = await getBlogPost(slug, typedLocale);
   if (!post) notFound();
 
-  const relatedPosts = await getBlogPosts({ category: post.category?.slug, page: 1 }).catch(() => null);
+  const relatedPosts = await getBlogPosts({ locale: typedLocale, category: post.category?.slug, page: 1 }).catch(() => null);
   const related = (relatedPosts?.data ?? []).filter((item) => item.id !== post.id).slice(0, 3);
   const dateLocale = typedLocale === 'fa' ? 'fa-IR' : typedLocale === 'tr' ? 'tr-TR' : 'en-US';
   const articleSchema = {
